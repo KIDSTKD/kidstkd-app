@@ -41,13 +41,14 @@ const NewsComponent = () => {
 
           <article key={news.EventName}>
             <Link href='link'>
-              <Image src={news.image} alt={news.EventName} width={360} height={240} className='w-full aspect-[3/2] object-cover' />
+              <Image src={`https://kidstkd.pockethost.io/api/files/03_news/${news.id}/${news.image}`} alt={news.EventName} width={360} height={240} className='w-full aspect-[3/2] object-cover' />
               <div className='truncate bg-light opacity-80
                       text-gray font-bebasRegular text-2xl text-center p-2
                       select-none cursor-default
       '>{news.EventName}</div>
               <p className='h-20 overflow-y-hidden'>{news.EventDescription}</p>
             </Link>
+            {news.image}
           </article>
 
 
