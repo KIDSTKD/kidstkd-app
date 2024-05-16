@@ -53,6 +53,19 @@ body {
      text-center p-2 cursor-default;
      }
 
+            /* Подзаголовок для текста */
+            h3 {
+              @apply
+               text-gray font-exo2 text-xl text-left p-2 indent-8
+               cursor-default;
+               }
+
+               p {
+                @apply
+                 text-dark text-justify	font-exo2 p-2 indent-5 
+                 cursor-default;
+              }
+
 
 
 
