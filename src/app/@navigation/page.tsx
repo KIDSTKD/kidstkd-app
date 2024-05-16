@@ -1,0 +1,30 @@
+import NavMenuItem from "@/app/@navigation/nav-menu-item";
+import Logo from "@/components/logo";
+import CloseNav from "./close-munu-button";
+
+import { MainMenuData } from "./navigation-data";
+
+export default function Navigation() {
+
+
+
+  return (
+    <nav className="sticky top-0">
+      <div className='flex justify-between lg:hidden'>
+        <div id='logo'><Logo /></div>
+        <CloseNav />
+        {/* <Image id='close' onClick={CloseMenu} src={IconClose} alt='Закрыть меню' className='w-6 ml-24 mr-3 transition' /> */}
+      </div>
+
+      <ul className="flex flex-col gap-1 xl:gap-2">
+        {MainMenuData.map(({ id, title, path, iconId, subMenu }) => (
+          <li key={title}>
+            <NavMenuItem id={id} title={title} path={path} iconId={iconId} subMenu={subMenu} />
+          </li>
+
+        ))}
+      </ul>
+    </nav>
+
+  );
+}
