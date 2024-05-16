@@ -21,7 +21,8 @@ pbClient.autoCancellation(false);
 export async function getNews() {
 
   const results = await pbClient.collection('03_news').getFullList<INews>({
-
+    requestKey: 'news',
+    sort: '-Date',
   });
 
   return results;
