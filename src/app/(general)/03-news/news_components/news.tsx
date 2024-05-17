@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import PocketBase from "pocketbase";
+import { Result } from 'postcss';
 export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 
 interface INews {
@@ -46,7 +47,7 @@ const NewsComponent = () => {
 
           <article key={news.id}>
             <Link href='link'>
-              <Image src={`https://kidstkd.pockethost.io/api/files/03_news/${news.id}/${news.image}`} alt={news.EventName} width={360} height={240} className='w-full aspect-[3/2] object-cover' />
+              <Image src={pbClient.files.getUrl(news, news.image, { 'thumb': '360x240' })} alt={news.EventName} width={360} height={240} className='w-full aspect-[3/2] object-cover' />
               <div className='truncate bg-light opacity-80
                       text-gray font-bebasRegular text-2xl text-center p-2
                       select-none cursor-default
