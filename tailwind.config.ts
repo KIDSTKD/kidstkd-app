@@ -59,6 +59,7 @@ const config: Config = {
         'bebasRegular': ['bebasRegular'],
       },
       backgroundImage: {
+        // footer icons
         'iconMenu' : "url('/icons/footer/menu.svg')",
         'iconMenuActive' : "url('/icons/footer/menu_active.svg')",
         'iconEvents' : "url('/icons/footer/events.svg')",
@@ -67,8 +68,17 @@ const config: Config = {
         'iconHomeActive' : "url('/icons/footer/home_active.svg')",
         'iconPodium' : "url('/icons/footer/podium.svg')",
         'iconPodiumActive' : "url('/icons/footer/podium_active.svg')",
-
         'iconUser' : "url('/icons/footer/user.svg')",
+        'iconUserActive' : "url('/icons/footer/user_active.svg')",
+
+        // header icons
+        'iconSearch' : "url('/icons/header/search.svg')",
+        'iconSearchActive' : "url('/icons/header/search_active.svg')",
+        'iconMail' : "url('/icons/header/mail.svg')",
+        'iconMailActive' : "url('/icons/header/mail_active.svg')",
+
+
+
 
 
 

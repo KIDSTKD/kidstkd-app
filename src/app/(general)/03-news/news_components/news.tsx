@@ -15,31 +15,36 @@ interface INews {
   image: string;
 }
 
-pbClient.autoCancellation(false);
-
-
 export async function getNews() {
-
+  pbClient.autoCancellation(false)
   const results = await pbClient.collection('03_news').getFullList<INews>({
     requestKey: 'news',
     sort: '-Date',
   });
 
+
   return results;
+
 };
+
+export const dynamic = 'force-dynamic'
+export const revalidate = 1
+
 
 const NewsComponent = () => {
 
   const res = use(getNews())
+
+
 
   return (
     <>
       <h1>Новости</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 lg:gap-2">
 
-        {res.map((news: any) => (
+        {res.map((news: INews) => (
 
-          <article key={news.EventName}>
+          <article key={news.id}>
             <Link href='link'>
               <Image src={`https://kidstkd.pockethost.io/api/files/03_news/${news.id}/${news.image}`} alt={news.EventName} width={360} height={240} className='w-full aspect-[3/2] object-cover' />
               <div className='truncate bg-light opacity-80
@@ -48,7 +53,6 @@ const NewsComponent = () => {
       '>{news.EventName}</div>
               <p className='h-20 overflow-y-hidden'>{news.EventDescription}</p>
             </Link>
-            {news.image}
           </article>
 
 
