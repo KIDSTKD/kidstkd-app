@@ -77,6 +77,8 @@ const config: Config = {
         'iconMail' : "url('/icons/header/mail.svg')",
         'iconMailActive' : "url('/icons/header/mail_active.svg')",
 
+        // buttons
+        'iconMore' : "url('/icons/buttons/more.svg')",
 
 
 

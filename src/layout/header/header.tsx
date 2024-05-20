@@ -1,8 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
 
-import HeaderUserButton from "./header-components/header-user-button";
-import HeaderSearchButton from "./header-components/header-search-button";
-import HeaderMailButton from "./header-components/header-mail-button";
+import IconVK from "../../../public/icons/social/vk.svg"
+
+import HeaderButton from "./header-components/header-button";
 
 const Header = () => {
 
@@ -13,6 +14,7 @@ const Header = () => {
                            items-center
                            px-2
                            ">
+
             <div className="flex flex-row">
                 <Link href='/events'>
                     <h2 className="text-2xl pl-6">Турниры</h2>
@@ -20,16 +22,19 @@ const Header = () => {
                 <Link href='/rank'>
                     <h2 className="text-2xl pl-6">Рейтинг</h2>
                 </Link>
+
             </div>
+
             <div className="flex flex-row gap-8 pr-2">
-                <div className="flex flex-row gap-4">
-                    <HeaderSearchButton />
-                    <HeaderMailButton />
-                    <HeaderUserButton />
-                </div>
 
                 <div className="flex flex-row gap-4">
-                    <HeaderUserButton />
+                    <HeaderButton text="search" />
+                    <HeaderButton text="mail" />
+                    <HeaderButton text="user" />
+                </div>
+
+                <div className="">
+                    <HeaderButton text="more" />
                 </div>
             </div>
 
