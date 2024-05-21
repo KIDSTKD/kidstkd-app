@@ -14,7 +14,7 @@ interface INews {
   EventDescription: string;
   EventText: string;
   image: string;
-  gallary: string;
+  gallary: string[];
   Date: string
 }
 
@@ -45,9 +45,13 @@ const SingleNews = ({ newsId }: { newsId: string }) => {
           className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
         <div dangerouslySetInnerHTML={{ __html: res.EventText }} />
 
-        <Image src={pbClient.files.getUrl(res, res.gallary, { 'thumb': '360x240' })} alt={res.EventName} width={360} height={240}
-          className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
-        {res.gallary}
+        {gal.map((res: any) => (
+          <>
+            <Image key={res.gallary} src={pbClient.files.getUrl(res, res.gallary, { 'thumb': '360x240' })} alt={res.EventName} width={360} height={240}
+              className='w-80 float-left lg:p-2 rounded aspect-[3/2] object-cover' />
+          </>
+        ))}
+
       </article>
     </>
   );
