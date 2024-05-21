@@ -17,23 +17,18 @@ interface INews {
   Date: string
 }
 
-export async function getNews(dataY: number) {
+export async function getNews(dataY: string) {
   pbClient.autoCancellation(false)
-  const results = await pbClient.collection('03_news').getFirstListItem<INews>(`year=${dataY}`, {
+  const results = await pbClient.collection('03_news').getFirstListItem<INews>(`id=${dataY}`, {
   });
-
-  // const results = await pbClient.collection('03_news').getFirstListItem<INews>(`id=${dataY}`, {
-
-
   return results;
-
 };
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 1
 
 
-const NNN = ({ dataY }: { dataY: number }) => {
+const NNN = ({ dataY }: { dataY: string }) => {
 
   const res = use(getNews(dataY))
 
