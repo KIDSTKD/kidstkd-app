@@ -48,7 +48,3 @@ const SingleNews = ({ newsId }: { newsId: string }) => {
 }
 
 export default SingleNews;
-
-
-
-{/* <div dangerouslySetInnerHTML={{ __html: news.EventText }} /> */ }
