@@ -1,10 +1,10 @@
-import NNN from "./nnn";
+import SingleNews from "./single-news";
 
 const NewsComponent = ({ params }: { params: { id: string } }) => {
 
   return (
     <>
-      <NNN newsId={params.id} />
+      <SingleNews newsId={params.id} />
     </>
   );
 }

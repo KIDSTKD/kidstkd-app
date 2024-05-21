@@ -14,6 +14,7 @@ interface INews {
   EventDescription: string;
   EventText: string;
   image: string;
+  gallary: [];
   Date: string
 }
 
@@ -28,7 +29,7 @@ export const dynamic = 'force-dynamic'
 export const revalidate = 1
 
 
-const NNN = ({ newsId }: { newsId: string }) => {
+const SingleNews = ({ newsId }: { newsId: string }) => {
 
   const res = use(getNews(newsId))
 
@@ -43,14 +44,16 @@ const NNN = ({ newsId }: { newsId: string }) => {
         <Image src={pbClient.files.getUrl(res, res.image, { 'thumb': '360x240' })} alt={res.EventName} width={360} height={240}
           className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
         <div dangerouslySetInnerHTML={{ __html: res.EventText }} />
-        <p>{res.Date}</p>
-        <p>{newsId} </p>
+
+        <p>{res.gallary}</p>
+
+
       </article>
     </>
   );
 }
 
-export default NNN;
+export default SingleNews;
 
 
 
