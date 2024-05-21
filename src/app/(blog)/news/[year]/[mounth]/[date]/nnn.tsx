@@ -17,10 +17,12 @@ interface INews {
   Date: string
 }
 
-export async function getNews() {
+export async function getNews(dataY: number) {
   pbClient.autoCancellation(false)
-  const results = await pbClient.collection('03_news').getFirstListItem<INews>('id="0epkrrxfdcbyzux"', {
+  const results = await pbClient.collection('03_news').getFirstListItem<INews>(`id=${dataY}`, {
   });
+
+  // const results = await pbClient.collection('03_news').getFirstListItem<INews>(`id=${dataY}`, {
 
 
   return results;
@@ -31,9 +33,9 @@ export const dynamic = 'force-dynamic'
 export const revalidate = 1
 
 
-const NNN = ({ dataY }: { dataY: { year: number } }) => {
+const NNN = ({ dataY }: { dataY: number }) => {
 
-  const res = use(getNews())
+  const res = use(getNews(dataY))
 
 
 
@@ -47,7 +49,7 @@ const NNN = ({ dataY }: { dataY: { year: number } }) => {
           className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
         <div dangerouslySetInnerHTML={{ __html: res.EventText }} />
         <p>{res.Date}</p>
-        <p>{dataY.year}</p>
+        <p>{dataY} 11</p>
       </article>
     </>
   );
