@@ -31,7 +31,7 @@ export const dynamic = 'force-dynamic'
 export const revalidate = 1
 
 
-const NNN = () => {
+const NNN = ({ dataY }: { dataY: { year: number } }) => {
 
   const res = use(getNews())
 
@@ -47,7 +47,7 @@ const NNN = () => {
           className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
         <div dangerouslySetInnerHTML={{ __html: res.EventText }} />
         <p>{res.Date}</p>
-
+        <p>{dataY.year}</p>
       </article>
     </>
   );

@@ -1,13 +1,13 @@
 import NNN from "./nnn";
 
-const NewsComponent = () => {
+const NewsComponent = ({ params }: { params: { year: any } }) => {
 
 
 
 
   return (
     <>
-      <NNN />
+      <NNN dataY={params.year} />
     </>
   );
 }
