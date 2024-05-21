@@ -7,12 +7,7 @@ export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 
 interface INews {
   id: string;
-  EventYear: number;
-  EventMounth: string;
-  EventDays: string;
-  EventDate: string;
   EventName: string;
-  EventDescription: string;
   EventText: string;
   image: string;
 }
@@ -53,7 +48,7 @@ const NewsComponent = () => {
                       text-gray font-bebasRegular text-2xl text-center p-2
                       select-none cursor-default
       '>{news.EventName}</div>
-              <p className='h-20 overflow-y-hidden'>{news.EventDescription}</p>
+              <p className='h-20 overflow-y-hidden'>{news.EventText}</p>
             </Link>
           </article>
         ))}
