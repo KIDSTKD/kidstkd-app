@@ -8,6 +8,7 @@ export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 interface INews {
   id: string;
   EventName: string;
+  EventDescription: string;
   EventText: string;
   image: string;
 }
