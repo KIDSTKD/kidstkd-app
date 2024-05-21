@@ -14,11 +14,12 @@ interface INews {
   EventDescription: string;
   EventText: string;
   image: string;
+  Date: string
 }
 
 export async function getNews() {
   pbClient.autoCancellation(false)
-  const results = await pbClient.collection('03_news').getFirstListItem<INews>('EventYear="2023"', {
+  const results = await pbClient.collection('03_news').getFirstListItem<INews>('id="0epkrrxfdcbyzux"', {
   });
 
 
@@ -45,6 +46,7 @@ const NewsComponent = () => {
         <Image src={pbClient.files.getUrl(res, res.image, { 'thumb': '360x240' })} alt={res.EventName} width={360} height={240}
           className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
         <div dangerouslySetInnerHTML={{ __html: res.EventText }} />
+        <p>{res.Date}</p>
 
       </article>
     </>
