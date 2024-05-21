@@ -19,7 +19,7 @@ interface INews {
 
 export async function getNews(newsId: string) {
   pbClient.autoCancellation(false)
-  const results = await pbClient.collection('03_news').getFirstListItem<INews>(`id=${newsId}`, {
+  const results = await pbClient.collection('03_news').getFirstListItem<INews>('id="4dd3f22kgl3cg7u"', {
   });
   return results;
 };
