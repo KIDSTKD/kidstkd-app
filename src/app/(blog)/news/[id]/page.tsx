@@ -7,7 +7,7 @@ const NewsComponent = ({ params }: { params: { id: string } }) => {
 
   return (
     <>
-      <NNN dataY={params.id} />
+      <NNN newsId={params.id} />
     </>
   );
 }

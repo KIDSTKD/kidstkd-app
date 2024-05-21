@@ -17,9 +17,9 @@ interface INews {
   Date: string
 }
 
-export async function getNews(dataY: string) {
+export async function getNews(newsId: string) {
   pbClient.autoCancellation(false)
-  const results = await pbClient.collection('03_news').getFirstListItem<INews>('id="0epkrrxfdcbyzux"', {
+  const results = await pbClient.collection('03_news').getFirstListItem<INews>(`id=${newsId}`, {
   });
   return results;
 };
@@ -28,9 +28,9 @@ export const dynamic = 'force-dynamic'
 export const revalidate = 1
 
 
-const NNN = ({ dataY }: { dataY: string }) => {
+const NNN = ({ newsId }: { newsId: string }) => {
 
-  const res = use(getNews(dataY))
+  const res = use(getNews(newsId))
 
 
 
@@ -44,7 +44,7 @@ const NNN = ({ dataY }: { dataY: string }) => {
           className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
         <div dangerouslySetInnerHTML={{ __html: res.EventText }} />
         <p>{res.Date}</p>
-        <p>{dataY} 11</p>
+        <p>{newsId}</p>
       </article>
     </>
   );
