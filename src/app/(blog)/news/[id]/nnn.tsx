@@ -19,7 +19,7 @@ interface INews {
 
 export async function getNews(newsId: string) {
   pbClient.autoCancellation(false)
-  const results = await pbClient.collection('03_news').getFirstListItem<INews>('id="4dd3f22kgl3cg7u"', {
+  const results = await pbClient.collection('03_news').getOne<INews>(`${newsId}`, {
   });
   return results;
 };
@@ -44,7 +44,7 @@ const NNN = ({ newsId }: { newsId: string }) => {
           className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
         <div dangerouslySetInnerHTML={{ __html: res.EventText }} />
         <p>{res.Date}</p>
-        <p>{newsId}</p>
+        <p>{newsId} </p>
       </article>
     </>
   );
