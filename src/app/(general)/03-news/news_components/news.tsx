@@ -62,6 +62,3 @@ const NewsComponent = () => {
 
 export default NewsComponent;
 
-
-
-{/* <div dangerouslySetInnerHTML={{ __html: news.EventText }} /> */ }
