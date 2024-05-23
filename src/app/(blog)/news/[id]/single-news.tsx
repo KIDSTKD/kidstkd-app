@@ -47,19 +47,9 @@ const SingleNews = ({ newsId }: { newsId: string }) => {
         <>
           <Image src={pbClient.files.getUrl(res, res.gallary[1], { 'thumb': '360x240' })} alt={res.EventName} width={360} height={240}
             className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
-          <Image src={pbClient.files.getUrl(res, res.gallary[2], { 'thumb': '360x240' })} alt={res.EventName} width={360} height={240}
-            className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
-          <Image src={pbClient.files.getUrl(res, res.gallary[99], { 'thumb': '360x240' })} alt={res.EventName} width={360} height={240}
-            className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
-          <Image src={pbClient.files.getUrl(res, res.gallary[4], { 'thumb': '360x240' })} alt={res.EventName} width={360} height={240}
-            className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
 
-          {res.map((res: INews) => (
-            <>
-              {res.gallary}
-            </>
 
-          ))}
+
         </>
 
       </div>
