@@ -11,7 +11,7 @@ interface INews {
   EventName: string;
   EventDescription: string;
   EventText: string;
-  gallary: string[];
+  gallary: string;
   Date: string
 }
 
@@ -46,7 +46,10 @@ const SingleNews = ({ newsId }: { newsId: string }) => {
         <>
           <Image src={pbClient.files.getUrl(res, res.gallary[1], { 'thumb': '360x240' })} alt={res.EventName} width={360} height={240}
             className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
-
+          {res.map((res: INews) => (
+            <Image key={res.gallary} src={pbClient.files.getUrl(res, res.gallary, { 'thumb': '360x240' })} alt={res.EventName} width={360} height={240}
+              className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
+          ))}
         </>
 
       </div>
