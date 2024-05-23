@@ -44,18 +44,17 @@ const SingleNews = ({ newsId }: { newsId: string }) => {
 
       <div className='flex flex-col'>
         <>
-          {res.gallary}
           <Image src={pbClient.files.getUrl(res, res.gallary[1], { 'thumb': '360x240' })} alt={res.EventName} width={360} height={240}
+            className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
+          <Image src={pbClient.files.getUrl(res, res.gallary[2], { 'thumb': '360x240' })} alt={res.EventName} width={360} height={240}
+            className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
+          <Image src={pbClient.files.getUrl(res, res.gallary[3], { 'thumb': '360x240' })} alt={res.EventName} width={360} height={240}
+            className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
+          <Image src={pbClient.files.getUrl(res, res.gallary[4], { 'thumb': '360x240' })} alt={res.EventName} width={360} height={240}
             className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
         </>
 
       </div>
-
-      {/* {res.map((news: INews) => (
-        <Image src={pbClient.files.getUrl(res, res.gallary, { 'thumb': '360x240' })} alt={res.EventName} width={360} height={240}
-          className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
-      ))} */}
-
     </>
   );
 }
