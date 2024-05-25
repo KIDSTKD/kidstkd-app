@@ -1,0 +1,64 @@
+import { use } from 'react'
+import Link from 'next/link';
+import Image from 'next/image';
+
+import PocketBase from "pocketbase";
+export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
+
+interface INews {
+  id: string;
+  EventName: string;
+  EventDescription: string;
+  EventText: string;
+  gallary: string;
+}
+
+export async function getNewsByYear(year: number) {
+  pbClient.autoCancellation(false)
+  const results = await pbClient.collection('03_news').getFullList<INews>({
+    requestKey: 'news-by-year',
+    filter: `Date > "${year}-01-01 00:00:00" && Date < "${year}-12-31 00:00:00"`,
+    sort: '-Date',
+  });
+
+  return results;
+
+};
+
+export const dynamic = 'force-dynamic'
+export const revalidate = 1
+
+
+const NewsByYearComponent = ({ year }: { year: number }) => {
+
+  const res = use(getNewsByYear(year))
+
+
+
+  return (
+    <>
+      <h1>Новости</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 lg:gap-2">
+
+        {res.map((news: INews) => (
+
+          <article key={news.id}>
+            <Link href={`/news/${news.id}`}>
+              <Image src={pbClient.files.getUrl(news, news.gallary[0], { 'thumb': '360x240' })} alt={news.EventName} width={360} height={240} className='w-full aspect-[3/2] object-cover' />
+              <div className='truncate bg-light opacity-80
+                      text-gray font-bebasRegular text-2xl text-center p-2
+                      select-none cursor-default
+      '>{news.EventName}</div>
+              <p className='h-20 overflow-y-hidden'>{news.EventDescription}</p>
+
+            </Link>
+          </article>
+        ))}
+      </div>
+
+    </>
+  );
+}
+
+export default NewsByYearComponent;
+

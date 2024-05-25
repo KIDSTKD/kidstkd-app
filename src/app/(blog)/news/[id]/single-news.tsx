@@ -5,7 +5,7 @@ import PocketBase from "pocketbase";
 export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 
 interface INews {
-  map(arg0: (news: INews) => import("react").JSX.Element): unknown;
+  // map(arg0: (news: INews) => import("react").JSX.Element): unknown;
   id: string;
 
   EventName: string;
