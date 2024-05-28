@@ -4,6 +4,8 @@ import Massage from "@/components/home/massage-me";
 import TKDBanner from "@/components/home/tkd-banner";
 import BestAthlete from "@/components/home/best-athlet";
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 1
 
 export default function Home() {
   return (
