@@ -27,6 +27,10 @@ export default function Home() {
 
       <BestAthlete />
 
+      <h2 className='cursor-pointer mt-5'><Link href='/03-news' className='text-gray hover:text-gray'>Новости</Link></h2>
+      <h2 className='cursor-pointer mt-5'><Link href='/05-taekwondo/blog' className='text-gray hover:text-gray'>Публикации</Link></h2>
+
+
     </>
   );
 }

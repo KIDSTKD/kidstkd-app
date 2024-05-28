@@ -1,4 +1,4 @@
-import NewsByYearComponent from "../news_components/news-by-year";
+import NewsByYearComponent from "../../../../components/news/news-by-year";
 export const dynamic = 'force-dynamic'
 export const revalidate = 1
 

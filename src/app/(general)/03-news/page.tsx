@@ -1,4 +1,4 @@
-import NewsComponent from "./news_components/news";
+import AllNews from "../../../components/news/all-news";
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 1
@@ -6,7 +6,7 @@ export const revalidate = 1
 export default function News() {
   return (
     <>
-      <NewsComponent />
+      <AllNews />
     </>
   );
 }

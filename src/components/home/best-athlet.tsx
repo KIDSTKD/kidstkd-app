@@ -64,12 +64,18 @@ const BestAthlete = () => {
                         <div className='absolute top-0'><Image src={BG1} alt='Kidstkd' /></div>
                         <div className='absolute z-30 bottom-0'><Image src={BG2} alt='Kidstkd' /></div>
 
-                        <div className='
-                    absolute z-10 top-1 w-[300px]
+                        <div className='absolute z-10 top-1 w-80
                     text-light font-bebasRegular text-xl text-center
-                '>                                {data.expand.user.name}
-                        </div>
+                '>{data.expand.user.name}</div>
+                        <div className='absolute z-40 bottom-1 w-80
+                    text-light font-bebasRegular text-2xl text-center
+                '>{data.expand.user.level}</div>
+                        <div className='absolute z-40 bottom-10 w-80
+                    text-light font-bebasRegular text-2xl text-center
+                '>рейтинг - {data.ratio}</div>
                     </div>
+
+
                 ))}
             </div>
 

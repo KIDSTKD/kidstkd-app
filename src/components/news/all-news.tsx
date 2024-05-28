@@ -2,6 +2,7 @@ import { use } from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 
+
 import PocketBase from "pocketbase";
 export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 
@@ -29,7 +30,7 @@ export const dynamic = 'force-dynamic'
 export const revalidate = 1
 
 
-const NewsComponent = () => {
+const AllNews = () => {
 
   const res = use(getNews())
 
@@ -60,5 +61,5 @@ const NewsComponent = () => {
   );
 }
 
-export default NewsComponent;
+export default AllNews;
 
