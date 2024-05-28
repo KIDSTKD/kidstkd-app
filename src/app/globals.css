@@ -60,11 +60,25 @@ body {
                cursor-default;
                }
 
+                      /* Подзаголовок для блоков */
+          h4 {
+            @apply
+             text-gray/80 font-bebasRegular text-2xl text-center p-2
+             cursor-default;
+             }
+
                p {
                 @apply
                  text-dark text-justify	font-exo2 p-2 indent-5 
                  cursor-default;
               }
+
+              ul {
+                @apply
+               text-dark font-exo2 list-disc p-2
+               cursor-default;
+                }
+            
 
 
 
