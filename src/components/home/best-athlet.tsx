@@ -19,6 +19,7 @@ export async function getBestAthlete() {
     pbClient.autoCancellation(false)
     const results = await pbClient.collection('users_ratio_2024').getFullList<IUserRatio>({
         requestKey: 'uset-ratio',
+        expand: 'user',
         sort: 'rank',
         filter: 'rank <= 10',
 
@@ -41,36 +42,37 @@ const BestAthlete = () => {
     return (
         <>
             <h4>Лучшие спортсмены</h4>
-
-            <div className="flex flex-col">
+            <div className='
+                w-full h-[400px]
+                flex
+                overflow-x-auto overflow-y-hidden
+                snap-x snap-center
+                scroll-smooth	
+                gap-4
+                scrollbar-hide
+            '>
 
                 {res.map((data: any) => (
-                    <>
-                        <Link key={data.user} href='/' passHref>
-                            <div className='
-                w-[300px] h-[400px]
+                    <div key={data.expand.user.id} className='w-80
                 snap-start snap-always
                 shrink-0
-                relative
-            '>
-                                <Image className='absolute top-10' src='../../../public/icons/footer/user' alt={data.user} width={300} height={300} />
-                                <div className='absolute top-0'><Image src={BG1} alt="Фон" /></div>
-                                <div className='absolute bottom-0'><Image src={BG2} alt='Фон' /></div>
+                relative'>
+                        <Image src={`https://kidstkd.pockethost.io/api/files/_pb_users_auth_/${data.expand.user.id}/${data.expand.user.avatar}`}
+                            width={320} height={320} alt=''
+                            className='absolute z-20 top-10'
+                        />
+                        <div className='absolute top-0'><Image src={BG1} alt='Kidstkd' /></div>
+                        <div className='absolute z-30 bottom-0'><Image src={BG2} alt='Kidstkd' /></div>
 
-                                <div className='
+                        <div className='
                     absolute z-10 top-1 w-[300px]
                     text-light font-bebasRegular text-xl text-center
-                '>{data.user}</div>
-                                <div className='
-                    absolute z-10 bottom-1 w-[300px]
-                    text-light font-bebasRegular text-xl text-center
-                '>{data.rank}</div>
-                            </div>
-                        </Link>
-                    </>
+                '>                                {data.expand.user.name}
+                        </div>
+                    </div>
                 ))}
-
             </div>
+
         </>
     );
 }
