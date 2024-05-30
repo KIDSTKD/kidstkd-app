@@ -1,4 +1,4 @@
-import SingleNews from "../../../../components/news/single-news";
+import SingleNews from "@/components/news/single-news";
 
 const NewsComponent = ({ params }: { params: { id: string } }) => {
 

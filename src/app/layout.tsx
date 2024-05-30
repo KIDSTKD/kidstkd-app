@@ -34,11 +34,11 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children, navigation,
+  children, navigation, privatenav
 }: Readonly<{
   children: React.ReactNode;
   navigation: React.ReactNode;
-  private: React.ReactNode;
+  privatenav: React.ReactNode;
 
 }>) {
 
@@ -60,7 +60,7 @@ export default function RootLayout({
                        w-4/5 md:w-1/2 lg:w-60 xl:w-96
                        -translate-x-[100%] lg:translate-x-0
                       h-full transition-transform
-                       ">{navigation}</div>
+                       ">{navigation}{privatenav}</div>
           <div className="grid-in-main">{children}</div>
           <Footer />
 

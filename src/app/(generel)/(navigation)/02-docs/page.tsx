@@ -1,5 +1,5 @@
 import Heading from "@/components/ui/heading";
-import DocBlock from "@/app/(navigation)/02-docs/docs-components/docBlock";
+import DocBlock from "@/components/docs-components/docBlock";
 import Button from "@/components/ui/button";
 
 import { Metadata } from 'next'

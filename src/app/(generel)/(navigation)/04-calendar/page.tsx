@@ -1,6 +1,6 @@
 import Heading from '@/components/ui/heading'
-import Mounth from './calendar-components/mounth'
-import MounthData from '@/app/(navigation)/04-calendar/calendar-components/mounth-data'
+import Mounth from '@/components/calendar-components/mounth'
+import MounthData from '@/components/calendar-components/mounth-data'
 
 import { Metadata } from 'next'
 const headerTitle = 'Календарь'

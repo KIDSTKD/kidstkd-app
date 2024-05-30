@@ -1,6 +1,6 @@
 import Heading from "@/components/ui/heading";
 import { DocData } from "@/layout/nav/navigation-data";
-import DocBlock from "@/app/(navigation)/02-docs/docs-components/docBlock";
+import DocBlock from "@/components/docs-components/docBlock";
 
 import { Metadata, ResolvingMetadata } from 'next'
 const headerTitle = 'Документы'

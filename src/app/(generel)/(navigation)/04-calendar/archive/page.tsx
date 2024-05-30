@@ -1,6 +1,6 @@
 import Heading from '@/components/ui/heading'
 import Link from 'next/link'
-import { ArchiveData } from '../calendar-components/archive-data'
+import { ArchiveData } from '@/components/calendar-components/archive-data'
 
 import { Metadata } from 'next'
 const headerTitle = 'Календарь - архив'
