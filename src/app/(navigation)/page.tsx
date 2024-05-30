@@ -1,15 +1,29 @@
 import Link from "next/link";
 
+import Heading from "@/components/ui/heading";
+
 import Massage from "@/components/home/massage-me";
 import TKDBanner from "@/components/home/tkd-banner";
 import BestAthlete from "@/components/home/best-athlet";
 
+import { Metadata } from 'next'
+const headerTitle = 'Тхэквондо в Уссурийске'
+export const metadata: Metadata = {
+  title: headerTitle + ' для детей от 4 лет',
+  description: 'Спортивные секции для детей в Уссурийске. Олимпийское тхэквондо для мальчиков и девочек от 4 лет. Бесплатное пробное занятие',
+  alternates: {
+    canonical: 'https://kidstkd.ru',
+  },
+}
+
 export const dynamic = 'force-dynamic'
 export const revalidate = 1
+
 
 export default function Home() {
   return (
     <>
+      <Heading text={headerTitle} />
       <p>Мы приглашаем детей от 4 лет на занятия олимпийским видом спорта. Занятия проходят в группах детей одного возраста, что обеспечивает положительный результат занятий. Занятия охватывают все аспекты тхэквондо, и включают в себя базовую подготовку, обучение ударной технике, обучение техническому комплексу пхумсэ.</p>
       <h4>Для занятий Вашему ребенку понадобиться:</h4>
       <ul>

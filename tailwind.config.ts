@@ -80,6 +80,10 @@ const config: Config = {
         // buttons
         'iconMore' : "url('/icons/buttons/more.svg')",
 
+        //
+        'loading' : "url('/layout/loading.svg')",
+
+
 
 
 
