@@ -12,10 +12,11 @@ export const MainMenuData = [
 
 export const AboutData = [
 
-    {id:11, title: "Куда отдать ребёнка?", path: "/01-about-us/01"},
-    {id:12, title: "Тхэквондо для детей", path: "/01-about-us/02"},
+    {id:11, title: "Куда отдать ребёнка?", path: "/01-about-us/sport-sections"},
+    {id:12, title: "Тхэквондо для детей", path: "/01-about-us/taekwondo-for-kids"},
     {id:13, title: "Тренерский коллектив", path: "/01-about-us/coach"},
     {id:14, title: "Аттестация", path: "/01-about-us/belt-test"},
+    {id:15, title: "Летний лагерь", path: "/01-about-us/camp"},
 
 ]
 

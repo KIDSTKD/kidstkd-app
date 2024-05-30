@@ -41,6 +41,8 @@ export default function RootLayout({
   private: React.ReactNode;
 
 }>) {
+
+
   return (
     <html lang="ru">
       <body className='custom-bg'>
