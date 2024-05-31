@@ -33,15 +33,15 @@ const SideMenu = ({
                 `}>{navigation}</div>
             <div className={`
             ${pathname.includes("events")
-                    ? "flex"
+                    ? ""
                     : "hidden"
                 }
                 ${pathname.includes("rank")
-                    ? "flex"
+                    ? ""
                     : "hidden"
                 }
                 ${pathname.includes("user")
-                    ? "flex"
+                    ? ""
                     : "hidden"
                 }
                 `}>{privatenav}</div>
