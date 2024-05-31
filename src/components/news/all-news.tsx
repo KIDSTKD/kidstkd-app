@@ -14,7 +14,6 @@ export async function getNews() {
     sort: '-Date',
   });
 
-
   return results;
 
 };
