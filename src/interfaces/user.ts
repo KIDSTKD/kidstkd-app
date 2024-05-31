@@ -1,0 +1,15 @@
+export interface IUser {
+    id: string,
+    name: string,
+    grade: string,
+    level: string,
+    member: string,
+    competition: number,
+    gold: number,
+    silver: number,
+    bronze: number,
+    fights_all: number,
+    fights_win: number,
+    trains: string,
+    avatar: string,
+  }

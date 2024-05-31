@@ -28,13 +28,13 @@ const Header = () => {
             <div className="flex flex-row gap-8 pr-2">
 
                 <div className="flex flex-row gap-4">
-                    <HeaderButton text="search" />
-                    <HeaderButton text="mail" />
-                    <HeaderButton text="user" />
+                    <HeaderButton text="search" link="" />
+                    <HeaderButton text="mail" link="" />
+                    <HeaderButton text="user" link="user" />
                 </div>
 
                 <div className="">
-                    <HeaderButton text="more" />
+                    <HeaderButton text="more" link="" />
                 </div>
             </div>
 

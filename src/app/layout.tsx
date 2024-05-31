@@ -4,7 +4,6 @@ import type { Viewport } from 'next'
 import Logo from "@/components/logo";
 import Footer from "@/layout/footer/footer";
 import Header from "@/layout/header/header";
-import SideMenu from "@/layout/nav/sidemenu";
 
 import "./globals.css";
 
@@ -61,7 +60,7 @@ export default function RootLayout({
                        w-4/5 md:w-1/2 lg:w-60 xl:w-96
                        -translate-x-[100%] lg:translate-x-0
                       h-full transition-transform
-                       "><SideMenu navigation={navigation} privatenav={privatenav} /></div>
+                       ">{navigation}{privatenav}</div>
           <div className="grid-in-main">{children}</div>
           <Footer />
 

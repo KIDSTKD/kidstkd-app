@@ -1,7 +1,26 @@
-export default function User() {
+import UserAvatar from '@/components/user-components/user-avatar'
+
+import { Metadata } from 'next'
+const headerTitle = 'Личный кабинет'
+export const metadata: Metadata = {
+  title: headerTitle + ' спортивного клуба KIDSTKD',
+  description: 'Достижения, рейтинг, личная информация',
+  alternates: {
+    canonical: 'https://kidstkd.ru/user',
+  },
+  robots: {
+    index: false,
+  },
+}
+
+export const dynamic = 'force-dynamic'
+export const revalidate = 1
+
+export default function UserPage() {
+
   return (
-    <div className="">
-      <p>user pages</p>
-    </div>
-  );
+    <>
+      <UserAvatar />
+    </>
+  )
 }

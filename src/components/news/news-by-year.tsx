@@ -2,16 +2,13 @@ import { use } from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { INews } from '@/interfaces/news';
+
+
 import PocketBase from "pocketbase";
 export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 
-interface INews {
-  id: string;
-  EventName: string;
-  EventDescription: string;
-  EventText: string;
-  gallary: string;
-}
+
 
 export async function getNewsByYear(year: number) {
   pbClient.autoCancellation(false)

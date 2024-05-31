@@ -20,6 +20,10 @@ const config: Config = {
       'lightgray': '#555555',
       'light': '#f3f9fb',
 
+      'red': '#982525',
+      'green': '#25984b',
+      'yellow': '#d2ed1f',
+
       
     },
     extend: {

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const HeaderButton = ({ text }: { text: string }) => {
+const HeaderButton = ({ text, link }: { text: string, link: string }) => {
 
 
     return (
@@ -11,7 +11,7 @@ const HeaderButton = ({ text }: { text: string }) => {
                     text == "mail" ? "bg-iconMail hover:bg-iconMailActive" :
                         text == "user" ? "bg-iconUser hover:bg-iconUserActive" :
                             text == "more" ? "bg-iconMore hover:rotate-180 transition-transform" : ""
-                }`} href='/'></Link>
+                }`} href={link}></Link>
         </div>
 
     );
