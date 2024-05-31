@@ -34,11 +34,9 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children, navigation, privatenav
+  children,
 }: Readonly<{
   children: React.ReactNode;
-  navigation: React.ReactNode;
-  privatenav: React.ReactNode;
 
 }>) {
 
@@ -54,15 +52,15 @@ export default function RootLayout({
       '>
           <div className="grid-in-logo bg-blue w-full lg:w-60 xl:w-96"><Logo /></div>
           <Header />
-          <div id='nav' className="grid-in-nav bg-blue z-40
+          {/* <div id='nav' className="grid-in-nav bg-blue z-40
            fixed lg:relative
            
                        w-4/5 md:w-1/2 lg:w-60 xl:w-96
                        -translate-x-[100%] lg:translate-x-0
                       h-full transition-transform
-                       ">{navigation}{privatenav}</div>
+                       ">{navigation}{privatenav}</div> */}
           <div className="grid-in-main">{children}</div>
-          <Footer />
+          {/* <Footer /> */}
 
 
 

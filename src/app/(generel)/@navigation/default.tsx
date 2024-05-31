@@ -2,7 +2,7 @@ import NavMenuItem from "@/layout/nav/nav-menu-item";
 import Logo from "@/components/logo";
 import CloseNav from "@/layout/nav/close-munu-button";
 
-import { MainMenuData } from "../../layout/nav/navigation-data";
+import { MainMenuData } from "@/layout/nav/navigation-data";
 
 export default function Navigation() {
 
