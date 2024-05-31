@@ -1,4 +1,6 @@
 import UserAvatar from '@/components/user-components/user-avatar'
+import WidgetMedals from '@/components/user-components/widget-medals'
+import WidgetAchivments from '@/components/user-components/widget-achivments'
 
 import { Metadata } from 'next'
 const headerTitle = 'Личный кабинет'
@@ -21,6 +23,8 @@ export default function UserPage() {
   return (
     <>
       <UserAvatar />
+      <WidgetMedals />
+      <WidgetAchivments />
     </>
   )
 }
