@@ -61,7 +61,7 @@ const data = [
     { id: 213, db: '3 юношеский разряд', src: '/icons/user/levels/jun3.png' },
     { id: 214, db: 'б/р', src: '/icons/user/levels/nolevel.png' },
 
-    { id: 30, db: 'KIDSTKD', src: '/layout/logo.svg' },
+    { id: 30, db: 'KIDSTKD', src: '/layout/kidstkd.svg' },
     { id: 31, db: 'Приморский край', src: '/icons/user/team/pk.png' },
     { id: 32, db: 'Дальневосточный округ', src: '/icons/user/team/dfo.png' },
 ]
