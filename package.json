@@ -11,6 +11,7 @@
   "dependencies": {
     "@savvywombat/tailwindcss-grid-areas": "^4.0.0",
     "class-variance-authority": "^0.7.0",
+    "cookies-next": "^4.2.1",
     "next": "14.2.3",
     "pocketbase": "^0.21.2",
     "react": "^18",

@@ -7,6 +7,8 @@ export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 
 export async function getResults() {
 
+    pbClient.autoCancellation(false)
+
     const results = await pbClient.collection('users_competitions_2024').getFullList({
         expand: 'user',
         requestKey: 'competitions',

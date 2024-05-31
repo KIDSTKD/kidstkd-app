@@ -14,6 +14,8 @@ import { use } from 'react'
 
 export async function getRank() {
 
+    pbClient.autoCancellation(false)
+
     const results = await pbClient.collection('users_ratio_2024').getFullList({
         expand: 'user',
         requestKey: 'competitions',
