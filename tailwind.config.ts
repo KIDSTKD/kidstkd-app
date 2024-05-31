@@ -26,12 +26,13 @@ const config: Config = {
       gridTemplateAreas: {
         'rootLayout': [
           'logo header',
-          'main main',
+          'nav main',
+          'nav footer',
+
         ],
 
         'subLayout': [
-          'nav main aside',
-          'nav footer footer',
+          'main aside',
         ],
         'mobileLayout': [
           'logo',
@@ -43,13 +44,13 @@ const config: Config = {
       },
       gridTemplateColumns: {
         'rootLayout': 'auto 1fr',
-        'subLayout': 'auto 1fr auto',
+        'subLayout': '1fr auto',
         'mobileLayout': '1fr',
 
       },
       gridTemplateRows: {
-        'rootLayout': 'auto 1fr',
-        'subLayout': '1fr auto',
+        'rootLayout': 'auto 1fr auto',
+        'subLayout': '1fr',
         'mobileLayout': 'auto auto 1fr 56px',
 
       },
