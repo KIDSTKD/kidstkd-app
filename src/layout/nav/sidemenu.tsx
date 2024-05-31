@@ -38,11 +38,11 @@ const SideMenu = ({
                 }
                 ${pathname.includes("rank")
                     ? ""
-                    : "hidden"
+                    : ""
                 }
                 ${pathname.includes("user")
                     ? ""
-                    : "hidden"
+                    : ""
                 }
                 `}>{privatenav}</div>
 
