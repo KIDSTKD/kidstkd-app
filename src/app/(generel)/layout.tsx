@@ -1,10 +1,9 @@
 import "../globals.css";
 
 export default function RootLayout({
-  children, navigation
+  children
 }: Readonly<{
   children: React.ReactNode;
-  navigation: React.ReactNode;
 
 }>) {
   return (

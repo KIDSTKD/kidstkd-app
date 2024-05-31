@@ -1,12 +1,10 @@
-import Footer from "@/layout/footer/footer";
 
 import "../globals.css";
 
 export default function RootLayout({
-  children, privatenav
+  children
 }: Readonly<{
   children: React.ReactNode;
-  privatenav: React.ReactNode;
 
 }>) {
   return (
