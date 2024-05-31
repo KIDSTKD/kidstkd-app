@@ -1,3 +1,11 @@
+export const PrivateMenuData = [
+    {id:1, title: "Статистика", path: "/01-about-us", iconId: 'About', subMenu: false},
+    {id:2, title: "Достижения", path: "/02-docs", iconId: "Docs", subMenu: false},
+    {id:3, title: "Рейтинг", path: "/03-news", iconId: "News", subMenu: false},
+    {id:4, title: "Уведомления", path: "/04-calendar", iconId: "Calendar", subMenu: false},
+
+]
+
 export const MainMenuData = [
     {id:1, title: "О Нас", path: "/01-about-us", iconId: 'About', subMenu: true},
     {id:2, title: "Документы", path: "/02-docs", iconId: "Docs", subMenu: true},
@@ -6,8 +14,6 @@ export const MainMenuData = [
     {id:5, title: "Тхэквондо", path: "/05-taekwondo", iconId: "Taekwondo", subMenu: true},
     {id:6, title: "Экипировка", path: "/06-gear", iconId: "none", subMenu: false},
     {id:7, title: "Контакты", path: "/07-contacts", iconId: "none", subMenu: false},
-
-
 ]
 
 export const AboutData = [

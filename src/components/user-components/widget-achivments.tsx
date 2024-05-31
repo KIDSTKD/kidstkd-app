@@ -6,8 +6,6 @@ import WidgetCompetitions from "./widget-competitions";
 import PocketBase from "pocketbase";
 export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 
-
-
 import { cookies } from 'next/headers'
 import db from '@/utils/pocketbase/auth'
 import { use } from 'react'
@@ -25,8 +23,6 @@ export async function getRank() {
     return results;
 };
 
-
-
 const getUser = async () => {
     const cookieStore = cookies();
     const result = await db.getUser(cookieStore);
@@ -34,7 +30,6 @@ const getUser = async () => {
 }
 
 type ToString = string;
-
 
 const data = [
     { id: 111, db: '1 дан', src: '/icons/user/grades/1dan.png' },
@@ -67,9 +62,6 @@ const data = [
     { id: 31, db: 'Приморский край', src: '/icons/user/team/pk.png' },
     { id: 32, db: 'Дальневосточный округ', src: '/icons/user/team/dfo.png' },
 ]
-
-
-
 
 const WidgetAchivments = () => {
 

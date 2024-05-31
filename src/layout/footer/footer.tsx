@@ -25,7 +25,7 @@ const Footer = () => {
                     </div>
 
                 </div>
-                <div className='hidden lg:grid grid-cols-3 justify-between py-20 divide-x-[1px] divide-light'>
+                <div className='hidden lg:grid grid-cols-3 justify-between pl-80 py-20 divide-x-[1px] divide-light'>
                     <div className="flex justify-center">
                         <h2 className="text-light text-2xl">Документы</h2>
                     </div>
