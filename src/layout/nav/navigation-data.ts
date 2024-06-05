@@ -6,6 +6,14 @@ export const PrivateMenuData = [
 
 ]
 
+export const EventMenuData = [
+    {id:1, title: "Положения", path: "/01-about-us", iconId: 'About', subMenu: false},
+    {id:2, title: "Протоколы", path: "/02-docs", iconId: "Docs", subMenu: false},
+    {id:3, title: "Турнирные таблицы", path: "/03-news", iconId: "News", subMenu: false},
+    {id:4, title: "...", path: "/04-calendar", iconId: "Calendar", subMenu: false},
+
+]
+
 export const MainMenuData = [
     {id:1, title: "О Нас", path: "/01-about-us", iconId: 'About', subMenu: true},
     {id:2, title: "Документы", path: "/02-docs", iconId: "Docs", subMenu: true},

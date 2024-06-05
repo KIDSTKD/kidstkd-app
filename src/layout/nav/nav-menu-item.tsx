@@ -56,7 +56,7 @@ const NavMenuItem = ({ id, title, path, iconId, subMenu }: {
 
             </div>
 
-            <ul id={iconId + 'Data'} className={`${pathname.includes(path) ? "" : "hidden"}`}>
+            <ul id={iconId + 'Data'} className={`p-0 ${pathname.includes(path) ? "" : "hidden"}`}>
                 {subMenuData.map(({ id, title, path }) => (
                     <li key={title} className={`font-exo2 text-light list-none 
                                 text-sm md:text-base 

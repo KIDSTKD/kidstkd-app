@@ -1,4 +1,4 @@
-import "../globals.css";
+import "../../globals.css";
 
 import PrivateNavigation from "@/layout/nav/privatenav";
 
