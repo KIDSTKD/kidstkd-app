@@ -1,5 +1,6 @@
 import { use } from 'react'
 import Image from 'next/image';
+import Link from 'next/link';
 
 import PocketBase from "pocketbase";
 export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
@@ -24,6 +25,11 @@ const SingleNews = ({ newsId }: { newsId: string }) => {
   const res = use(getNews(newsId))
 
 
+  const qqqc = res.gallary.length
+  const qqq = res.gallary
+
+
+
   return (
     <>
       <h1>{res.EventName}</h1>
@@ -35,18 +41,21 @@ const SingleNews = ({ newsId }: { newsId: string }) => {
         <div dangerouslySetInnerHTML={{ __html: res.EventText }} />
       </article>
 
-      <div className='flex flex-col'>
-        <>
-          <Image src={pbClient.files.getUrl(res, res.gallary[0], { 'thumb': '360x240' })} alt={res.EventName} width={360} height={240}
-            className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
-          <Image src={pbClient.files.getUrl(res, res.gallary[1], { 'thumb': '360x240' })} alt={res.EventName} width={360} height={240}
-            className='w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
+      <>
+        {res.gallary.map((gallary: INews) => (
+          <Link href={`https://kidstkd.pockethost.io/api/files/5ivpjpyfv12nfus/${res.id}/${gallary}`}
+            className='float-left'>
+            <Image src={`https://kidstkd.pockethost.io/api/files/5ivpjpyfv12nfus/${res.id}/${gallary}`}
+              alt={res.EventName} width={360} height={240}
+              className='w-80' />
+          </Link>
+        ))}
 
-        </>
+      </>
 
-      </div>
     </>
   );
 }
 
 export default SingleNews;
+

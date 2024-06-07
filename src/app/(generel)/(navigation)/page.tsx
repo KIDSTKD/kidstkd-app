@@ -6,6 +6,8 @@ import Massage from "@/components/home/massage-me";
 import TKDBanner from "@/components/home/tkd-banner";
 import BestAthlete from "@/components/home/best-athlet";
 
+import PaginatedNews from "@/components/news/pagination";
+
 import { Metadata } from 'next'
 const headerTitle = 'Тхэквондо в Уссурийске'
 export const metadata: Metadata = {
@@ -42,6 +44,7 @@ export default function Home() {
       <BestAthlete />
 
       <h2 className='cursor-pointer mt-5'><Link href='/03-news' className='text-gray hover:text-gray'>Новости</Link></h2>
+      <PaginatedNews />
       <h2 className='cursor-pointer mt-5'><Link href='/05-taekwondo/blog' className='text-gray hover:text-gray'>Публикации</Link></h2>
 
 

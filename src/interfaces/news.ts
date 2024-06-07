@@ -3,5 +3,5 @@ export interface INews {
     EventName: string;
     EventDescription: string;
     EventText: string;
-    gallary: string;
+    gallary: any;
   }
