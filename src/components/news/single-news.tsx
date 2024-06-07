@@ -43,7 +43,7 @@ const SingleNews = ({ newsId }: { newsId: string }) => {
 
       <>
         {res.gallary.map((gallary: INews) => (
-          <Link href={`https://kidstkd.pockethost.io/api/files/5ivpjpyfv12nfus/${res.id}/${gallary}`}
+          <Link key={gallary.id} href={`https://kidstkd.pockethost.io/api/files/5ivpjpyfv12nfus/${res.id}/${gallary}`}
             className='float-left'>
             <Image src={`https://kidstkd.pockethost.io/api/files/5ivpjpyfv12nfus/${res.id}/${gallary}`}
               alt={res.EventName} width={360} height={240}
