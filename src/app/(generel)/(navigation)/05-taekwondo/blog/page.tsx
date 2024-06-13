@@ -6,7 +6,7 @@ export const revalidate = 1
 export default function Blog() {
   return (
     <>
-      <PaginatedPosts />
+      <PaginatedPosts perpage={24} />
     </>
   );
 }

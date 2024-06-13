@@ -7,9 +7,9 @@ import { IPost } from '@/interfaces/posts';
 import PocketBase from "pocketbase";
 export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 
-export async function getPosts() {
+export async function getPosts(perpage: number) {
   pbClient.autoCancellation(false)
-  const results = await pbClient.collection('05_posts').getList<IPost>(1, 24, {
+  const results = await pbClient.collection('05_posts').getList<IPost>(1, perpage, {
     requestKey: 'posts',
     sort: '-post_id',
   });
@@ -22,9 +22,9 @@ export const dynamic = 'force-dynamic'
 export const revalidate = 1
 
 
-const PaginatedPosts = () => {
+const PaginatedPosts = ({ perpage }: { perpage: number }) => {
 
-  const res = use(getPosts())
+  const res = use(getPosts(perpage))
 
   const pag = res.items
 
