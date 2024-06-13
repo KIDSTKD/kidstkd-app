@@ -1,4 +1,6 @@
-import AllNews from "@/components/news-components/all-news";
+import PaginatedNews from "@/components/news-components/pagination";
+
+import SearchBar from "@/hooks/search-bar";
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 1
@@ -6,7 +8,12 @@ export const revalidate = 1
 export default function News() {
   return (
     <>
-      <AllNews />
+      <PaginatedNews pagenumber={1} perpage={12} />
+
+      <SearchBar />
+
+
+
     </>
   );
 }

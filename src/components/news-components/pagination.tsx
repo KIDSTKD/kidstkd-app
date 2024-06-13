@@ -1,3 +1,4 @@
+
 import { use } from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
@@ -5,11 +6,13 @@ import Image from 'next/image';
 import { INews } from '@/interfaces/news';
 
 import PocketBase from "pocketbase";
+
 export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 
-export async function getNews() {
+export async function getNews(pagenumber: number, perpage: number) {
+
   pbClient.autoCancellation(false)
-  const results = await pbClient.collection('03_news').getList<INews>(1, 6, {
+  const results = await pbClient.collection('03_news').getList<INews>(pagenumber, perpage, {
     requestKey: 'news',
     sort: '-Date',
   });
@@ -22,13 +25,13 @@ export const dynamic = 'force-dynamic'
 export const revalidate = 1
 
 
-const PaginatedNews = () => {
+const PaginatedNews = ({ pagenumber, perpage }: {
+  perpage: number,
+  pagenumber: number
+}) => {
 
-  const res = use(getNews())
-
+  const res = use(getNews(pagenumber, perpage))
   const pag = res.items
-
-
 
   return (
     <>
@@ -49,6 +52,8 @@ const PaginatedNews = () => {
           </article>
         ))}
       </div>
+
+
 
     </>
   );

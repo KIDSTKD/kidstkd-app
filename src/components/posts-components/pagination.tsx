@@ -21,7 +21,6 @@ export async function getPosts(perpage: number) {
 export const dynamic = 'force-dynamic'
 export const revalidate = 1
 
-
 const PaginatedPosts = ({ perpage }: { perpage: number }) => {
 
   const res = use(getPosts(perpage))
