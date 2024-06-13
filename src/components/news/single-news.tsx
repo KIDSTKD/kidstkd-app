@@ -24,12 +24,6 @@ const SingleNews = ({ newsId }: { newsId: string }) => {
 
   const res = use(getNews(newsId))
 
-
-  const qqqc = res.gallary.length
-  const qqq = res.gallary
-
-
-
   return (
     <>
       <h1>{res.EventName}</h1>
@@ -46,7 +40,7 @@ const SingleNews = ({ newsId }: { newsId: string }) => {
           <Link key={gallary.id} href={`https://kidstkd.pockethost.io/api/files/5ivpjpyfv12nfus/${res.id}/${gallary}`}
             className='float-left'>
             <Image src={`https://kidstkd.pockethost.io/api/files/5ivpjpyfv12nfus/${res.id}/${gallary}`}
-              alt={res.EventName} width={360} height={240}
+              alt={res.EventName} width={320} height={200}
               className='w-80' />
           </Link>
         ))}

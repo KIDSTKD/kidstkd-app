@@ -1,17 +1,12 @@
 import { use } from 'react'
 import Image from 'next/image';
+import Link from 'next/link';
+
+import { IPost } from '@/interfaces/posts';
 
 import PocketBase from "pocketbase";
 export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 
-interface IPost {
-  id: string;
-  title: string;
-  description: string;
-  images: string;
-  post: string;
-
-}
 
 export async function getPost(postId: string) {
   pbClient.autoCancellation(false)
@@ -35,10 +30,21 @@ const SinglePost = ({ postId }: { postId: string }) => {
 
 
       <article key={res.id}>
-        <Image src={pbClient.files.getUrl(res, res.images[0], { 'thumb': '360x240' })} alt={res.title} width={360} height={240}
-          className='w-full lg:w-80 float-right lg:p-2 rounded aspect-[3/2] object-cover' />
+        <Image src={pbClient.files.getUrl(res, res.images[0], { 'thumb': '320x200' })} alt={res.title} width={360} height={240}
+          className='w-full lg:w-80 float-right lg:p-2 rounded object-cover' />
         <div dangerouslySetInnerHTML={{ __html: res.post }} />
       </article>
+      <>
+        {res.images.map((gallary: IPost) => (
+          <Link key={gallary.id} href={`https://kidstkd.pockethost.io/api/files/wb3wrxgyid3x1vg/${res.id}/${gallary}`}
+            className='float-left'>
+            <Image src={`https://kidstkd.pockethost.io/api/files/wb3wrxgyid3x1vg/${res.id}/${gallary}`}
+              alt={res.title} width={320} height={200}
+              className='w-80 aspect-video' />
+          </Link>
+        ))}
+
+      </>
 
     </>
   );

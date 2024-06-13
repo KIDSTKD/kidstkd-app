@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import Logo from "@/components/logo";
 
 import MenuButton from "./footer-buttons/menu-button";
