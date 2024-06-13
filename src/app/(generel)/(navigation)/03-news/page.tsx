@@ -1,4 +1,4 @@
-import AllNews from "@/components/news/all-news";
+import AllNews from "@/components/news-components/all-news";
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 1

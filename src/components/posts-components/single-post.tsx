@@ -40,7 +40,7 @@ const SinglePost = ({ postId }: { postId: string }) => {
             className='float-left'>
             <Image src={`https://kidstkd.pockethost.io/api/files/wb3wrxgyid3x1vg/${res.id}/${gallary}`}
               alt={res.title} width={320} height={200}
-              className='w-80 aspect-video' />
+              className='w-80 aspect-auto' />
           </Link>
         ))}
 

@@ -6,7 +6,7 @@ import Massage from "@/components/home/massage-me";
 import TKDBanner from "@/components/home/tkd-banner";
 import BestAthlete from "@/components/home/best-athlet";
 
-import PaginatedNews from "@/components/news/pagination";
+import PaginatedNews from "@/components/news-components/pagination";
 
 import { Metadata } from 'next'
 const headerTitle = 'Тхэквондо в Уссурийске'
