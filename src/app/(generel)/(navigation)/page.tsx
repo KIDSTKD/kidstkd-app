@@ -6,7 +6,7 @@ import Massage from "@/components/home/massage-me";
 import TKDBanner from "@/components/home/tkd-banner";
 import BestAthlete from "@/components/home/best-athlet";
 
-import PaginatedNews from "@/components/news-components/pagination";
+import PaginatedNews from "@/components/news-components/paginated-news";
 import PaginatedPosts from "@/components/posts-components/pagination";
 
 import { Metadata } from 'next'

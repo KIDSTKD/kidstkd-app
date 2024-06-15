@@ -1,15 +1,17 @@
-
 import { use } from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 
 import { INews } from '@/interfaces/news';
 
+import Pagination from '../ui/pagination';
+
 import PocketBase from "pocketbase";
 
 export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 
 export async function getNews(pagenumber: number, perpage: number) {
+
 
   pbClient.autoCancellation(false)
   const results = await pbClient.collection('03_news').getList<INews>(pagenumber, perpage, {
@@ -26,8 +28,8 @@ export const revalidate = 1
 
 
 const PaginatedNews = ({ pagenumber, perpage }: {
+  pagenumber: number,
   perpage: number,
-  pagenumber: number
 }) => {
 
   const res = use(getNews(pagenumber, perpage))
@@ -52,6 +54,11 @@ const PaginatedNews = ({ pagenumber, perpage }: {
           </article>
         ))}
       </div>
+
+
+      <Pagination totalPages={res.totalPages} />
+
+
 
 
 
