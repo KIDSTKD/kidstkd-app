@@ -56,7 +56,7 @@ const PaginatedNews = ({ pagenumber, perpage }: {
       </div>
 
 
-      <Pagination totalPages={res.totalPages} />
+      <Pagination totalPages={res.totalPages} link='/03-news' />
 
 
 
