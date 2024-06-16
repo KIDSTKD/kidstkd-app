@@ -23,9 +23,9 @@ const Pagination = ({ totalPages }: {
                         <div className={`text-light font-bebasRegular text-center text-lg leading-5
                 w-6 h-6 rounded cursor-pointer
                 border-2 border-blue
-                hover:bg-subblue
+                hover:bg-lightblue
                 ${page == pag
-                                ? "bg-subblue"
+                                ? "bg-lightblue"
                                 : "bg-blue"
                             }
                 `}>
