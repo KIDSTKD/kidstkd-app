@@ -23,6 +23,13 @@ export async function generateMetadata(
     alternates: {
       canonical: 'https://kidstkd.ru/03-news/' + params.year,
     },
+    openGraph: {
+      images: '/img/og-main.png',
+      title: headerTitle + ' | KIDSTKD',
+      description: headerTitle + ' - ' + params.year + ' | KIDSTKD',
+      url: 'https://kidstkd.ru/03-news/' + params.year,
+      siteName: 'kidstkd.ru',
+    },
   }
 }
 
