@@ -2,14 +2,16 @@ import { use } from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 
+import Pagination from '../ui/pagination';
+
 import { IPost } from '@/interfaces/posts';
 
 import PocketBase from "pocketbase";
 export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 
-export async function getPosts(perpage: number) {
+export async function getPosts(pagenumber: number, perpage: number) {
   pbClient.autoCancellation(false)
-  const results = await pbClient.collection('05_posts').getList<IPost>(1, perpage, {
+  const results = await pbClient.collection('05_posts').getList<IPost>(pagenumber, perpage, {
     requestKey: 'posts',
     sort: '-post_id',
   });
@@ -21,9 +23,13 @@ export async function getPosts(perpage: number) {
 export const dynamic = 'force-dynamic'
 export const revalidate = 1
 
-const PaginatedPosts = ({ perpage }: { perpage: number }) => {
+const PaginatedPosts = ({ pagenumber, perpage }: {
+  pagenumber: number,
+  perpage: number,
 
-  const res = use(getPosts(perpage))
+}) => {
+
+  const res = use(getPosts(pagenumber, perpage))
 
   const pag = res.items
 
@@ -48,6 +54,9 @@ const PaginatedPosts = ({ perpage }: { perpage: number }) => {
           </article>
         ))}
       </div>
+
+      <Pagination totalPages={res.totalPages} link='/05-taekwondo/blog' />
+
 
     </>
   );

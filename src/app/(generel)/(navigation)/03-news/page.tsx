@@ -14,3 +14,7 @@ export default function News({ searchParams }: any) {
     </>
   );
 }
+
+
+
+

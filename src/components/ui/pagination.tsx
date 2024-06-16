@@ -14,7 +14,6 @@ const Pagination = ({ totalPages, link }: {
     const searchParams = useSearchParams()
     const page = searchParams.get('page')
 
-
     return (
         <>
             <div className="flex flex-row justify-center items-center p-2 gap-2">
@@ -35,9 +34,7 @@ const Pagination = ({ totalPages, link }: {
                     </Link>
                 ))}
             </div>
-
         </>
-
     )
 }
 

@@ -1,12 +1,15 @@
-import PaginatedPosts from "@/components/posts-components/pagination";
+import PaginatedPosts from "@/components/posts-components/paginated-posts";
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 1
 
-export default function Blog() {
+export default function Blog({ searchParams }: any) {
+
+  const page = searchParams.page
+
   return (
     <>
-      <PaginatedPosts perpage={24} />
+      <PaginatedPosts pagenumber={page} perpage={12} />
     </>
   );
 }
