@@ -34,7 +34,6 @@ const NewsByYearComponent = ({ year }: { year: number }) => {
 
   return (
     <>
-      <h1>Новости</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 lg:gap-2">
 
         {res.map((news: INews) => (
