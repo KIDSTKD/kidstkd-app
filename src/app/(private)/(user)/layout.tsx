@@ -15,7 +15,7 @@ export default function RootLayout({
       grid-rows-subLayout h-full
       '>
       <div id='nav' className="grid-in-nav bg-blue z-40
-           fixed lg:relative
+           fixed top-0 lg:relative
            
                        w-4/5 md:w-1/2 lg:w-60 xl:w-96
                        -translate-x-[100%] lg:translate-x-0
@@ -26,3 +26,4 @@ export default function RootLayout({
     </div>
   );
 }
+
