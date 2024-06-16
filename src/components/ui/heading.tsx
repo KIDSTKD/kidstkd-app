@@ -1,4 +1,4 @@
-const Heading = ({ text }: { text: string }) => {
+const Heading = ({ text }: { text: string | any }) => {
     return (
         <>
             <div>
