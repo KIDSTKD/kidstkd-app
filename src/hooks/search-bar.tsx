@@ -6,5 +6,11 @@ export default function SearchBar() {
     const searchParams = useSearchParams()
     const page = searchParams.get('page')
 
-    return page
+
+    const aaa = typeof (page) === 'string' ? Number(page) : 1
+
+    return aaa
+
 }
+
+

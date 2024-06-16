@@ -1,3 +1,4 @@
+
 import PaginatedNews from "@/components/news-components/paginated-news";
 
 import SearchBar from "@/hooks/search-bar";
@@ -5,20 +6,15 @@ import SearchBar from "@/hooks/search-bar";
 export const dynamic = 'force-dynamic'
 export const revalidate = 1
 
+export default function News({ searchParams }: any) {
 
-export default function News() {
-
-
-  const pagi = Number(SearchBar) | 1
-
+  const aaa = searchParams.page
 
   return (
     <>
-      <PaginatedNews pagenumber={pagi} perpage={12} />
+      <PaginatedNews pagenumber={aaa} perpage={12} />
 
-      <SearchBar /> - сёрч бар
-
-
+      {aaa}
 
     </>
   );
