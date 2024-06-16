@@ -15,9 +15,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://kidstkd.ru'),
-  verification: {
-    yandex: 97585336,
-  },
+
   title: headerTitle + ' | KIDSTKD',
   description: headerTitle + ' - Тхэквондо в Уссурийске для детей от 4 лет. Бесплатное пробное занятие',
   applicationName: 'KIDSTKD',
@@ -32,6 +30,9 @@ export const metadata: Metadata = {
     description: headerTitle + ' - Тхэквондо в Уссурийске для детей от 4 лет. Бесплатное пробное занятие',
     url: 'https://kidstkd.ru',
     siteName: 'kidstkd.ru',
+  },
+  verification: {
+    yandex: 97585336,
   },
 
 }
