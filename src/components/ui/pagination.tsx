@@ -16,14 +16,16 @@ const Pagination = ({ totalPages }: {
 
     return (
         <>
-            <div className="flex flex-row justify-center items-center p-2">
+            <div className="flex flex-row justify-center items-center p-2 gap-2">
 
                 {arr.map((pag: any) => (
                     <Link href={`/03-news?page=${pag}`} key={arr[0]}>
-                        <div className={`text-light font-bebasRegular text-center text-lg leading-6
-                w-6 h-6 m-2 rounded cursor-pointer
+                        <div className={`text-light font-bebasRegular text-center text-lg leading-5
+                w-6 h-6 rounded cursor-pointer
+                border-2 border-blue
+                hover:bg-subblue
                 ${page == pag
-                                ? "bg-lightblue"
+                                ? "bg-subblue"
                                 : "bg-blue"
                             }
                 `}>
@@ -33,7 +35,6 @@ const Pagination = ({ totalPages }: {
                 ))}
             </div>
 
-            {page} - с пагинации
         </>
 
     )
