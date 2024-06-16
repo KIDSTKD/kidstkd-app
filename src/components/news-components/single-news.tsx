@@ -41,7 +41,7 @@ const SingleNews = ({ newsId }: { newsId: string }) => {
             className='float-left'>
             <Image src={`https://kidstkd.pockethost.io/api/files/5ivpjpyfv12nfus/${res.id}/${gallary}`}
               alt={res.EventName} width={620} height={200}
-              className='w-full' />
+              className='w-full lg:w-80' />
           </Link>
         ))}
 
