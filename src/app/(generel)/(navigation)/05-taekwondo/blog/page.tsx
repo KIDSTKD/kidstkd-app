@@ -1,3 +1,4 @@
+import Heading from "@/components/ui/heading";
 import PaginatedPosts from "@/components/posts-components/paginated-posts";
 
 export const dynamic = 'force-dynamic'
@@ -9,6 +10,7 @@ export default function Blog({ searchParams }: any) {
 
   return (
     <>
+      <Heading text="Публикации" />
       <PaginatedPosts pagenumber={page} perpage={12} />
     </>
   );

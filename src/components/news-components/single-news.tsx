@@ -40,8 +40,8 @@ const SingleNews = ({ newsId }: { newsId: string }) => {
           <Link key={gallary.id} href={`https://kidstkd.pockethost.io/api/files/5ivpjpyfv12nfus/${res.id}/${gallary}`}
             className='float-left'>
             <Image src={`https://kidstkd.pockethost.io/api/files/5ivpjpyfv12nfus/${res.id}/${gallary}`}
-              alt={res.EventName} width={320} height={200}
-              className='w-80' />
+              alt={res.EventName} width={620} height={200}
+              className='w-full' />
           </Link>
         ))}
 
