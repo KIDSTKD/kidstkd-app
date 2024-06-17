@@ -17,10 +17,10 @@ const Header = () => {
 
             <div className="flex flex-row">
                 <Link href='/events'>
-                    <h2 className="text-2xl pl-6">Турниры</h2>
+                    <h2 className="text-2xl pl-6 cursor-pointer">Турниры</h2>
                 </Link>
-                <Link href='/rank'>
-                    <h2 className="text-2xl pl-6">Рейтинг</h2>
+                <Link href='/user/rank'>
+                    <h2 className="text-2xl pl-6 cursor-pointer">Рейтинг</h2>
                 </Link>
 
             </div>

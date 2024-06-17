@@ -1,0 +1,29 @@
+{
+    "theme_color": "#255d98",
+    "background_color": "#255d98",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "name": "KIDSTKD App",
+    "short_name": "KIDSTKD",
+    "description": "KIDSTKD Taekwondo Team",
+        "icons": [
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+
+        },
+        {
+            "src": "/icon-512x512-any.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+
+        }
+    ],
+    "dir": "ltr",
+    "lang": "ru"
+}
