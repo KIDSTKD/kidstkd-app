@@ -1,11 +1,10 @@
-import "../../globals.css";
-
-import EventNavigation from "@/layout/nav/eventnavigation";
+import "../globals.css";
 
 export default function RootLayout({
-  children,
+  children, eventsnav,
 }: Readonly<{
   children: React.ReactNode;
+  eventsnav: React.ReactNode;
 
 }>) {
   return (
@@ -20,7 +19,7 @@ export default function RootLayout({
                        w-4/5 md:w-1/2 lg:w-60 xl:w-96
                        -translate-x-[100%] lg:translate-x-0
                       h-full transition-transform
-                       "><EventNavigation /></div>
+                       ">{eventsnav}</div>
       <main className="grid-in-main overflow-y-hidden">{children}</main>
       <aside className="grid-in-aside hidden xl:flex w-0 xl:w-60"></aside>
     </div>

@@ -30,7 +30,7 @@ const Header = () => {
                 <div className="flex flex-row gap-4">
                     <HeaderButton text="search" link="" />
                     <HeaderButton text="mail" link="" />
-                    <HeaderButton text="user" link="user" />
+                    <HeaderButton text="user" link="/user" />
                 </div>
 
                 <div className="">
