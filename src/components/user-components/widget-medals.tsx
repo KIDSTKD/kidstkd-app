@@ -26,7 +26,9 @@ const WidgetMedals = () => {
         <>
             {res.map((user: any) => (
                 <>
-                    <div key={user?.name} className='flex flex-row justify-around divide-x-4 divide-blue mb-6'>
+                    <div key={user.expand.user.id} className='flex flex-row justify-around divide-x-4 divide-blue mb-6'>
+
+
 
 
                         <div className='has-tooltip flex flex-col items-center w-full'>

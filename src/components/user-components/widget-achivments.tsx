@@ -88,7 +88,7 @@ const WidgetAchivments = () => {
             <div className='flex flex-row justify-around divide-x-4 divide-blue mb-6'>
                 {rank.map((user: any) => (
                     <>
-                        <div className='has-tooltip flex flex-col items-center justify-center w-full my-6'>
+                        <div key={user.id} className='has-tooltip flex flex-col items-center justify-center w-full my-6'>
                             <h2 className='text-5xl text-blue font-bebasRegular'>#{user.rank}</h2>
                             {/* <span className='tooltip'>Место в рейтинге</span> */}
                         </div>
@@ -99,7 +99,7 @@ const WidgetAchivments = () => {
 
                 {rank.map((user: any) => (
                     <>
-                        <div className='has-tooltip flex flex-col items-center w-full'>
+                        <div key={user.id} className='has-tooltip flex flex-col items-center w-full'>
                             {/* <span className='tooltip'>Подиумы</span> */}
                             <Image src='/icons/user/podium-outline.svg' alt="Подиумы" width={60} height={60} />
                             <div className="flex justify-center items-center font-bebasLight text-3xl text-blue py-3 cursor-pointer">{user?.podiums}</div>
