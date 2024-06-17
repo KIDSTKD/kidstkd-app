@@ -23,9 +23,10 @@ export async function getPosts(pagenumber: number, perpage: number) {
 export const dynamic = 'force-dynamic'
 export const revalidate = 1
 
-const PaginatedPosts = ({ pagenumber, perpage }: {
+const PaginatedPosts = ({ pagenumber, perpage, withPagination }: {
   pagenumber: number,
   perpage: number,
+  withPagination: boolean,
 
 }) => {
 
@@ -55,7 +56,7 @@ const PaginatedPosts = ({ pagenumber, perpage }: {
         ))}
       </div>
 
-      <Pagination totalPages={res.totalPages} link='/05-taekwondo/blog' />
+      <Pagination totalPages={res.totalPages} link='/05-taekwondo/blog' withPagination={withPagination} />
 
 
     </>

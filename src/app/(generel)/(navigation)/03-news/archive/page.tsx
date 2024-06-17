@@ -11,7 +11,7 @@ export default function News({ searchParams }: any) {
   return (
     <>
       <Heading text="Новости" />
-      <PaginatedNews pagenumber={page} perpage={12} />
+      <PaginatedNews pagenumber={page} perpage={12} withPagination={true} />
     </>
   );
 }

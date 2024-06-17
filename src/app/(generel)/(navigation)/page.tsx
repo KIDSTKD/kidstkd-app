@@ -44,9 +44,9 @@ export default function Home() {
       <BestAthlete />
 
       <h2 className='cursor-pointer mt-5'><Link href='/03-news' className='text-gray hover:text-gray'>Новости</Link></h2>
-      <PaginatedNews pagenumber={1} perpage={6} />
+      <PaginatedNews pagenumber={1} perpage={6} withPagination={false} />
       <h2 className='cursor-pointer mt-5'><Link href='/05-taekwondo/blog' className='text-gray hover:text-gray'>Публикации</Link></h2>
-      <PaginatedPosts pagenumber={1} perpage={6} />
+      <PaginatedPosts pagenumber={1} perpage={6} withPagination={false} />
 
 
     </>

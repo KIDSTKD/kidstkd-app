@@ -4,9 +4,10 @@ import { useSearchParams } from 'next/navigation'
 
 import Link from "next/link";
 
-const Pagination = ({ totalPages, link }: {
+const Pagination = ({ totalPages, link, withPagination }: {
     totalPages: number,
     link: string,
+    withPagination: boolean
 }) => {
 
     const arr = Array.from({ length: totalPages }, (v, i) => i + 1);
@@ -16,7 +17,13 @@ const Pagination = ({ totalPages, link }: {
 
     return (
         <>
-            <div className="flex flex-row justify-center items-center p-2 gap-2">
+            <div className={`flex flex-row justify-center items-center p-2 gap-2
+                ${withPagination == false
+                    ? "hidden"
+                    : ""
+
+                }
+            `}>
 
                 {arr.map((pag: any) => (
                     <Link href={`${link}?page=${pag}`} key={arr[0]}>

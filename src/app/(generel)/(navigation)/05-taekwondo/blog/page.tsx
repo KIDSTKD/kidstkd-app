@@ -11,7 +11,7 @@ export default function Blog({ searchParams }: any) {
   return (
     <>
       <Heading text="Публикации" />
-      <PaginatedPosts pagenumber={page} perpage={12} />
+      <PaginatedPosts pagenumber={page} perpage={12} withPagination={true} />
     </>
   );
 }

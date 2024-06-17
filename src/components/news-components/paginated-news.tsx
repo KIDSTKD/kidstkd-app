@@ -27,9 +27,10 @@ export const dynamic = 'force-dynamic'
 export const revalidate = 1
 
 
-const PaginatedNews = ({ pagenumber, perpage }: {
+const PaginatedNews = ({ pagenumber, perpage, withPagination }: {
   pagenumber: number,
   perpage: number,
+  withPagination: boolean
 }) => {
 
   const res = use(getNews(pagenumber, perpage))
@@ -56,7 +57,7 @@ const PaginatedNews = ({ pagenumber, perpage }: {
       </div>
 
 
-      <Pagination totalPages={res.totalPages} link='/03-news' />
+      <Pagination totalPages={res.totalPages} link='/03-news' withPagination={withPagination} />
 
 
 
