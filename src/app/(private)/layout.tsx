@@ -1,10 +1,11 @@
 import "../globals.css";
 
 export default function SubLayout({
-  children, privatenav,
+  children, privatenav
 }: Readonly<{
   children: React.ReactNode;
   privatenav: React.ReactNode;
+
 
 
 }>) {
