@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 }
 
 export default function News({ searchParams, pagenumber, perpage }: {
-  searchParams: any,
+  searchParams: number | any,
   pagenumber: number,
   perpage: number,
 }) {
