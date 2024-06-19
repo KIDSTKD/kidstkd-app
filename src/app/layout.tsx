@@ -5,7 +5,7 @@ import Logo from "@/components/logo";
 import Footer from "@/layout/footer/footer";
 import Header from "@/layout/header/header";
 
-import "./globals.css";
+import "@/app/globals.css"
 
 const headerTitle = 'Тхэквондо в Уссурийске'
 

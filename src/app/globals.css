@@ -78,6 +78,14 @@ body {
                text-dark font-exo2 list-disc p-2
                cursor-default;
                 }
+
+                /* kibon used h */
+
+                h5 {
+                  @apply
+                   text-gray/80 font-bebasRegular text-xl text-left p-2 indent-8
+                   cursor-default;
+                   }
             
 
 

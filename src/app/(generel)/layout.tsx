@@ -1,4 +1,4 @@
-import "../globals.css";
+import "@/app/globals.css"
 
 export default function SubLayout({
   children, navigation,

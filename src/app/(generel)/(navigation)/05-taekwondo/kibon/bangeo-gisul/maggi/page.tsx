@@ -1,0 +1,209 @@
+import Heading from '@/components/ui/heading'
+import Image from 'next/image'
+import Link from 'next/link'
+
+import { Metadata } from 'next'
+const headerTitle = 'Блоки (макки)'
+export const metadata: Metadata = {
+    title: headerTitle,
+    description: 'Блоки (макки) — это техника защиты важных частей тела от атаки противника. В отличие от уклонов (пхихаги), техника блоков (макки) применяется когда нет возможности избежать прямого контакта с противником.',
+    openGraph: {
+        images: 'https://kidstkd.ru/img/05/kibon/kibon.png',
+        title: headerTitle,
+        description: 'Блоки (макки) — это техника защиты важных частей тела от атаки противника. В отличие от уклонов (пхихаги), техника блоков (макки) применяется когда нет возможности избежать прямого контакта с противником.',
+        url: 'https://kidstkd.ru/05-taekwondo/kibon/bangeo-gisul/maggi',
+    },
+    alternates: {
+        canonical: 'https://kidstkd.ru/05-taekwondo/kibon/bangeo-gisul/maggi',
+    },
+}
+
+export default function Maggi() {
+    return (
+        <>
+            <Heading text={headerTitle} />
+            <p>Блоки (макки) — это техника защиты важных частей тела от атаки противника. В отличие от уклонов (пхихаги), техника блоков (макки) применяется когда нет возможности избежать прямого контакта с противником. </p>
+            <p>Если вы хорошо практикуете свои навыки блокировки и можете блокировать независимо от того, насколько сильной или быстрой была атака, у вас есть шанс на победу, но все равно легко проиграть из-за непрерывных атак противника. Таким образом, защитная техника тхэквондо заключается не только в блокировании, но и в тренировке определенных частей тела, чтобы наносить удары по жизненно важным точкам противника при блокировании, вызывая сильный шок и не позволяя противнику снова использовать свои руки и ноги. Другими словами, навыки блокировки необходимо тренировать и тренировать так же, как и навыки атаки, чтобы защита могла трансформироваться в атаку.</p>
+
+            <div className='bg-light float-right w-full md:w-1/2 py-10 rounded-sm ml-[8px] relative'>
+                <div className='absolute top-0 right-0 left-0 bottom-0'>
+                    <h4 className='absolute top-2 left-[120px] right-0'>Центр</h4>
+                    <p className='indent-0 absolute top-[7%] text-center leading-4 z-20 w-44'>Верхний край головы</p>
+                    <p className='indent-0 absolute top-[17%] text-center leading-4 z-20 w-44'>Инчжун</p>
+                    <p className='indent-0 absolute top-[23%] text-center leading-4 z-20 w-44'>Плечи</p>
+                    <p className='indent-0 absolute top-[28%] text-center leading-4 z-20 w-44'>Грудь</p>
+                    <p className='indent-0 absolute top-[33%] text-center leading-4 z-20 w-44'>Солнечное сплетение (мёнчхи)</p>
+                    <p className='indent-0 absolute bottom-[53%] text-center w-44 z-20'>Уровень пояса</p>
+                    <p className='indent-0 absolute bottom-[31%] text-center w-44 z-20'>Уровень колена</p>
+                    <p className='indent-0 absolute bottom-[14%] left-[120px] text-right leading-4 z-20 w-1/5'>Внешняя часть (правая)</p>
+                    <p className='indent-0 absolute bottom-[14%] right-0 text-left leading-4 z-20 w-1/5'>Внешняя часть (левая)</p>
+                    <h4 className='absolute bottom-0 left-[120px] right-0'>Основные линии</h4>
+                </div>
+                <div className='flex'>
+                    <h4 className='z-20 w-[120px] flex-auto'></h4>
+                    <Image src='/img/05/kibon/bangeo-gisul/maggi/01.jpg'
+                        alt='Уровни' width={600} height={600}
+                        className='z-10 flex-auto w-[calc(100%-120px)]' />
+                </div>
+            </div>
+            <h4>Конечная точка выполнение блока</h4>
+            <p>При выполнении блоков, траектория которых направлена вниз - арэ макки (при использовании запястья – пхальмок или ребра ладони – сонналь), - рука проходит через точку танчжон (низ живота) и останавливается внутри центра бедра.</p>
+            <p>При выполнении блоков, траектория выполнение которых направлена внутрь – ан макки, - рука останавливается перед линией проходящей по центру корпуса.</p>
+            <p>При выполнении блоков, траектория выполнение которых направлена наружу – паккат макки, - рука останавливается на внешней линии тела.</p>
+            <h4>Положение и высота блоков</h4>
+            <p>При выполнении блоков, закрывающих средний уровень (момтхон макки), при этом блок выполняется с сжатым кулаком, запястье должно быть расположено на уровне солнечного сплетения (мёнчхи). Максимально допустимая высота блока среднего уровня определяется расположением верхней границы кулака не выше уровня плеч.</p>
+            <p>При выполнении блоков, закрывающих средний уровень (момтхон макки), при этом блок выполняется ребром ладони (сонналь),  ребро ладони быть расположено на уровне солнечного сплетения (мёнчхи). Максимально допустимая высота блока среднего уровня определяется расположением кончиков пальцев не выше уровня плеч.</p>
+            <p>При выполнении блока ольгуль макки (вне зависимости от рабочей поверхности: запястье или ребро ладони) целью блока является заблокировать точку инчжун. Максимально допустимая высота блока, вне зависимости от рабочей поверхности, определяется верхней частью головы.</p>
+            <h4>Исходное положение и диапозон движения</h4>
+            <p>При выполнении блоков нижнего уровня (арэ макки), кулак или ребро ладони начинает движение вниз перед линией плеч.</p>
+            <p>При выполнении блоков среднего уровня (момтхон макки), движение выполняется с высокой амплитудой в пределах уровней плеч и пояса.</p>
+            <p>При выполнении блоков верхнего уровня (ольгуль макки), движение следует начинать с уровня пояса. Также стоит учесть, что при практическом применении высота блока может незначительно меняться.</p>
+
+            <div className='grid grid-cols-1 lg:grid-cols-2'>
+                <div>
+                    <Link href='/kibon/bangeo-gisul/maggi/naeryeo-maggi' >
+                        <div className='hover:underline hover:bg-subblue hover:bg-opacity-25'>
+                            <h5 className='cursor-pointer'>Нэрё макки</h5>
+                            <p className='indent-12 cursor-pointer'>Арэ макки</p>
+                            <p className='indent-12 cursor-pointer'>Cонналь арэ макки</p>
+                        </div>
+                    </Link>
+                    <Link href='/kibon/bangeo-gisul/maggi/an-maggi' >
+                        <div className='hover:underline hover:bg-subblue hover:bg-opacity-25'>
+                            <h5 className='cursor-pointer'>Ан макки</h5>
+                            <p className='indent-12 cursor-pointer'>Момтхон ан макки</p>
+                            <p className='indent-12 cursor-pointer'>Сонналь ан макки</p>
+                            <p className='indent-12 cursor-pointer'>Патхансон ан макки</p>
+                        </div>
+                    </Link>
+                    <Link href='/kibon/bangeo-gisul/maggi/ollyeo-maggi' >
+                        <div className='hover:underline hover:bg-subblue hover:bg-opacity-25'>
+                            <h5 className='cursor-pointer'>Оллё макки</h5>
+                            <p className='indent-12 cursor-pointer'>Ольгуль макки</p>
+                            <p className='indent-12 cursor-pointer'>Сонналь ольгуль макки</p>
+                            <p className='indent-12 cursor-pointer'>Ккыро оллё макки</p>
+                        </div>
+                    </Link>
+                    <Link href='/kibon/bangeo-gisul/maggi/bakkat-maggi' >
+                        <div className='hover:underline hover:bg-subblue hover:bg-opacity-25'>
+                            <h5 className='cursor-pointer'>Паккат макки</h5>
+                            <p className='indent-12 cursor-pointer'>Паккат макки</p>
+                            <p className='indent-12 cursor-pointer'>Ольгуль паккат макки</p>
+                            <p className='indent-12 cursor-pointer'>Сонналь паккат макки</p>
+                            <p className='indent-12 cursor-pointer'>Анпхальмок паккат макки</p>
+                        </div>
+                    </Link>
+                    <Link href='/kibon/bangeo-gisul/maggi/biteuleo-maggi' >
+                        <div className='hover:underline hover:bg-subblue hover:bg-opacity-25'>
+                            <h5 className='cursor-pointer'>Питхыро макки</h5>
+                            <p className='indent-12 cursor-pointer'>Ольгуль сонналь питхыро паккат макки</p>
+                            <p className='indent-12 cursor-pointer'>Сонналь питхыро паккат макки</p>
+                            <p className='indent-12 cursor-pointer'>Анпхальмок питхыро паккат макки</p>
+                        </div>
+                    </Link>
+                    <Link href='/kibon/bangeo-gisul/maggi/gawi-maggi' >
+                        <div className='hover:underline hover:bg-subblue hover:bg-opacity-25'>
+                            <h5 className='cursor-pointer'>Кави макки</h5>
+                        </div>
+                    </Link>
+                    <Link href='/kibon/bangeo-gisul/maggi/hechyeo-maggi' >
+                        <div className='hover:underline hover:bg-subblue hover:bg-opacity-25'>
+                            <h5 className='cursor-pointer'>Хэчхё макки</h5>
+                            <p className='indent-12 cursor-pointer'>Хэчхё макки</p>
+                            <p className='indent-12 cursor-pointer'>Арэ хэчхё макки</p>
+                            <p className='indent-12 cursor-pointer'>Анпхальмок хэчхё макки</p>
+                            <p className='indent-12 cursor-pointer'>Арэ сонналь хэчхё макки</p>
+                            <p className='indent-12 cursor-pointer'>Соннальтын хэчхё макки</p>
+                        </div>
+                    </Link>
+                    <Link href='/kibon/bangeo-gisul/maggi/oesan-maggi' >
+                        <div className='hover:underline hover:bg-subblue hover:bg-opacity-25'>
+                            <h5 className='cursor-pointer'>Висантхыль макки (Висан макки)</h5>
+                            <p className='indent-12 cursor-pointer'>Пхальмок висан макки</p>
+                            <p className='indent-12 cursor-pointer'>Пхёнсон висан макки</p>
+                        </div>
+                    </Link>
+                    <Link href='/kibon/bangeo-gisul/maggi/yeopmaggi' >
+                        <div className='hover:underline hover:bg-subblue hover:bg-opacity-25'>
+                            <h5 className='cursor-pointer'>Ёп макки</h5>
+                            <p className='indent-12 cursor-pointer'>Ёп макки</p>
+                            <p className='indent-12 cursor-pointer'>Сонналь ёп макки</p>
+                        </div>
+                    </Link>
+                </div>
+                <div>
+                    <Link href='/kibon/bangeo-gisul/maggi/nulleo-maggi' >
+                        <div className='hover:underline hover:bg-subblue hover:bg-opacity-25'>
+                            <h5 className='cursor-pointer'>Нулльо макки</h5>
+                            <p className='indent-12 cursor-pointer'>Патхансон нулльо макки</p>
+                        </div>
+                    </Link>
+                    <Link href='/kibon/bangeo-gisul/maggi/taesan-maggi' >
+                        <div className='hover:underline hover:bg-subblue hover:bg-opacity-25'>
+                            <h5 className='cursor-pointer'>Тхэсан макки или Сантхыль макки</h5>
+                            <p className='indent-12 cursor-pointer'>Тхэсан макки</p>
+                            <p className='indent-12 cursor-pointer'>Хэчхё тхэсан макки (Ольгуль ту анпхальмок ёп макки)</p>
+                            <p className='indent-12 cursor-pointer'></p>
+                        </div>
+                    </Link>
+                    <Link href='/kibon/bangeo-gisul/maggi/geumgang-maggi' >
+                        <div className='hover:underline hover:bg-subblue hover:bg-opacity-25'>
+                            <h5 className='cursor-pointer'>Кымган макки</h5>
+                            <p className='indent-12 cursor-pointer'>Хактари соги кымган макки</p>
+                            <p className='indent-12 cursor-pointer'>Анпхальмок кымган паккат макки</p>
+                            <p className='indent-12 cursor-pointer'>Сонналь кымган макки</p>
+                        </div>
+                    </Link>
+                    <Link href='/kibon/bangeo-gisul/maggi/hwangso-maggi' >
+                        <div className='hover:underline hover:bg-subblue hover:bg-opacity-25'>
+                            <h5 className='cursor-pointer'>Хвансо макки</h5>
+                        </div>
+                    </Link>
+                    <Link href='/kibon/bangeo-gisul/maggi/geodeureo-maggi' >
+                        <div className='hover:underline hover:bg-subblue hover:bg-opacity-25'>
+                            <h5 className='cursor-pointer'>Кодыро макки</h5>
+                            <p className='indent-12 cursor-pointer'>Cонналь кодыро паккат макки</p>
+                            <p className='indent-12 cursor-pointer'>Арэ сонналь кодыро макки</p>
+                            <p className='indent-12 cursor-pointer'>Кодыро паккат макки</p>
+                            <p className='indent-12 cursor-pointer'>Арэ кодыро макки</p>
+                            <p className='indent-12 cursor-pointer'>Ольгуль анпхальмок кодыро макки</p>
+                            <p className='indent-12 cursor-pointer'>Анпхальмок соннальтак кодыро паккат макки</p>
+                            <p className='indent-12 cursor-pointer'>Соннальтын кодыро паккат макки</p>
+                            <p className='indent-12 cursor-pointer'>Анмакко анмакки</p>
+                            <p className='indent-12 cursor-pointer'>Анпхальмок кодыро паккат макки</p>
+                        </div>
+                    </Link>
+                    <Link href='/kibon/bangeo-gisul/maggi/arae-anpalmog-pyojeog-an-maggi' >
+                        <div className='hover:underline hover:bg-subblue hover:bg-opacity-25'>
+                            <h5 className='cursor-pointer'>Арэ анпхальмок пхёчжок анмакки</h5>
+                        </div>
+                    </Link>
+                    <Link href='/kibon/bangeo-gisul/maggi/geodeo-maggi' >
+                        <div className='hover:underline hover:bg-subblue hover:bg-opacity-25'>
+                            <h5 className='cursor-pointer'>Кодо макки</h5>
+                        </div>
+                    </Link>
+                    <Link href='/kibon/bangeo-gisul/maggi/bada-maggi' >
+                        <div className='hover:underline hover:bg-subblue hover:bg-opacity-25'>
+                            <h5 className='cursor-pointer'>Пада макки</h5>
+                            <p className='indent-12 cursor-pointer'>Пальналь пада макки</p>
+                            <p className='indent-12 cursor-pointer'>Чонгани пада макки</p>
+                        </div>
+                    </Link>
+                    <Link href='/kibon/bangeo-gisul/maggi/oesgeoreo-maggi' >
+                        <div className='hover:underline hover:bg-subblue hover:bg-opacity-25'>
+                            <h5 className='cursor-pointer'>Откоро макки</h5>
+                            <p className='indent-12 cursor-pointer'>Арэ откоро макки</p>
+                            <p className='indent-12 cursor-pointer'>Ольгуль откоро макки</p>
+                        </div>
+                    </Link>
+                </div>
+            </div>
+
+        </>
+
+    )
+}
+
+
+
