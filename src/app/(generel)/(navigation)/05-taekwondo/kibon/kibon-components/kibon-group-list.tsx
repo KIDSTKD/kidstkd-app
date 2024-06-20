@@ -1,0 +1,61 @@
+import { use } from 'react'
+
+import KibonList from './kibon-list';
+
+import { IKibon } from '@/interfaces/kibon';
+
+
+import PocketBase from "pocketbase";
+
+export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
+
+export async function getKibon(kisul_group: string, kisul: string) {
+
+
+    pbClient.autoCancellation(false)
+    const results = await pbClient.collection('05_kibon').getFullList<IKibon>({
+        requestKey: 'kibon',
+        sort: 'kibon_group',
+        filter: `kisul_group = "${kisul_group}" && kisul = "${kisul}"`
+    });
+
+    return results;
+
+};
+
+export const dynamic = 'force-dynamic'
+export const revalidate = 1
+
+
+const KibonGroupList = ({ kisul_group, kisul }: {
+    kisul_group: string,
+    kisul: string,
+}) => {
+
+    const res = use(getKibon(kisul_group, kisul))
+
+
+    return (
+        <>
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+
+                {res.map((kibon: IKibon) => (
+
+
+
+                    <div key={kibon.kisul}>
+                        <h5 className='cursor-pointer'>{kibon.kibon_group}</h5>
+                        {/* <KibonList kibon_group={kibon.kibon_group} /> */}
+                    </div>
+                ))}
+            </div>
+
+
+
+        </>
+    );
+}
+
+export default KibonGroupList;
+
+
