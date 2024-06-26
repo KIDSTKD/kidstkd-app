@@ -206,7 +206,9 @@ export default function Maggi() {
                 </div>
             </div>
 
-            {/* <KibonGroupList kisul_group='bangeo-gisul' kisul='maggi' /> */}
+
+____________
+            <KibonGroupList kisul_group='bangeo-gisul' kisul='maggi' />
 
         </>
 
