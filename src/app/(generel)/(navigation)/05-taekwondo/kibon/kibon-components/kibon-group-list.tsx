@@ -13,8 +13,8 @@ export async function getKibon(kisul_group: string, kisul: string) {
 
 
     pbClient.autoCancellation(false)
-    const results = await pbClient.collection('05_kibon').getFullList<IKibon>({
-        requestKey: 'kibon',
+    const results = await pbClient.collection('kibon_schema').getFullList<IKibon>({
+        requestKey: 'kibon_schema',
         sort: 'kibon_group',
         filter: `kisul_group = "${kisul_group}" && kisul = "${kisul}"`
     });
@@ -43,8 +43,8 @@ const KibonGroupList = ({ kisul_group, kisul }: {
 
 
 
-                    <div key={kibon.kisul}>
-                        <h5 className='cursor-pointer'>{kibon.kibon_group}</h5>
+                    <div key={kibon.id}>
+                        <h5 className='cursor-pointer'>{kibon.id}</h5>
                         {/* <KibonList kibon_group={kibon.kibon_group} /> */}
                     </div>
                 ))}

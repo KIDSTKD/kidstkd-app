@@ -65,7 +65,7 @@ export default function Maggi() {
             <p>При выполнении блоков среднего уровня (момтхон макки), движение выполняется с высокой амплитудой в пределах уровней плеч и пояса.</p>
             <p>При выполнении блоков верхнего уровня (ольгуль макки), движение следует начинать с уровня пояса. Также стоит учесть, что при практическом применении высота блока может незначительно меняться.</p>
 
-            {/* <div className='grid grid-cols-1 lg:grid-cols-2'>
+            <div className='grid grid-cols-1 lg:grid-cols-2'>
                 <div>
                     <Link href='/kibon/bangeo-gisul/maggi/naeryeo-maggi' >
                         <div className='hover:underline hover:bg-subblue hover:bg-opacity-25'>
@@ -204,9 +204,9 @@ export default function Maggi() {
                         </div>
                     </Link>
                 </div>
-            </div> */}
+            </div>
 
-            <KibonGroupList kisul_group='bangeo-gisul' kisul='maggi' />
+            {/* <KibonGroupList kisul_group='bangeo-gisul' kisul='maggi' /> */}
 
         </>
 
