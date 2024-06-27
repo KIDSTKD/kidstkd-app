@@ -15,12 +15,6 @@ export default function Ppaegi() {
    return (
       <>
          <Heading text={headerTitle} />
-         {/* <h5>Нэрё ппэги</h5>
-         <h5>Олле ппэги</h5>
-         <h5>Тхыро ппэги</h5>
-         <h5>Толле ппэги</h5>
-         <h5>Хвитулльо ппэги</h5>
-         <h5>Монэ ппэги</h5> */}
 
          <KibonGroupList kisul_group="bangeo-gisul" kisul="ppaegi" />
       </>
