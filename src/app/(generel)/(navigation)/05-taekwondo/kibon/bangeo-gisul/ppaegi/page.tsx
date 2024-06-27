@@ -1,29 +1,28 @@
-import Heading from '@/components/ui/heading'
+import Heading from "@/components/ui/heading";
+import KibonGroupList from "@/components/kibon-components/kibon-group-list";
 
-
-
-import { Metadata } from 'next'
-const headerTitle = 'Освобождение от захватов'
+import { Metadata } from "next";
+const headerTitle = "Освобождение от захватов";
 export const metadata: Metadata = {
-    title: headerTitle,
-    description: headerTitle + ' - KIDSTKD',
-}
+   title: headerTitle,
+   description: headerTitle + " - KIDSTKD",
+};
 
+export const dynamic = "force-dynamic";
+export const revalidate = 1;
 
 export default function Ppaegi() {
-    return (
-        <>
-            <Heading text={headerTitle} />
-            <h5>Нэрё ппэги</h5>
-            <h5>Олле ппэги</h5>
-            <h5>Тхыро ппэги</h5>
-            <h5>Толле ппэги</h5>
-            <h5>Хвитулльо ппэги</h5>
-            <h5>Монэ ппэги</h5>
-        </>
+   return (
+      <>
+         <Heading text={headerTitle} />
+         <h5>Нэрё ппэги</h5>
+         <h5>Олле ппэги</h5>
+         <h5>Тхыро ппэги</h5>
+         <h5>Толле ппэги</h5>
+         <h5>Хвитулльо ппэги</h5>
+         <h5>Монэ ппэги</h5>
 
-    )
+         <KibonGroupList kisul_group="bangeo-gisul" kisul="ppeagi" />
+      </>
+   );
 }
-
-
-
