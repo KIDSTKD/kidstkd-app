@@ -38,7 +38,7 @@ const KibonGroupList = ({
       <div className="grid grid-cols-1">
         {res.map((kibon: IKibon) => (
           <div key={kibon.id}>
-            <h5 className="cursor-pointer">{kibon.id}</h5>
+            <h2 className="cursor-pointer text-left indent-8 text-2xl">{kibon.id}</h2>
             <KibonList kibon_group={kibon.id} />
           </div>
         ))}
