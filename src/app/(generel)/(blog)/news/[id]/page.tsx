@@ -1,6 +1,6 @@
 import SingleNews from "@/components/news-components/single-news";
 
-const NewsComponent = ({ params }: { params: { id: string } }) => {
+export default function NewsPage({ params }: { params: { id: string } }) {
 
   return (
     <>
@@ -9,4 +9,3 @@ const NewsComponent = ({ params }: { params: { id: string } }) => {
   );
 }
 
-export default NewsComponent;

@@ -1,6 +1,5 @@
 import Heading from '@/components/ui/heading'
 import Image from 'next/image'
-import Link from 'next/link'
 
 import KibonGroupList from '../../kibon-components/kibon-group-list'
 
@@ -47,7 +46,7 @@ export default function Maggi() {
                 </div>
                 <div className='flex'>
                     <h4 className='z-20 w-[120px] flex-auto'></h4>
-                    <Image src='/img/05/kibon/bangeo-gisul/maggi/01.jpg'
+                    <Image src='/img/05-kibon/maggi/01.jpg'
                         alt='Уровни' width={600} height={600}
                         className='z-10 flex-auto w-[calc(100%-120px)]' />
                 </div>

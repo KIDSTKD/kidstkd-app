@@ -40,7 +40,7 @@ const KibonGroupList = ({ kisul_group, kisul }: {
 
     return (
         <>
-            <div className="grid grid-cols-1 lg:grid-cols-2">
+            <div className="grid grid-cols-1">
 
                 {res.map((kibon: IKibon) => (
 
