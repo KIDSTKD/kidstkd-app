@@ -24,12 +24,11 @@ export const revalidate = 1;
 
 const KibonGroupList = ({ kisul_group, kisul }: { kisul_group: string; kisul: string }) => {
    const res = use(getKibon(kisul_group, kisul));
-
    return (
       <>
-         <div className="grid grid-cols-1">
+         <div className="grid grid-cols-1 lg:grid-cols-2">
             {res.map((kibon: IKibon) => (
-               <div key={kibon.id} className="w-full lg:w-1/2 hover:underline hover:bg-subblue hover:bg-opacity-25">
+               <div key={kibon.id} className="hover:underline hover:bg-subblue hover:bg-opacity-25 rounded">
                   <h5 className="cursor-pointer text-left indent-8">{kibon.id}</h5>
                   <KibonList kibon_group={kibon.id} />
                </div>
