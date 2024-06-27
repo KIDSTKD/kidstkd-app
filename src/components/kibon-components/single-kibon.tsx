@@ -26,8 +26,6 @@ const Kibon = ({ kibonId }: { kibonId: string }) => {
   return (
     <>
       <h1>{res.kibon}</h1>
-
-
       <article key={res.id}>
         <Image src={pbClient.files.getUrl(res, res.img[0], { 'thumb': '320x200' })} alt={res.kibon} width={360} height={240}
           className='w-full lg:w-80 float-right lg:p-2 rounded object-cover' />
@@ -38,10 +36,7 @@ const Kibon = ({ kibonId }: { kibonId: string }) => {
         <div dangerouslySetInnerHTML={{ __html: res.etc }} />
 
       </article>
-      <>
 
-
-      </>
 
     </>
   );

@@ -1,5 +1,5 @@
 import "@/app/globals.css"
-import KibonNavigation from "./kibon-components/kibon-navigation";
+import KibonNavigation from "../../../../../components/kibon-components/kibon-navigation";
 
 export default function KibonLayout({
   children,

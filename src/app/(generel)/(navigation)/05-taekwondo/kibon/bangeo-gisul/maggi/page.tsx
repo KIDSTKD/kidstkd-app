@@ -1,7 +1,7 @@
 import Heading from '@/components/ui/heading'
 import Image from 'next/image'
 
-import KibonGroupList from '../../kibon-components/kibon-group-list'
+import KibonGroupList from '../../../../../../../components/kibon-components/kibon-group-list'
 
 import { Metadata } from 'next'
 const headerTitle = 'Блоки (макки)'
