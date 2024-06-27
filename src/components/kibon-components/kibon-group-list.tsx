@@ -9,42 +9,34 @@ import PocketBase from "pocketbase";
 export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 
 export async function getKibon(kisul_group: string, kisul: string) {
-  pbClient.autoCancellation(false);
-  const results = await pbClient
-    .collection("kibon_schema")
-    .getFullList<IKibon>({
+   pbClient.autoCancellation(false);
+   const results = await pbClient.collection("kibon_schema").getFullList<IKibon>({
       requestKey: "kibon_schema",
       sort: "id",
       filter: `kisul_group = "${kisul_group}" && kisul = "${kisul}"`,
-    });
+   });
 
-  return results;
+   return results;
 }
 
 export const dynamic = "force-dynamic";
 export const revalidate = 1;
 
-const KibonGroupList = ({
-  kisul_group,
-  kisul,
-}: {
-  kisul_group: string;
-  kisul: string;
-}) => {
-  const res = use(getKibon(kisul_group, kisul));
+const KibonGroupList = ({ kisul_group, kisul }: { kisul_group: string; kisul: string }) => {
+   const res = use(getKibon(kisul_group, kisul));
 
-  return (
-    <>
-      <div className="grid grid-cols-1">
-        {res.map((kibon: IKibon) => (
-          <div key={kibon.id}>
-            <h2 className="cursor-pointer text-left indent-8 text-2xl">{kibon.id}</h2>
-            <KibonList kibon_group={kibon.id} />
-          </div>
-        ))}
-      </div>
-    </>
-  );
+   return (
+      <>
+         <div className="grid grid-cols-1">
+            {res.map((kibon: IKibon) => (
+               <div key={kibon.id} className="w-full lg:w-1/2 hover:underline hover:bg-subblue hover:bg-opacity-25">
+                  <h5 className="cursor-pointer text-left indent-8">{kibon.id}</h5>
+                  <KibonList kibon_group={kibon.id} />
+               </div>
+            ))}
+         </div>
+      </>
+   );
 };
 
 export default KibonGroupList;
