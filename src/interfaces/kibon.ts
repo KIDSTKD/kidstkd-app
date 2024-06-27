@@ -4,7 +4,6 @@ export interface IKibon {
     kisul: string;
     kibon_group: string;
     kibon: string;
-    name: string;
     description: string;
     method: string;
     etc: string;
