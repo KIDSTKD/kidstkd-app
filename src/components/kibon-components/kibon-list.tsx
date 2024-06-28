@@ -28,7 +28,7 @@ const KibonList = ({ kibon_group }: { kibon_group: string }) => {
       <>
          {res.map((kibon: IKibon) => (
             <Link href={`/kibon/${kibon.id}`} key={kibon.kibon_group}>
-               <p className="indent-0 pl-14 cursor-pointer">{kibon.kibon}</p>
+               <p className="indent-0 pl-14 cursor-pointer hover:underline">{kibon.kibon}</p>
             </Link>
          ))}
       </>

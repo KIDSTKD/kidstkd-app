@@ -1,5 +1,6 @@
 import Heading from '@/components/ui/heading'
 
+import KibonGroupList from '@/components/kibon-components/kibon-group-list'
 
 import { Metadata } from 'next'
 const headerTitle = 'Прочее'
@@ -12,9 +13,9 @@ export default function Etc() {
     return (
         <>
             <Heading text={headerTitle} />
-            <h5>큰 똘쩌귀</h5>
-            <h5>작은 똘쩌귀</h5>
-            <h5>학다리서기 작은 똘쩌귀</h5>
+
+            <KibonGroupList kisul_group="jase" kisul="똘쩌귀" />
+
 
         </>
     )
