@@ -14,7 +14,7 @@ export default function Etc() {
         <>
             <Heading text={headerTitle} />
 
-            <KibonGroupList kisul_group="jase" kisul="똘쩌귀" />
+            <KibonGroupList kisul_group="jase" kisul="www" />
 
 
         </>
