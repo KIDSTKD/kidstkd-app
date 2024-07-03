@@ -1,9 +1,8 @@
 import Kibon from "@/components/kibon-components/single-kibon";
 import KibonNavigation from "@/components/kibon-components/kibon-navigation";
+
+
 import { use } from 'react'
-
-import { Metadata } from "next"
-
 import { IKibon } from '@/interfaces/kibon';
 
 import PocketBase from "pocketbase";
@@ -17,33 +16,33 @@ export async function getKibon(params: {id: string}) {
   return results;
 };
 
-interface PostProps {
-  params: {
-      id: any,
-  }
+
+
+
+import { Metadata } from 'next'
+ 
+type Props = {
+  params: { id: string }
 }
+ 
+export async function generateMetadata(
+  { params }: Props,
+): Promise<Metadata> {
+  // read route params
+  const id = params.id
+ 
+  // fetch data
+  // const product = await fetch(`https://.../${id}`).then((res) => res.json())
+  const post = getKibon(params)
+ 
 
-export async function generateMetadata({
-  params,
-}: PostProps): Promise<Metadata> {
-  const post = use(getKibon(params.id))
-
-
-
+ 
   return {
-      title: post.kibon,
-      description: post.description,
-      openGraph: {
-          images: '/img/05/kibon/kibon.png',
-          title: post.kibon,
-          description: post.description,
-          url: 'https://kidstkd.ru/kibon' + post.id,
-      },
-      alternates: {
-          canonical: 'https://kidstkd.ru/kibon' + post.id,
-      },
+    title: (await post).kibon,
+
   }
 }
+
 
 export default function KibonPage({ params }: { params: { id: string } }) {
    return (
