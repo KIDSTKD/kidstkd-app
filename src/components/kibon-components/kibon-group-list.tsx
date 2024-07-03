@@ -34,6 +34,7 @@ const KibonGroupList = ({ kisul_group, kisul }: { kisul_group: string; kisul: st
                </div>
             ))}
          </div>
+         
       </>
    );
 };
