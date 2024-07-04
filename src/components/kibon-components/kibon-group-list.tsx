@@ -41,10 +41,10 @@
 // export default KibonGroupList;
 
 
-const KibonGroupList = () => {
+const KibonGroupList = ({ kisul_group, kisul }: { kisul_group: string; kisul: string }) => {
    return (
       <>
-1
+ {kisul} - {kisul_group}
       </>
    );
 };
