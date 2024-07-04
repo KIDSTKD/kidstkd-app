@@ -13,7 +13,6 @@ export default function PrivateNavigation() {
             </div>
             <CloseNav />
          </div>
-
          <ul className="flex flex-col gap-1 xl:gap-2">
             {PrivateMenuData.map(({ id, title, path, iconId, subMenu }) => (
                <li key={title}>
