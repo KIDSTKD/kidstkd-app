@@ -4,7 +4,7 @@ import { IKibon } from "@/interfaces/kibon";
 import PocketBase from "pocketbase";
 export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 export async function getKibon(kisul_group: string, kisul: string) {
-   // pbClient.autoCancellation(false);
+   pbClient.autoCancellation(false);
    const results = await pbClient.collection("kibon_schema").getFullList<IKibon>({
       requestKey: "kibon_schema",
       sort: "id",
@@ -13,7 +13,7 @@ export async function getKibon(kisul_group: string, kisul: string) {
    return results;
 }
 export const dynamic = "force-dynamic";
-export const revalidate = 3600;
+export const revalidate = 1;
 const KibonGroupList = ({ kisul_group, kisul }: { kisul_group: string; kisul: string }) => {
    const res = use(getKibon(kisul_group, kisul));
    return (
