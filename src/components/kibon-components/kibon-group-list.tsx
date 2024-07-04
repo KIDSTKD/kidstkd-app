@@ -47,13 +47,13 @@ const KibonGroupList = ({ kisul_group, kisul }: { kisul_group: string; kisul: st
    return (
          <div className="grid grid-cols-1 lg:grid-cols-2">
             {res.map((kibon: any) => (
-               <div key={kibon.id} className=" hover:bg-subblue hover:bg-opacity-25 rounded">
-                  <h5 className="cursor-pointer text-left indent-8">{kibon.id}</h5>
-                  <KibonList kibon_group={kibon.id} />
-               </div>
-               // <div key={kibon.id}>
-               // {kibon.id}
+               // <div key={kibon.id} className=" hover:bg-subblue hover:bg-opacity-25 rounded">
+               //    <h5 className="cursor-pointer text-left indent-8">{kibon.id}</h5>
+               //    <KibonList kibon_group={kibon.id} />
                // </div>
+               <div key={kibon.id}>
+               {kibon.id}
+               </div>
             ))}
          </div>
 
