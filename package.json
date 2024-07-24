@@ -12,17 +12,17 @@
     "@savvywombat/tailwindcss-grid-areas": "^4.0.0",
     "class-variance-authority": "^0.7.0",
     "cookies-next": "^4.2.1",
-    "next": "14.2.3",
+    "next": "^14.2.5",
     "pocketbase": "^0.21.2",
-    "react": "^18",
-    "react-dom": "^18"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.3",
+    "eslint-config-next": "^14.2.5",
     "postcss": "^8",
     "prettier": "3.3.2",
     "tailwindcss": "^3.4.1",
