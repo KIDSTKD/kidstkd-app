@@ -24,7 +24,7 @@ export async function getNews(pagenumber: number, perpage: number) {
 };
 
 export const dynamic = 'force-dynamic'
-export const revalidate = 1
+export const revalidate = 3600
 
 
 const PaginatedNews = ({ pagenumber, perpage, withPagination }: {
