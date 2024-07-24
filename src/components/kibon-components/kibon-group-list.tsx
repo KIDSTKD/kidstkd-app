@@ -5,7 +5,7 @@ import PocketBase from "pocketbase";
 export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 export async function getKibon(kisul_group: string, kisul: string) {
    pbClient.autoCancellation(false);
-   const results = await pbClient.collection("kibon_schema").getFullList<IKibon>({
+   const results = await pbClient.collection("kibon").getFullList<IKibon>({
       requestKey: "kibon_list",
       sort: "id",
       filter: `kisul = "${kisul}"`,
@@ -23,8 +23,8 @@ const KibonGroupList = ({ kisul_group, kisul }: { kisul_group: string; kisul: st
          <div className="grid grid-cols-1 lg:grid-cols-2">
             {res.map((kibon: IKibon) => (
                <div key={kibon.id} className=" hover:bg-subblue hover:bg-opacity-25 rounded">
-                  <h5 className="cursor-pointer text-left indent-8">{kibon.id}</h5>
-                  <KibonList kibon_group={kibon.id} />
+                  <h5 className="cursor-pointer text-left indent-8">{kibon.kibon}</h5>
+                  <KibonList kibon_group={kibon.kibon_group} />
                </div>
             ))}
             
