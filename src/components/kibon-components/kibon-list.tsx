@@ -4,7 +4,7 @@ import { IKibon } from "@/interfaces/kibon";
 import PocketBase from "pocketbase";
 export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 export async function getKibon(kibon_group: string) {
-   // pbClient.autoCancellation(false);
+   pbClient.autoCancellation(false);
    const results = await pbClient.collection("kibon").getFullList<IKibon>({
       requestKey: "kibon",
       sort: "kibon_group",
