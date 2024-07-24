@@ -1,4 +1,4 @@
-import Heading from '@/ui/heading'
+import Heading from '@/components/ui/heading'
 import Image from 'next/image'
 
 import KibonGroupList from '../../../../../../../components/kibon-components/kibon-group-list'

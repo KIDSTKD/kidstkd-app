@@ -1,4 +1,4 @@
-import Button from "../../ui/button";
+import Button from "../ui/button";
 
 const DojangCard = ({ city, place, adress, src }: { city: string, place: string, adress: string, src: string }) => {
     return (

@@ -1,4 +1,4 @@
-import Heading from "@/ui/heading";
+import Heading from "@/components/ui/heading";
 import { DocData } from "@/layout/nav/navigation-data";
 import DocBlock from "@/components/docs-components/docBlock";
 

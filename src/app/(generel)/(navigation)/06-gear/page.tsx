@@ -1,4 +1,4 @@
-import Heading from '@/ui/heading'
+import Heading from '@/components/ui/heading'
 import { Metadata } from 'next'
 const headerTitle = 'Экипировка'
 export const metadata: Metadata = {

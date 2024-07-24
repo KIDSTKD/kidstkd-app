@@ -1,4 +1,4 @@
-import Heading from '@/ui/heading'
+import Heading from '@/components/ui/heading'
 import Mounth from '@/components/calendar-components/mounth'
 import MounthData from '@/components/calendar-components/mounth-data'
 

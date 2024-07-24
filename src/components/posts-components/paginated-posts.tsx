@@ -2,7 +2,7 @@ import { use } from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Pagination from '../../ui/pagination';
+import Pagination from '../ui/pagination';
 
 import { IPost } from '@/interfaces/posts';
 

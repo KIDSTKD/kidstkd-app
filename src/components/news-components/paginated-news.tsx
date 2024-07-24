@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 import { INews } from '@/interfaces/news';
 
-import Pagination from '../../ui/pagination';
+import Pagination from '@/components/ui/pagination';
 
 import PocketBase from "pocketbase";
 

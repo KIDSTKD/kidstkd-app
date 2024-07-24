@@ -1,4 +1,4 @@
-import Heading from "@/ui/heading";
+import Heading from "@/components/ui/heading";
 import PaginatedNews from "@/components/news-components/paginated-news";
 
 export const dynamic = 'force-dynamic'
