@@ -1,6 +1,6 @@
 import Heading from "@/ui/heading";
 import DocBlock from "@/components/docs-components/docBlock";
-import Button from "@/components/ui/button";
+import Button from "@/ui/button";
 
 import { Metadata } from 'next'
 import Link from "next/link";
