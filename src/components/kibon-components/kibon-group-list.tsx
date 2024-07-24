@@ -24,7 +24,7 @@ const KibonGroupList = ({ kisul_group, kisul }: { kisul_group: string; kisul: st
             {res.map((kibon: IKibon) => (
                <div key={kibon.id} className=" hover:bg-subblue hover:bg-opacity-25 rounded">
                   <h5 className="cursor-pointer text-left indent-8">{kibon.id}</h5>
-                  {/* <KibonList kibon_group={kibon.kibon_group} /> */}
+                  <KibonList kibon_group={kibon.id} />
                </div>
             ))}
             
