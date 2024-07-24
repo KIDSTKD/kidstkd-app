@@ -8,7 +8,7 @@ export async function getKibon(kisul_group: string, kisul: string) {
    pbClient.autoCancellation(false);
    const results = await pbClient.collection("kibon").getFullList<IKibon>({
       requestKey: "kibon_list",
-      sort: "kibon_group",
+      sort: "kibon",
       filter: `kisul = "${kisul}"`,
    });
    return results;
