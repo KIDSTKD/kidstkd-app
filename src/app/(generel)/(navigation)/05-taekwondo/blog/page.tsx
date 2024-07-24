@@ -1,4 +1,4 @@
-import Heading from "@/components/ui/heading";
+import Heading from "@/ui/heading";
 import PaginatedPosts from "@/components/posts-components/paginated-posts";
 
 export const dynamic = 'force-dynamic'

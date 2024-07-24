@@ -1,4 +1,4 @@
-import Heading from '@/components/ui/heading'
+import Heading from '@/ui/heading'
 import DojangCard from '@/components/contacts-components/dojang-card'
 
 import { Metadata } from 'next'

@@ -1,4 +1,4 @@
-import Heading from "@/components/ui/heading";
+import Heading from "@/ui/heading";
 import NewsByYearComponent from "@/components/news-components/news-by-year";
 
 export const dynamic = 'force-dynamic'

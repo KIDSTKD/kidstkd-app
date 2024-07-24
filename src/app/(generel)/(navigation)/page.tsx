@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import Heading from "@/components/ui/heading";
+import Heading from "@/ui/heading";
 
 import Massage from "@/components/home/massage-me";
 import TKDBanner from "@/components/home/tkd-banner";

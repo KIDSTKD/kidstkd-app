@@ -1,4 +1,4 @@
-import Heading from "@/components/ui/heading";
+import Heading from "@/ui/heading";
 import KibonGroupList from "@/components/kibon-components/kibon-group-list";
 
 import { Metadata } from "next";

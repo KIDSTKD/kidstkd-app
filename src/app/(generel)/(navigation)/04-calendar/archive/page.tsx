@@ -1,4 +1,4 @@
-import Heading from '@/components/ui/heading'
+import Heading from '@/ui/heading'
 import Link from 'next/link'
 import { ArchiveData } from '@/components/calendar-components/archive-data'
 

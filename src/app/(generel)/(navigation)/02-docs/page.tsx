@@ -1,4 +1,4 @@
-import Heading from "@/components/ui/heading";
+import Heading from "@/ui/heading";
 import DocBlock from "@/components/docs-components/docBlock";
 import Button from "@/components/ui/button";
 
