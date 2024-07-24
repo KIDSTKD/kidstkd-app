@@ -8,5 +8,4 @@ const Heading = ({ text }: { text: string | any }) => {
 
     )
 }
-
 export default Heading;
