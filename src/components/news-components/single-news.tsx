@@ -19,7 +19,6 @@ export async function getNews(newsId: string) {
 export const dynamic = 'force-dynamic'
 export const revalidate = 1
 
-
 const SingleNews = ({ newsId }: { newsId: string }) => {
 
   const res = use(getNews(newsId))
