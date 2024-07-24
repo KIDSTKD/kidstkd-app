@@ -13,8 +13,6 @@ import PocketBase from "pocketbase";
 //    return results;
 // }
 
-
-
 // export const dynamic = "force-dynamic";
 // export const revalidate = 1;
 const KibonGroupList = ({ kisul_group, kisul }: { kisul_group: string; kisul: string }) => {
