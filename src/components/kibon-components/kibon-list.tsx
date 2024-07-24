@@ -19,7 +19,7 @@ export async function getKibon(kibon_group: string) {
 }
 
 export const dynamic = "force-dynamic";
-export const revalidate = 1;
+export const revalidate = 3600;
 
 const KibonList = ({ kibon_group }: { kibon_group: string }) => {
    const res = use(getKibon(kibon_group));
