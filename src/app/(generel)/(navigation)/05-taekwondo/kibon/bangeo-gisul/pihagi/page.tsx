@@ -17,7 +17,7 @@ export default function Pihagi() {
             <Heading text={headerTitle} />
 
 
-            <KibonGroupList />
+            <KibonGroupList kisul_group='bangeo-gisul' kisul='pihagi' />
 
 
         </>

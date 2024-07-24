@@ -33,7 +33,7 @@ export default function Seogi() {
             особенностей допускается незначительно изменить положение стоп для большей устойчивости.
          </p>
 
-         <KibonGroupList />
+         <KibonGroupList kisul_group="idong-gisul" kisul="seogi" />
       </>
    );
 }

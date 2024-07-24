@@ -14,7 +14,7 @@ export default function Etc() {
         <>
             <Heading text={headerTitle} />
 
-            <KibonGroupList />
+            <KibonGroupList kisul_group="jase" kisul="etc" />
 
 
         </>

@@ -12,7 +12,7 @@ export default function Chagi() {
    return (
       <>
          <Heading text={headerTitle} />
-<KibonGroupList />
+<KibonGroupList kisul_group="gonggyeog-gisul" kisul="chagi"/>
 
       </>
    );
