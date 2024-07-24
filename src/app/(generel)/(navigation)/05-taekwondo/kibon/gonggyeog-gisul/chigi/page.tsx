@@ -14,7 +14,7 @@ export default function Chigi() {
         <>
             <Heading text={headerTitle} />
 
-            <KibonGroupList kisul_group="gonggyeog-gisul" kisul="chigi"/>
+            <KibonGroupList />
 
 
          

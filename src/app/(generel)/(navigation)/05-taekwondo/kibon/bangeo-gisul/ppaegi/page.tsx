@@ -16,7 +16,7 @@ export default function Ppaegi() {
       <>
          <Heading text={headerTitle} />
 
-         <KibonGroupList kisul_group="bangeo-gisul" kisul="ppaegi" />
+         <KibonGroupList />
       </>
    );
 }

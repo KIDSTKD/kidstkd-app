@@ -14,7 +14,7 @@ export default function Ttwigi() {
       <>
          <Heading text={headerTitle} />
 
-         <KibonGroupList kisul_group="idong-gisul" kisul="ttwigi" />
+         <KibonGroupList  />
       </>
    );
 }

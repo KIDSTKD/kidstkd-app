@@ -25,7 +25,7 @@ export default function Junbijase() {
             к друг другу.
          </p>
 
-         <KibonGroupList kisul_group="jase" kisul="junbijase" />
+         <KibonGroupList  />
       </>
    );
 }
