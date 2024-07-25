@@ -15,7 +15,7 @@ export async function getKibon(postId: string) {
 };
 
 export const dynamic = 'force-dynamic'
-export const revalidate = 1
+export const revalidate = 3600
 
 
 const Kibon = ({ kibonId }: { kibonId: string }) => {
