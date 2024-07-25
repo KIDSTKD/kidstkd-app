@@ -1,9 +1,9 @@
 import Kibon from "@/components/kibon-components/single-kibon";
 import KibonNavigation from "@/components/kibon-components/kibon-navigation";
 
-import { IKibon } from '@/interfaces/kibon';
-import PocketBase from "pocketbase";
-export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
+// import { IKibon } from '@/interfaces/kibon';
+// import PocketBase from "pocketbase";
+// export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 
 // interface PostProps {
 //    params: {
