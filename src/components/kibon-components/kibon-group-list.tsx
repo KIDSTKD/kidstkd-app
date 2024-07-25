@@ -24,7 +24,7 @@ const KibonGroupList = ({ kisul_group, kisul }: { kisul_group: string; kisul: st
          <div className="grid grid-cols-1 lg:grid-cols-2">
             {res.map((kibon: IKibon) => (
 
-               <Link href={`/kibon/${kibon.id}`} key={kibon.kibon_group}>
+               <Link href={`/kibon/${kisul_group}/${kisul}/${kibon.id}`} key={kibon.kibon_group}>
                <div key={kibon.id} className=" hover:bg-subblue hover:bg-opacity-25 rounded">
 
 <h5 className="cursor-pointer text-left indent-8">{kibon.kibon}</h5>
