@@ -14,6 +14,7 @@ export async function getKibon(postId: string) {
   return results;
 };
 
+
 export const dynamic = 'force-dynamic'
 export const revalidate = 3600
 
@@ -35,6 +36,7 @@ const Kibon = ({ kibonId }: { kibonId: string }) => {
         <h4>Методика выполнения</h4>
         <div dangerouslySetInnerHTML={{ __html: res.method }} />
         <div dangerouslySetInnerHTML={{ __html: res.etc }} />
+  
 
       </article>
 
