@@ -1,10 +1,10 @@
 import "@/app/globals.css"
+import Sidebar from "@/layout/sidebar/sidebar";
 
 export default function SubLayout({
-  children, navigation,
+  children,
 }: Readonly<{
   children: React.ReactNode;
-  navigation: React.ReactNode;
 
 
 }>) {
@@ -14,13 +14,14 @@ export default function SubLayout({
       grid-cols-subLayout
       grid-rows-subLayout h-full
       '>
-      <div id='nav' className="grid-in-nav bg-blue z-40
+        <Sidebar />
+      {/* <div id='nav' className="grid-in-nav bg-blue z-40
            fixed top-0 lg:relative
            
                        w-4/5 md:w-1/2 lg:w-60 xl:w-96
                        -translate-x-[100%] lg:translate-x-0
                       h-full transition-transform
-                       ">{navigation}</div>
+                       ">{navigation}</div> */}
       <main className="grid-in-main overflow-y-hidden">{children}</main>
       <aside className="grid-in-aside hidden xl:flex w-0 xl:w-60"></aside>
     </div>

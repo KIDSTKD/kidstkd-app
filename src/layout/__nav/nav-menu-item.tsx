@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 
 import IconArrowOpen from '../../../public/icons/buttons/arrow-open.svg'
 
-import { AboutData, DocData, NewsData, CalendarData, TaekwondoData, EmptyData } from "./navigation-data";
+import { AboutData, DocData, NewsData, CalendarData, TaekwondoData, EmptyData } from "../sidebar/navigation-data";
 
 
 const NavMenuItem = ({ id, title, path, iconId, subMenu }: {

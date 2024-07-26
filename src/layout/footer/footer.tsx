@@ -9,9 +9,9 @@ import UserButton from "./footer-buttons/user-button";
 import Level1 from "./level1";
 import Level2 from "./level2";
 
-import { DocData } from "../nav/navigation-data";
-import { NewsData } from "../nav/navigation-data";
-import { CalendarData } from "../nav/navigation-data";
+import { DocData } from "../sidebar/navigation-data";
+import { NewsData } from "../sidebar/navigation-data";
+import { CalendarData } from "../sidebar/navigation-data";
 
 const NewsLinks = NewsData.slice(0, 2);
 const CalendarLinks = CalendarData.slice(0, 2);
