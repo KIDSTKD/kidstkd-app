@@ -1,10 +1,9 @@
 import "@/app/globals.css"
 
 export default function SubLayout({
-  children, privatenav
+  children
 }: Readonly<{
   children: React.ReactNode;
-  privatenav: React.ReactNode;
 
 
 
@@ -21,7 +20,7 @@ export default function SubLayout({
                        w-4/5 md:w-1/2 lg:w-60 xl:w-96
                        -translate-x-[100%] lg:translate-x-0
                       h-full transition-transform
-                       ">{privatenav}</div>
+                       ">private nav</div>
       <main className="grid-in-main overflow-y-hidden">{children}</main>
       <aside className="grid-in-aside hidden xl:flex w-0 xl:w-60"></aside>
     </div>
