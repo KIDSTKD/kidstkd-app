@@ -9,7 +9,7 @@ export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 
 export async function getKibon(postId: string) {
    pbClient.autoCancellation(false);
-   const results = await pbClient.collection("kibon").getOne<IKibon>(`${postId}`, {});
+   const results = await pbClient.collection("05_kibon").getOne<IKibon>(`${postId}`, {});
    return results;
 }
 
@@ -23,7 +23,7 @@ const Kibon = ({ kibonId }: { kibonId: string }) => {
       <>
          <h1>{res.kibon}</h1>
          <article key={res.id}>
-            <Link href={`https://kidstkd.pockethost.io/api/files/kibon/${res.id}/${res.img}`}>
+            <Link href={`https://kidstkd.pockethost.io/api/files/05_kibon/${res.id}/${res.img}`}>
                <Image
                   src={pbClient.files.getUrl(res, res.img[0], { thumb: "320x200" })}
                   alt={res.kibon}

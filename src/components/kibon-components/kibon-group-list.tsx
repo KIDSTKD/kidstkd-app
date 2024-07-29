@@ -6,7 +6,7 @@ import PocketBase from "pocketbase";
 export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 export async function getKibon(kisul_group: string, kisul: string) {
    pbClient.autoCancellation(false);
-   const results = await pbClient.collection("kibon").getFullList<IKibon>({
+   const results = await pbClient.collection("05_kibon").getFullList<IKibon>({
       requestKey: "kibon_list",
       sort: "kibon",
       filter: `kisul = "${kisul}"`,
