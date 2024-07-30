@@ -12,7 +12,7 @@ interface PostProps {
 
 import { Metadata } from "next";
 
-export const KisulData = [
+const KisulData = [
    {id:1, kisul: "maggi", tech: "Макки", decsp: "Блоки"},
 ]
 
