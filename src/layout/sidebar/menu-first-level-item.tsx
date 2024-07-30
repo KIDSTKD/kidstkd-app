@@ -13,7 +13,7 @@ const MenuFirstLevelItem = ({ id, title, path }: { id: number; title: string; pa
             text-2xl xl:text-3xl
             pl-8 py-2 cursor-pointer
             border-l-8 hover:border-l-light
-            transition-all ${pathname == path
+            transition-all ${pathname.includes(path)
                         ? "border-l-ligth"
                         : "border-l-transparent"
                     }`}
