@@ -1,23 +1,18 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import IconLink from "../../../public/icons/buttons/link.svg";
 
-const LinkP = ({ text }: { text: string }) => {
-   const AnimateLinkLogo = () => {
-      document.getElementById("link-icon")!.classList.toggle("rotate-180");
-   };
-
+const LinkP = ({ text, href }: { text: string; href: string }) => {
    return (
       <>
-         <span
-            onMouseOver={AnimateLinkLogo}
-            onMouseLeave={AnimateLinkLogo}
-            className="hover:bg-subblue/25 rounded text-linkblue inline-flex items-baseline indent-0 cursor-pointer"
-         >
-            {text}
-            <Image id="link-icon" src={IconLink} alt="Ссылка" className="w-4 transition-transform" />
-         </span>
+         <Link href={href}>
+            <span className="hover:bg-subblue/25 rounded text-linkblue inline-flex items-baseline indent-0 cursor-pointer">
+               {text}
+               <Image id="link-icon" src={IconLink} alt="Ссылка" className="w-4" />
+            </span>
+         </Link>
       </>
    );
 };

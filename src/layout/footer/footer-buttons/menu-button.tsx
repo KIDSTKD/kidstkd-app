@@ -3,7 +3,7 @@
 const MenuButton = () => {
 
     const SidebarMenu = () => {
-        document.getElementById('nav')!.classList.toggle('-translate-x-[100%]');
+        document.getElementById('sidebar')!.classList.toggle('-translate-x-[100%]');
         document.getElementById('menu')!.classList.toggle('bg-iconMenuActive');
         document.getElementById('overlay')!.classList.toggle('hidden');
     }
