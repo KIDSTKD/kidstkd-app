@@ -1,6 +1,7 @@
 import Kibon from "@/components/kibon-components/single-kibon";
 import KibonNavigation from "@/components/kibon-components/kibon-navigation";
 
+
 interface PostProps {
    params: {
       id: string;
