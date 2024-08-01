@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 
 const SidebarMenu = () => {
     document.getElementById('sidebar')!.classList.add('-translate-x-[100%]');
-    document.getElementById('menuIcon')!.classList.remove('bg-iconMenuFilled');
+    document.getElementById('menu')!.classList.remove('bg-iconMenuActive');
     document.getElementById('logo')!.classList.remove('bg-hoverblue');
     document.getElementById('wrapper')!.classList.remove('bg-hoverlightblue');
     document.getElementById('overlay')!.classList.add('hidden');
