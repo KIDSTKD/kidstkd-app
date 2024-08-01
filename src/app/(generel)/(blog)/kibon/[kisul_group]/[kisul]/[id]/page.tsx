@@ -1,7 +1,6 @@
 import Kibon from "@/components/kibon-components/single-kibon";
 import KibonNavigation from "@/components/kibon-components/kibon-navigation";
 
-
 interface PostProps {
    params: {
       id: string;
@@ -13,13 +12,13 @@ interface PostProps {
 import { Metadata } from "next";
 
 export async function generateMetadata({ params }: PostProps): Promise<Metadata> {
-   const data = await fetch(`https://kidstkd.pockethost.io//api/collections/kibon/records/${params.id}`).then((res) => res.json());
+   const data = await fetch(`https://kidstkd.pockethost.io//api/collections/05_kibon/records/${params.id}`).then((res) => res.json());
 
    return {
       title: data.kibon,
       description: "Базовая техника: " + data.kibon_group + " - " + data.kibon,
       openGraph: {
-         images: `https://kidstkd.pockethost.io/api/files/kibon/${data?.id}/${data.img}`,
+         images: `https://kidstkd.pockethost.io/api/files/05_kibon/${data?.id}/${data.img}`,
          title: data.kibon,
          description: "Базовая техника: " + data.kibon_group + " - " + data.kibon,
          url: "https://kidstkd.ru/" + params.kisul_group + "/" + params.kisul + "/" + params.id,

@@ -36,9 +36,9 @@ const SinglePost = ({ postId }: { postId: string }) => {
       </article>
       <>
         {res.images.map((gallary: IPost) => (
-          <Link key={gallary.id} href={`https://kidstkd.pockethost.io/api/files/wb3wrxgyid3x1vg/${res.id}/${gallary}`}
+          <Link key={gallary.images} href={`https://kidstkd.pockethost.io/api/files/05_posts/${res.id}/${gallary}`}
             className='float-left'>
-            <Image src={`https://kidstkd.pockethost.io/api/files/wb3wrxgyid3x1vg/${res.id}/${gallary}`}
+            <Image src={`https://kidstkd.pockethost.io/api/files/05_posts/${res.id}/${gallary}`}
               alt={res.title} width={320} height={200}
               className='w-80 aspect-auto' />
           </Link>
