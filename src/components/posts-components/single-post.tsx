@@ -35,8 +35,8 @@ const SinglePost = ({ postId }: { postId: string }) => {
         <div dangerouslySetInnerHTML={{ __html: res.post }} />
       </article>
       <>
-        {res.images.map((gallary: IPost) => (
-          <Link key={gallary.images} href={`https://kidstkd.pockethost.io/api/files/05_posts/${res.id}/${gallary}`}
+        {res.images.map((gallary: string) => (
+          <Link key={gallary} href={`https://kidstkd.pockethost.io/api/files/05_posts/${res.id}/${gallary}`}
             className='float-left'>
             <Image src={`https://kidstkd.pockethost.io/api/files/05_posts/${res.id}/${gallary}`}
               alt={res.title} width={320} height={200}
