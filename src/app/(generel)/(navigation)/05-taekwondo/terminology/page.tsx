@@ -1,6 +1,6 @@
 import Heading from "@/components/ui/heading";
 
-import LinkP from "@/components/ui/link-p";
+import LinkSpan from "@/components/ui/link-span";
 
 import { Metadata } from "next";
 const headerTitle = "Терминология тхэквондо";
@@ -90,7 +90,7 @@ export default function Taekwondo() {
          <p>Кибон [기본] – базовая техника</p>
          <p>Кибон дончжак [기본동작] – базовые движения (передвижение в стойках, выполнение блоков, ударов из стоек)</p>
          <p>
-            <LinkP text="Пхумсэ [품새]" href="poomsae" /> - регламентированные упражнения, включающие в себя атакующие и защитные технические
+            <LinkSpan text="Пхумсэ [품새]" href="poomsae" /> - регламентированные упражнения, включающие в себя атакующие и защитные технические
             элементы, выполняемые по определенным траекториям в точно установленной последовательности.
          </p>
          <p>Кёруги [겨루기] – поединок, спарринг</p>
@@ -105,7 +105,7 @@ export default function Taekwondo() {
             <p>Титки [딛기] - </p>
             <p>Твиги [뒤기] - </p>
             <p>
-               <LinkP text="Макки [막기] - блоки" href="terminology/bangeo-gisul/maggi" />
+               <LinkSpan text="Макки [막기] - блоки" href="terminology/bangeo-gisul/maggi" />
             </p>
             <p>Мильги [밀기] - </p>
             <p>Ппэги [빼기] - </p>
@@ -115,7 +115,7 @@ export default function Taekwondo() {
             <p>Чирыги [지르기] - </p>
             <p>Ччирыги [찌르기] - </p>
             <p>
-               <LinkP text="Чхаги [차기] - удары ногами" href="terminology/gonggyeog-gisul/chagi" />
+               <LinkSpan text="Чхаги [차기] - удары ногами" href="terminology/gonggyeog-gisul/chagi" />
             </p>
             <p>Чхиги [치기] - </p>
             <p>Пхихаги [피하기] - </p>

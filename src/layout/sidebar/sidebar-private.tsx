@@ -5,9 +5,10 @@ import Logo from "@/components/logo";
 
 import IconClose from "../../../public/icons/buttons/close.svg";
 
-import GeneralSidebalContent from "./content-general";
+import PrivateSidebalContent from "./content-private";
 
-const Sidebar = () => {
+
+const PrivateSidebar = () => {
    const CloseMenu = () => {
       document.getElementById("sidebar")!.classList.add("-translate-x-[100%]");
       document.getElementById("menu")!.classList.remove("bg-iconMenuActive");
@@ -36,9 +37,9 @@ const Sidebar = () => {
             </div>
             <Image id="close" onClick={CloseMenu} src={IconClose} alt="Закрыть меню" className="w-6 ml-[100px] mr-3 transition" />
          </div>
-         <GeneralSidebalContent />
+         <PrivateSidebalContent />
       </nav>
    );
 };
 
-export default Sidebar;
+export default PrivateSidebar;

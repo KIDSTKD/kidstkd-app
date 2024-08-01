@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import IconLink from "../../../public/icons/buttons/link.svg";
 
-const LinkP = ({ text, href }: { text: string; href: string }) => {
+const LinkSpan = ({ text, href }: { text: string; href: string }) => {
    return (
       <>
          <Link href={href}>
@@ -17,4 +17,4 @@ const LinkP = ({ text, href }: { text: string; href: string }) => {
    );
 };
 
-export default LinkP;
+export default LinkSpan;
