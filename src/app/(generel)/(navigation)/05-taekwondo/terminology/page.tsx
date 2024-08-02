@@ -1,6 +1,11 @@
-import Heading from "@/components/ui/heading";
+import Image from "next/image";
 
+import Heading from "@/components/ui/heading";
 import LinkSpan from "@/components/ui/link-span";
+import BlogImage from "@/components/ui/blog-image";
+
+import Hangeul1 from "../../../../../../public/img/05-terms/01.jpg"
+import Hangeul2 from "../../../../../../public/img/05-terms/02.jpg"
 
 import { Metadata } from "next";
 const headerTitle = "Терминология тхэквондо";
@@ -16,6 +21,11 @@ export default function Taekwondo() {
    return (
       <>
          <Heading text={headerTitle} />
+         <BlogImage
+         href='/img/05-terms/hangeul.png'
+         src='/img/05-terms/hangeul.png'
+         alt="Терминология тхэквондо"
+         />
          <p>
             Традиционно при изучении тхэквондо используются корейские термины. Каждому техническому элементу соответствует термин, однако в разных
             школах можно встретить разные варианты произношения одних и тех же слов.
@@ -42,6 +52,10 @@ export default function Taekwondo() {
             некоторых систем романизациихангыля основной упор при транскрипции делается не на то, как та или иная буква пишется, а на то, как она
             слышится (фонетическая транскрипция) .
          </p>
+         <div className="grid grid-cols-2 bg-light items-center">
+         <Image src={Hangeul1} alt="Транскрипция корейского языка"/>
+         <Image src={Hangeul2} alt="Транскрипция корейского языка"/>
+         </div>
          <p>Примечания:</p>
          <ul>
             <li>буква ㅇ в начале слога не читается</li>
@@ -49,7 +63,7 @@ export default function Taekwondo() {
             <li>запись после дефиса — транскрипция буквы в конце слова или слога</li>
             <li>Написание БОЛЬШИМИ БУКВАМИ для русской транскрипции — основной способ передачи буквы в транскрипции</li>
          </ul>
-         <h4>Передача букв на стыке слогов</h4>
+         <h3>Передача букв на стыке слогов</h3>
          <p>
             Особенности транскрибирования букв, стоящих на границах слогов, сведены в следующую таблицу (звёздочкой * отмечено написание перед и и
             йотированными гласными):
@@ -103,21 +117,31 @@ export default function Taekwondo() {
             <p>Намги [납기] - </p>
             <p>Номгиги [넘기기] - </p>
             <p>Титки [딛기] - </p>
-            <p>Твиги [뒤기] - </p>
+            <p>
+               <LinkSpan text="Твиги [뛰기] - прыжки" href="terminology/idong-gisul/ttwigi" />
+            </p>
             <p>
                <LinkSpan text="Макки [막기] - блоки" href="terminology/bangeo-gisul/maggi" />
             </p>
             <p>Мильги [밀기] - </p>
             <p>Ппэги [빼기] - </p>
-            <p>Соги [서기] - </p>
-            <p>Чапки [잡기] - </p>
-            <p>Чунбичасэ [준비자새] - </p>
+            <p>
+               <LinkSpan text="Соги [서기] - стойки" href="terminology/idong-gisul/seogi" />
+            </p>
+            <p>
+               <LinkSpan text="Чапки [잡기] - захваты" href="terminology/gonggyeog-gisul/jabgi" />
+            </p>
+            <p>
+               <LinkSpan text="Чунбичасэ [준비자새] - позиции готовности" href="terminology/jase/junbijase" />
+            </p>
             <p>Чирыги [지르기] - </p>
             <p>Ччирыги [찌르기] - </p>
             <p>
                <LinkSpan text="Чхаги [차기] - удары ногами" href="terminology/gonggyeog-gisul/chagi" />
             </p>
-            <p>Чхиги [치기] - </p>
+            <p>
+               <LinkSpan text="Чхиги [치기] - удары" href="terminology/gonggyeog-gisul/chigi" />
+            </p>
             <p>Пхихаги [피하기] - </p>
          </div>
       </>

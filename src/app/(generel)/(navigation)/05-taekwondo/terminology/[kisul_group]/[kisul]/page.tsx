@@ -14,6 +14,12 @@ import { Metadata } from "next";
 
 const KisulData = [
    {id:1, kisul: "maggi", tech: "Макки", decsp: "Блоки"},
+   {id:2, kisul: "chagi", tech: "Чхаги", decsp: "Удары ногами"},
+   {id:3, kisul: "ttwigi", tech: "Ттвиги", decsp: "Прыжки"},
+   {id:4, kisul: "seogi", tech: "Соги", decsp: "Стойки"},
+   {id:5, kisul: "chigi", tech: "Чхиги", decsp: "Удары"},
+   {id:6, kisul: "junbijase", tech: "Чунбичасэ", decsp: "Позиции готовности"},
+   {id:6, kisul: "jabgi", tech: "Чапки", decsp: "Захваты"},
 ]
 
 export async function generateMetadata({ params }: PostProps): Promise<Metadata> {
@@ -26,7 +32,7 @@ export async function generateMetadata({ params }: PostProps): Promise<Metadata>
       title: meta?.tech + " (" + meta?.decsp + ")" + " - Терминология: Базовая техника",
       description: meta?.tech + " (" + meta?.decsp + ")" + " - Терминология: Базовая техника",
       openGraph: {
-         // images: `https://kidstkd.pockethost.io/api/files/kibon/${data?.id}/${data.img}`,
+         images: '/img/05-terms/hangeul.png',
          title: meta?.tech + " (" + meta?.decsp + ")" + " - Терминология: Базовая техника",
          description: meta?.tech + " (" + meta?.decsp + ")" + " - Терминология: Базовая техника",
          url: "https://kidstkd.ru/05-taekwondo/terminology/" + params.kisul,
