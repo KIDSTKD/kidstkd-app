@@ -20,7 +20,7 @@ const Massage = () => (
             <div className='flex flex-row gap-5 py-5 md:w-1/2 justify-center md:justify-start'>
                 {MessageData.map(({ id, icon, href }) => (
                     <a href={href} key={id}><Image src={icon} alt='Записаться на пробное занятие' width={100} height={100}
-                        className='w-16 hover:scale-105'
+                        className='w-16 hover:scale-105 transition-all'
                     /></a>
                 ))}
             </div>

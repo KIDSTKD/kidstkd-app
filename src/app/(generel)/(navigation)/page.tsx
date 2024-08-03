@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import Heading from "@/components/ui/heading";
+import LinkSpan from "@/components/ui/link-span";
 
 import Massage from "@/components/home/massage-me";
 import TKDBanner from "@/components/home/tkd-banner";
@@ -38,7 +39,7 @@ export default function Home() {
                тхэквондо;
             </li>
             <li>
-               анкета занимающегося в спортивной секции тхэквондо, которую можно <Link href="/02-docs/07-other">скачать</Link> и заполнить
+               анкета занимающегося в спортивной секции тхэквондо, которую можно <LinkSpan text={"скачать"} href={"/02-docs/07-other"} /> и заполнить
                самостоятельно;
             </li>
             <li>копии свидетельства о рождении и полиса ОМС (обязательного медицинского страхования);</li>
