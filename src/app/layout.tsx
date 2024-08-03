@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: 'kidstkd.ru',
   },
   verification: {
-    yandex: 97585336,
+    yandex: 91602935,
   },
 
 }
@@ -67,7 +67,7 @@ export default function RootLayout({
                 m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
                 (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
       
-                ym(97585336, "init", {
+                ym(91602935, "init", {
                       clickmap:true,
                       trackLinks:true,
                       accurateTrackBounce:true,
