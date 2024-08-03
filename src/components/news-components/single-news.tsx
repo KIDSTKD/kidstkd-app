@@ -29,13 +29,13 @@ const SingleNews = ({ newsId }: { newsId: string }) => {
                alt={res.EventName}
                width={360}
                height={240}
-               className="w-80 float-right lg:p-2 rounded object-cover"
+               className="w-full lg:w-80 float-right lg:p-2 rounded object-cover"
             />
             <div dangerouslySetInnerHTML={{ __html: res.EventText }} />
          </article>
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {res.gallary.map((gallary: INews) => (
-               <Link key={gallary.id} href={`https://kidstkd.pockethost.io/api/files/5ivpjpyfv12nfus/${res.id}/${gallary}`} className="float-left">
+               <Link key={res.gallary} href={`https://kidstkd.pockethost.io/api/files/5ivpjpyfv12nfus/${res.id}/${gallary}`} className="float-left">
                   <Image
                      src={`https://kidstkd.pockethost.io/api/files/5ivpjpyfv12nfus/${res.id}/${gallary}`}
                      alt={res.EventName}
