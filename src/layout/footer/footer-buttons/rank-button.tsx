@@ -10,10 +10,10 @@ const RankButton = () => {
     return (
 
         <Link id='rank' className={`p-4 transition bg-no-repeat bg-center
-        ${pathname == '/rank'
+        ${pathname == '/user/rank'
                 ? "bg-iconPodiumActive"
                 : "bg-iconPodium"
-            }`} href='/rank'></Link>
+            }`} href='/user/rank'></Link>
 
     );
 };
