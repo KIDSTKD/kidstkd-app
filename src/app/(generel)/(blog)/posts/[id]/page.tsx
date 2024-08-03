@@ -18,13 +18,13 @@ export async function generateMetadata({ params }: PostProps): Promise<Metadata>
       title: data.title,
       description: data.description,
       openGraph: {
-         images: `https://kidstkd.pockethost.io/api/files/kibon/${data?.id}/${data.img}`,
+         images: `https://kidstkd.pockethost.io/api/files/05_posts/${data?.id}/${data.img}`,
          title: data.title,
          description: data.description,
-         url: "https://kidstkd.ru/posts" + params.id,
+         url: "https://kidstkd.ru/posts/" + params.id,
       },
       alternates: {
-         canonical: "https://kidstkd.ru/posts" + params.id,
+         canonical: "https://kidstkd.ru/posts/" + params.id,
       },
    };
 }
