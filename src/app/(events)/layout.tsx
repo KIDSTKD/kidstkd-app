@@ -1,6 +1,6 @@
 import "@/app/globals.css"
 
-import PrivateSidebar from "@/layout/sidebar/sidebar-private";
+import EventSidebar from "@/layout/sidebar/sidebar-events";
 
 export default function SubLayout({
   children
@@ -22,7 +22,7 @@ export default function SubLayout({
                        w-4/5 md:w-1/2 lg:w-60 xl:w-96
                        -translate-x-[100%] lg:translate-x-0
                       h-full transition-transform
-                       "><PrivateSidebar /></div>
+                       "><EventSidebar /></div>
       <main className="grid-in-main overflow-y-hidden">{children}</main>
       <aside className="grid-in-aside hidden xl:flex w-0 xl:w-60"></aside>
     </div>

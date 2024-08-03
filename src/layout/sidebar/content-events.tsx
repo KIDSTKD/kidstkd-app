@@ -3,9 +3,9 @@
 import MenuFirstLevelItem from "./menu-first-level-item";
 
 
-import { PrivateMenuData } from "./navigation-data";
+import { EventMenuData } from "./navigation-data";
 
-const PrivateSidebalContent = () => {
+const EventsSidebalContent = () => {
    // const MenuAboutUs = () => {
    //    document.getElementById("about-us")!.classList.toggle("hidden");
    //    document.getElementById("docs")!.classList.add("hidden");
@@ -33,7 +33,7 @@ const PrivateSidebalContent = () => {
                     ))}
                 </div> */}
 
-         {PrivateMenuData.map((data) => (
+         {EventMenuData.map((data) => (
             <>
                <MenuFirstLevelItem id={data.id} title={data.title} path={data.path} />
             </>
@@ -42,4 +42,4 @@ const PrivateSidebalContent = () => {
    );
 };
 
-export default PrivateSidebalContent;
+export default EventsSidebalContent;

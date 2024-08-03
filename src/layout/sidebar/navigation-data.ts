@@ -1,16 +1,16 @@
 export const PrivateMenuData = [
-    {id:1, title: "Статистика", path: "/01-about-us", iconId: 'About', subMenu: false},
-    {id:2, title: "Достижения", path: "/02-docs", iconId: "Docs", subMenu: false},
-    {id:3, title: "Рейтинг", path: "/03-news", iconId: "News", subMenu: false},
-    {id:4, title: "Уведомления", path: "/04-calendar", iconId: "Calendar", subMenu: false},
+    {id:1, title: "Статистика", path: "/user", iconId: '', subMenu: false},
+    {id:2, title: "Достижения", path: "/user", iconId: "", subMenu: false},
+    {id:3, title: "Рейтинг", path: "/user", iconId: "", subMenu: false},
+    {id:4, title: "Уведомления", path: "/user", iconId: "", subMenu: false},
 
 ]
 
 export const EventMenuData = [
-    {id:1, title: "Положения", path: "/01-about-us", iconId: 'About', subMenu: false},
-    {id:2, title: "Протоколы", path: "/02-docs", iconId: "Docs", subMenu: false},
-    {id:3, title: "Турнирные таблицы", path: "/03-news", iconId: "News", subMenu: false},
-    {id:4, title: "...", path: "/04-calendar", iconId: "Calendar", subMenu: false},
+    {id:1, title: "Положения", path: "/events", iconId: '', subMenu: false},
+    {id:2, title: "Протоколы", path: "/events", iconId: "", subMenu: false},
+    {id:3, title: "Турнирные таблицы", path: "/events", iconId: "", subMenu: false},
+    {id:4, title: "...", path: "/events", iconId: "", subMenu: false},
 
 ]
 
