@@ -93,7 +93,7 @@ export default function OG2024() {
          <h2>Участники</h2>
          <div className="grid grid-cols-2 gap-10">
             <div className="">
-               <div className="text-4xl font-bebasRegular text-dark">W-49kg</div>
+               <div className="text-4xl font-bebasRegular text-dark hover:bg-lightblue/25 cursor-pointer">W-49kg</div>
                <p className="flex justify-between">
                   JOSIPA KAFADAR<span>CAN</span>
                </p>
@@ -148,7 +148,7 @@ export default function OG2024() {
             </div>
 
             <div className="">
-               <div className="text-4xl font-bebasRegular text-dark">W-57kg</div>
+               <div className="text-4xl font-bebasRegular text-dark hover:bg-lightblue/25 cursor-pointer">W-57kg</div>
                <p className="flex justify-between">
                   STACEY HYMER<span>AUS</span>
                </p>
@@ -200,7 +200,7 @@ export default function OG2024() {
             </div>
 
             <div className="">
-               <div className="text-4xl font-bebasRegular text-dark">W-67kg</div>
+               <div className="text-4xl font-bebasRegular text-dark hover:bg-lightblue/25 cursor-pointer">W-67kg</div>
 
                <p className="flex justify-between">
                   SARAH CHAARI<span>BEL</span>
@@ -253,7 +253,7 @@ export default function OG2024() {
             </div>
 
             <div className="">
-               <div className="text-4xl font-bebasRegular text-dark">W+67kg</div>
+               <div className="text-4xl font-bebasRegular text-dark hover:bg-lightblue/25 cursor-pointer">W+67kg</div>
 
                <p className="flex justify-between">
                   MARLENE JAHL<span>AUT</span>
@@ -306,7 +306,7 @@ export default function OG2024() {
             </div>
 
             <div className="">
-               <div className="text-4xl font-bebasRegular text-dark">M-58kg</div>
+               <div className="text-4xl font-bebasRegular text-dark hover:bg-lightblue/25 cursor-pointer">M-58kg</div>
 
                <p className="flex justify-between">
                   GEORGII GURTSIEV<span>AIN</span>
@@ -374,7 +374,7 @@ export default function OG2024() {
             </div>
 
             <div className="">
-               <div className="text-4xl font-bebasRegular text-dark">M-68kg</div>
+               <div className="text-4xl font-bebasRegular text-dark hover:bg-lightblue/25 cursor-pointer">M-68kg</div>
                <p className="flex justify-between">
                   EDIVAL PONTES<span>BRA</span>
                </p>
@@ -429,7 +429,7 @@ export default function OG2024() {
             </div>
 
             <div className="">
-               <div className="text-4xl font-bebasRegular text-dark">M-80kg</div>
+               <div className="text-4xl font-bebasRegular text-dark hover:bg-lightblue/25 cursor-pointer">M-80kg</div>
                <p className="flex justify-between">
                   LEON SEJRANOVIC<span>AUS</span>
                </p>
@@ -484,7 +484,7 @@ export default function OG2024() {
             </div>
 
             <div className="">
-               <div className="text-4xl font-bebasRegular text-dark">M+80kg</div>
+               <div className="text-4xl font-bebasRegular text-dark hover:bg-lightblue/25 cursor-pointer">M+80kg</div>
 
                <p className="flex justify-between">
                   ZHAOXIANG SONG<span>CHN</span>
