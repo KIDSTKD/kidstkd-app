@@ -53,9 +53,12 @@ export default function OG2024() {
          </h5>
 
          <h2>Турнирные таблицы (сетки)</h2>
-         <div className="grid grid-cols-4">
+         <div className="grid grid-cols-2 lg:grid-cols-4">
             {OG2024DrawShits.map(({ id, title, path }) => (
-               <Link href={path} key={id}>
+               <Link className="relative" href={path} key={id}>
+                  <div className="absolute top-0 bottom-0 left-0 right-0 z-20 items-center flex">
+                  <h4 className="text-6xl text-dark/50 text-center w-full cursor-pointer hover:bg-lightblue/25">{title}</h4>
+                  </div>
                <Image key={id} src={path} alt={title} width={360} height={240} className="object-cover cursor-pointer" />
                </Link>
             ))}
