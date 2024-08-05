@@ -1,7 +1,10 @@
 import Heading from "@/components/ui/heading";
 import Image from "next/image";
+import Link from "next/link";
 
 import LinkSpan from "@/components/ui/link-span";
+
+import { OG2024DrawShits } from "./drawshits";
 
 import { Metadata } from "next";
 const headerTitle = "Тхэквондо - ОИ2024";
@@ -34,13 +37,29 @@ export default function OG2024() {
             Соревнования по тхэквондо на летних Олимпийских играх 2024 года в Париже пройдут с 7 по 10 августа на стадионе Гран-пале Стрип. В
             соревнованиях примут участие 128 лучших тхэквондистов: по 16 в каждой из 8 весовых категорий (4 у мужчин и 4 у женщин).
          </p>
+
          <h2>Расписание</h2>
-         <h5><LinkSpan text="7 АВГУСТА - женщины -47кг, мужчины -58кг" href={""} /></h5>
-         <h5><LinkSpan text="8 АВГУСТА - женщины -57кг, мужчины -68кг" href={""} /></h5>
-         <h5><LinkSpan text="9 АВГУСТА - женщины -67кг, мужчины -80кг" href={""} /></h5>
-         <h5><LinkSpan text="10 АВГУСТА - женщины +67кг, мужчины +80кг" href={""} /></h5>
+         <h5>
+            <LinkSpan text="7 АВГУСТА - женщины -47кг, мужчины -58кг" href={""} />
+         </h5>
+         <h5>
+            <LinkSpan text="8 АВГУСТА - женщины -57кг, мужчины -68кг" href={""} />
+         </h5>
+         <h5>
+            <LinkSpan text="9 АВГУСТА - женщины -67кг, мужчины -80кг" href={""} />
+         </h5>
+         <h5>
+            <LinkSpan text="10 АВГУСТА - женщины +67кг, мужчины +80кг" href={""} />
+         </h5>
 
-
+         <h2>Турнирные таблицы (сетки)</h2>
+         <div className="grid grid-cols-4">
+            {OG2024DrawShits.map(({ id, title, path }) => (
+               <Link href={path} key={id}>
+               <Image key={id} src={path} alt={title} width={360} height={240} className="object-cover cursor-pointer" />
+               </Link>
+            ))}
+         </div>
          <h2>Квалификация</h2>
          <p>
             Всего 128 спортсменов примут участие в олимпийском турнире по тхэквондо в столице Франции: 64 мужчины и 64 женщины — ровно столько же,
