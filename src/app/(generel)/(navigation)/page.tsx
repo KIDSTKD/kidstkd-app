@@ -28,7 +28,7 @@ export default function Home() {
       <>
          <Heading text={headerTitle} />
          <h4>Прямая трансляция ОИ-2024. День 1</h4>
-<iframe className="w-full aspect-video" src="//www.cbc.ca/i/phoenix/player/syndicate/?mediaId=9.6452535" width="640" height="360"></iframe>
+<iframe className="w-full aspect-video" src="//www.cbc.ca/i/phoenix/player/syndicate/?mediaId=9.6452535" width="1280" height="720"></iframe>
          <p>
             Мы приглашаем детей от 4 лет на занятия олимпийским видом спорта. Занятия проходят в группах детей одного возраста, что обеспечивает
             положительный результат занятий. Занятия охватывают все аспекты тхэквондо, и включают в себя базовую подготовку, обучение ударной технике,
