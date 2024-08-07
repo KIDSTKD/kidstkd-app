@@ -22,8 +22,13 @@ export default function OG2024() {
       <>
          <Heading text={headerTitle} />
 
+         <h4>Предварительные поединки</h4>
 <iframe className="w-full aspect-video" src="//www.cbc.ca/i/phoenix/player/syndicate/?mediaId=9.6452535" width="640" height="320"></iframe>
-        
+<h4>1/4 и 1/2 финала</h4>
+<iframe className="w-full aspect-video" src="//www.cbc.ca/i/phoenix/player/syndicate/?mediaId=9.6452590" width="640" height="320"></iframe>
+<h4>Финальные поединки</h4>
+<iframe className="w-full aspect-video" src="//www.cbc.ca/i/phoenix/player/syndicate/?mediaId=9.6452659" width="640" height="320"></iframe>
+           
       </>
    );
 }
