@@ -84,6 +84,7 @@ const config: Config = {
 
         // buttons
         'iconMore' : "url('/icons/buttons/more.svg')",
+        'iconStream' : "url('/icons/buttons/stream.svg')",
 
         //
         'loading' : "url('/layout/loading.svg')",
