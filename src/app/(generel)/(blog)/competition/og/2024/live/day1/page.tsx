@@ -7,7 +7,7 @@ export const metadata: Metadata = {
    title: headerTitle,
    description: "Прямая трансляция (мужчины -58кг, женщины -49 кг)",
    openGraph: {
-      images: "/img/blog/competition/og/2024/mascot.png",
+      images: "/img/blog/competition/og/2024/live.jpg",
       title: headerTitle,
       description: "Прямая трансляция (мужчины -58кг, женщины -49 кг)",
       url: "https://kidstkd.ru/competition/og/2024/live/day1",
