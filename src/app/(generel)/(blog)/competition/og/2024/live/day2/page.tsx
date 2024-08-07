@@ -1,5 +1,7 @@
 import Heading from "@/components/ui/heading";
 
+import DaysNavi from "../days-navi";
+
 import { Metadata } from "next";
 const headerTitle = "Прямая трансляция ОИ2024 - день 2 (М-68, Ж-57)";
 export const metadata: Metadata = {
@@ -20,6 +22,7 @@ export default function OG2024() {
    return (
       <>
          <Heading text={headerTitle} />
+         <DaysNavi />
 
          <h4>Предварительные поединки</h4>
 <iframe className="w-full aspect-video" src="//www.cbc.ca/i/phoenix/player/syndicate/?mediaId=9.6452774" width="640" height="320"></iframe>

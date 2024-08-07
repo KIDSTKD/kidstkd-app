@@ -1,6 +1,8 @@
 import Heading from "@/components/ui/heading";
 import LinkSpan from "@/components/ui/link-span";
 
+import DaysNavi from "../days-navi";
+
 import { Metadata } from "next";
 const headerTitle = "Прямая трансляция ОИ2024 - день 1 (М-58, Ж-49)";
 export const metadata: Metadata = {
@@ -21,6 +23,7 @@ export default function OG2024() {
    return (
       <>
          <Heading text={headerTitle} />
+        <DaysNavi />
 
          <h4>Предварительные поединки</h4>
          <p>Возможны перебои в прямой трансляции. Трансляция также доступна на сайте <LinkSpan text={"olympics.com"} href={"https://olympics.com/en/paris-2024/videos/women-s-49kg-men-s-58kg-round-of-16-taekwondo-olympic-games-paris-2024"} /> (необходима авторизация)</p>
