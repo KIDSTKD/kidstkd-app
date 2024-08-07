@@ -45,15 +45,26 @@ export default function OG2024() {
             <div className="bg-iconStream w-6 h-6 animate-pulse"></div>
             </Link>
          </h5>
-         <h5>
-            <LinkSpan text="8 АВГУСТА - женщины -57кг, мужчины -68кг" href={""} />
+         <h5 className="flex flex-raw items-center gap-3">
+            <LinkSpan text="8 АВГУСТА - женщины -57кг, мужчины -68кг" href='2024/live/day2' />
+            <Link href='2024/live/day2'>
+            <div className="bg-iconStream w-6 h-6 animate-pulse"></div>
+            </Link>
          </h5>
-         <h5>
-            <LinkSpan text="9 АВГУСТА - женщины -67кг, мужчины -80кг" href={""} />
+         <h5 className="flex flex-raw items-center gap-3">
+            <LinkSpan text="9 АВГУСТА - женщины -67кг, мужчины -80кг" href='2024/live/day3' />
+            <Link href='2024/live/day3'>
+            <div className="bg-iconStream w-6 h-6 animate-pulse"></div>
+            </Link>
          </h5>
-         <h5>
-            <LinkSpan text="10 АВГУСТА - женщины +67кг, мужчины +80кг" href={""} />
+         <h5 className="flex flex-raw items-center gap-3">
+            <LinkSpan text="10 АВГУСТА - женщины +67кг, мужчины +80кг" href='2024/live/day4' />
+            <Link href='2024/live/day4'>
+            <div className="bg-iconStream w-6 h-6 animate-pulse"></div>
+            </Link>
          </h5>
+
+
 
          <h2>Турнирные таблицы (сетки)</h2>
          <div className="grid grid-cols-2 lg:grid-cols-4">
