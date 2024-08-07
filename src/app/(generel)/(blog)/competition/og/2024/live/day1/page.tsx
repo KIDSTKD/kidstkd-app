@@ -26,7 +26,7 @@ export default function OG2024() {
         <DaysNavi />
 
          <h4>Предварительные поединки</h4>
-         <p>Возможны перебои в прямой трансляции. Трансляция также доступна на сайте <LinkSpan text={"olympics.com"} href={"https://olympics.com/en/paris-2024/videos/women-s-49kg-men-s-58kg-round-of-16-taekwondo-olympic-games-paris-2024"} /> (необходима авторизация)</p>
+         <p>Возможны перебои в прямой трансляции. Трансляция также доступна на сайте <LinkSpan text={"olympics.com"} href={"https://olympics.com/ru/paris-2024/videos/women-s-49kg-men-s-58kg-quarter-finals-semi-finals-taekwondo-olympic-games-paris-2024"} /> (необходима авторизация)</p>
 <iframe className="w-full aspect-video" src="//www.cbc.ca/i/phoenix/player/syndicate/?mediaId=9.6452535" width="640" height="320"></iframe>
 <h4>Полуфиналы</h4>
 <iframe className="w-full aspect-video" src="//www.cbc.ca/i/phoenix/player/syndicate/?mediaId=9.6452590" width="640" height="320"></iframe>
