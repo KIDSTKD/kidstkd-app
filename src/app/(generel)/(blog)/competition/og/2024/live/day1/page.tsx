@@ -21,13 +21,7 @@ export default function OG2024() {
    return (
       <>
          <Heading text={headerTitle} />
-         <Image
-            src="/img/blog/competition/og/2024/mascot.png"
-            alt={headerTitle}
-            width={360}
-            height={240}
-            className="w-full lg:w-80 float-right lg:p-2 rounded object-cover"
-         />
+
 <iframe src="//www.cbc.ca/i/phoenix/player/syndicate/?mediaId=9.6452535" width="640" height="360"></iframe>
         
       </>
