@@ -28,7 +28,7 @@ export default function OG2024() {
             height={240}
             className="w-full lg:w-80 float-right lg:p-2 rounded object-cover"
          />
-<iframe className="w-full aspect-video" src="//www.cbc.ca/i/phoenix/player/syndicate/?mediaId=9.6452535" width="640" height="360"></iframe>
+<iframe src="//www.cbc.ca/i/phoenix/player/syndicate/?mediaId=9.6452535" width="640" height="360"></iframe>
         
       </>
    );
