@@ -2,18 +2,18 @@ import Heading from "@/components/ui/heading";
 import Image from "next/image";
 
 import { Metadata } from "next";
-const headerTitle = "Прямая трансляция ОИ2024 - тхэквондо";
+const headerTitle = "Прямая трансляция ОИ2024 - день 1 (М-58, Ж-49)";
 export const metadata: Metadata = {
    title: headerTitle,
-   description: "Тхэквондо на летних Олимпийских играх 2024",
+   description: "Прямая трансляция (мужчины -58кг, женщины -49 кг)",
    openGraph: {
       images: "/img/blog/competition/og/2024/mascot.png",
       title: headerTitle,
-      description: "Тхэквондо на летних Олимпийских играх 2024",
-      url: "https://kidstkd.ru/competition/og/2024",
+      description: "Прямая трансляция (мужчины -58кг, женщины -49 кг)",
+      url: "https://kidstkd.ru/competition/og/2024/live/day1",
    },
    alternates: {
-      canonical: "https://kidstkd.ru/competition/og/2024",
+      canonical: "https://kidstkd.ru/competition/og/2024/live/day1",
    },
 };
 
