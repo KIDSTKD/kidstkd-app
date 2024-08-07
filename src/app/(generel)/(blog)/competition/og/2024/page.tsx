@@ -40,8 +40,8 @@ export default function OG2024() {
 
          <h2>Расписание и прямые трансляции</h2>
          <h5 className="flex flex-raw items-center gap-3">
-            <LinkSpan text="7 АВГУСТА - женщины -47кг, мужчины -58кг" href='https://www.cbc.ca/player/play/video/9.6452535' />
-            <Link href='https://www.cbc.ca/player/play/video/9.6452535'>
+            <LinkSpan text="7 АВГУСТА - женщины -47кг, мужчины -58кг" href='2024/live/day1' />
+            <Link href='2024/live/day1'>
             <div className="bg-iconStream w-6 h-6 animate-pulse"></div>
             </Link>
          </h5>
