@@ -22,7 +22,7 @@ export default function OG2024() {
       <>
          <Heading text={headerTitle} />
 
-<iframe className="w-full" src="//www.cbc.ca/i/phoenix/player/syndicate/?mediaId=9.6452535" width="1280" height="720"></iframe>
+<iframe className="w-full" src="//www.cbc.ca/i/phoenix/player/syndicate/?mediaId=9.6452535" width="640" height="320"></iframe>
         
       </>
    );
