@@ -22,7 +22,6 @@ export default function OG2024() {
       <>
          <Heading text={headerTitle} />
          <DaysNavi />
-
          <h4>Предварительные поединки</h4>
 <iframe className="w-full aspect-video" src="//www.cbc.ca/i/phoenix/player/syndicate/?mediaId=9.6453060" width="640" height="320"></iframe>
 <h4>Полуфиналы</h4>
