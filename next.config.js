@@ -123,32 +123,32 @@ module.exports = {
       },
       {
         source: '/news/2024/:path*',
-        destination: '/news/2024/',
+        destination: '/03-news/2024/',
         permanent: true,
       },
       {
         source: '/news/2023/:path*',
-        destination: '/news/2023/',
+        destination: '/03-news/2023/',
         permanent: true,
       },
       {
         source: '/news/2022/:path*',
-        destination: '/news/2022/',
+        destination: '/03-news/2022/',
         permanent: true,
       },
       {
         source: '/news/2021/:path*',
-        destination: '/news/2021/',
+        destination: '/03-news/2021/',
         permanent: true,
       },
       {
         source: '/news/2020/:path*',
-        destination: '/news/2020/',
+        destination: '/03-news/2020/',
         permanent: true,
       },
       {
         source: '/news/2019/:path*',
-        destination: '/news/2019/',
+        destination: '/03-news/2019/',
         permanent: true,
       },
     ]
