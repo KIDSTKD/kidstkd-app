@@ -2,42 +2,38 @@ import { use } from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Pagination from '../ui/pagination';
 
 import { IPost } from '@/interfaces/posts';
 
 import PocketBase from "pocketbase";
 export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 
-export async function getPosts(pagenumber: number, perpage: number) {
+export async function getPosts(tag: string) {
   pbClient.autoCancellation(false)
-  const results = await pbClient.collection('05_posts').getList<IPost>(pagenumber, perpage, {
+  const results = await pbClient.collection('05_posts').getList<IPost>(1, 50, {
     requestKey: 'posts',
-    sort: '-post_id',
+    expand: 'tags',
+    filter: `tags.tag="pss"`
   });
 
   return results;
 
 };
 
-const PaginatedPosts = ({ pagenumber, perpage, withPagination }: {
-  pagenumber: number,
-  perpage: number,
-  withPagination: boolean,
+const TagPosts = ({ tag }: {
+  tag: string,
+
 
 }) => {
 
-  const res = use(getPosts(pagenumber, perpage))
-
-  const pag = res.items
-
-
+  const res = use(getPosts(tag))
+  const a = res.items
 
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 lg:gap-2">
 
-        {pag.map((posts: IPost) => (
+        {a.map((posts: IPost) => (
 
           <article key={posts.id}>
             <Link href={`/posts/${posts.id}`}>
@@ -53,12 +49,11 @@ const PaginatedPosts = ({ pagenumber, perpage, withPagination }: {
         ))}
       </div>
 
-      <Pagination totalPages={res.totalPages} link='/05-taekwondo/blog' withPagination={withPagination} />
 
 
     </>
   );
 }
 
-export default PaginatedPosts;
+export default TagPosts;
 

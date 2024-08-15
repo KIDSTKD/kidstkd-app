@@ -1,4 +1,5 @@
 import SinglePost from "@/components/posts-components/single-post";
+import TagsCloud from "@/components/posts-components/tags-cloud";
 
 interface PostProps {
   params: {
@@ -34,6 +35,7 @@ export default function PostPage({ params }: { params: { id: string } }) {
   return (
     <>
       <SinglePost postId={params.id} />
+      <TagsCloud />
     </>
   );
 }

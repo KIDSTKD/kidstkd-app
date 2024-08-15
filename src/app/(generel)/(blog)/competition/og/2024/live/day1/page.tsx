@@ -23,15 +23,22 @@ export default function OG2024() {
    return (
       <>
          <Heading text={headerTitle} />
-        <DaysNavi />
+         <DaysNavi />
 
          <h4>Предварительные поединки</h4>
-<iframe className="w-full aspect-video" src="//www.cbc.ca/i/phoenix/player/syndicate/?mediaId=9.6452535" width="640" height="320"></iframe>
-<h4>Полуфиналы</h4>
-<iframe className="w-full aspect-video" src="//www.cbc.ca/i/phoenix/player/syndicate/?mediaId=9.6452590" width="640" height="320"></iframe>
-<h4>Финальные поединки</h4>
-<iframe className="w-full aspect-video" src="//www.cbc.ca/i/phoenix/player/syndicate/?mediaId=9.6452659" width="640" height="320"></iframe>
-           
+         <iframe
+         className="w-full aspect-video"
+            width="720"
+            height="405"
+            src="https://rutube.ru/play/embed/86d00f7ffdbc5f62acb4494b0987fefe/?p=CFyqbnNK6ecRUhqPIbou4g"
+            frameBorder="0"
+            allow="clipboard-write; autoplay"
+            allowFullScreen
+         ></iframe>
+         <h4>Полуфиналы</h4>
+         <iframe className="w-full aspect-video" src="//www.cbc.ca/i/phoenix/player/syndicate/?mediaId=9.6452590" width="640" height="320"></iframe>
+         <h4>Финальные поединки</h4>
+         <iframe className="w-full aspect-video" src="//www.cbc.ca/i/phoenix/player/syndicate/?mediaId=9.6452659" width="640" height="320"></iframe>
       </>
    );
 }

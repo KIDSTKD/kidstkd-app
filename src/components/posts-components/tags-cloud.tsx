@@ -1,0 +1,32 @@
+import { use } from "react";
+
+export interface ITags {
+   id: string;
+   tag: string;
+   description: string;
+}
+
+import PocketBase from "pocketbase";
+export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
+
+export async function getPost() {
+   pbClient.autoCancellation(false);
+   const results = await pbClient.collection("tags").getFullList<ITags>();
+   return results;
+}
+
+const TagsCloud = () => {
+   const res = use(getPost());
+
+   return (
+      <div className="pt-10">
+         {res.map((posts: ITags) => (
+            <>
+               <h2 className="text-gray/50 cursor-pointer hover:text-linkblue/50">#{posts.description}</h2>
+            </>
+         ))}
+      </div>
+   );
+};
+
+export default TagsCloud;
