@@ -1,11 +1,7 @@
 import Link from "next/link";
 import { use } from "react";
 
-export interface ITags {
-   id: string;
-   tag: string;
-   description: string;
-}
+import { ITags } from "@/interfaces/tags";
 
 import PocketBase from "pocketbase";
 export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
