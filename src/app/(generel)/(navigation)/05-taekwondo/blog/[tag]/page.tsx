@@ -4,14 +4,13 @@ import TagPosts from "@/components/posts-components/tags-posts";
 export const dynamic = 'force-dynamic'
 export const revalidate = 1
 
-export default function Blog({ searchParams }: any) {
+export default function Blog({ params }: { params: { tag: number } }) {
 
-  const page = searchParams.page
 
   return (
     <>
-      <Heading text="Публикации" />
-      {/* <TagPosts tag="pss"  /> */}
+      <Heading text={"Публикации " + "#" + params.tag} />
+      <TagPosts tag="pss"  />
     </>
   );
 }

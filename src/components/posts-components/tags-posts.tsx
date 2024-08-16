@@ -2,7 +2,6 @@ import { use } from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 
-
 import { IPost } from '@/interfaces/posts';
 
 import PocketBase from "pocketbase";
@@ -11,9 +10,10 @@ export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 export async function getPosts(tag: string) {
   pbClient.autoCancellation(false)
   const results = await pbClient.collection('05_posts').getList<IPost>(1, 50, {
-    requestKey: 'posts',
+    requestKey: 'tag',
     expand: 'tags',
-    filter: `tags.tag="pss"`
+    filter: `tag.tag?="${tag}"`
+
   });
 
   return results;
@@ -22,7 +22,6 @@ export async function getPosts(tag: string) {
 
 const TagPosts = ({ tag }: {
   tag: string,
-
 
 }) => {
 
