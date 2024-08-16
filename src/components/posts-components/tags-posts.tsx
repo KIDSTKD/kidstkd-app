@@ -7,6 +7,9 @@ import { IPost } from '@/interfaces/posts';
 import PocketBase from "pocketbase";
 export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 1
+
 export async function getPosts(tag: string) {
   pbClient.autoCancellation(false)
   const results = await pbClient.collection('05_posts').getList<IPost>(1, 50, {
