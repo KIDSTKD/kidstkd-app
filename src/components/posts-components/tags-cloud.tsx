@@ -12,7 +12,7 @@ export const pbClient = new PocketBase("https://kidstkd.pockethost.io");
 
 export async function getPost() {
    pbClient.autoCancellation(false);
-   const results = await pbClient.collection("tags").getFullList<ITags>();
+   const results = await pbClient.collection("05_posts_tags").getFullList<ITags>();
    return results;
 }
 
