@@ -24,6 +24,11 @@ const config: Config = {
       'green': '#25984b',
       'yellow': '#d2ed1f',
 
+      'summerblue': '#0d1f2d',
+      'summerbluelight': '#193d5e',
+      'winterlight': '#e5f2fe',
+      'wintergray': '#b0c3d5',
+
       
     },
     extend: {

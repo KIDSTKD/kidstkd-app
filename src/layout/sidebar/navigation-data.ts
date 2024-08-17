@@ -30,7 +30,7 @@ export const AboutData = [
     {id:12, title: "Тхэквондо для детей", path: "/01-about-us/taekwondo-for-kids"},
     {id:13, title: "Тренерский коллектив", path: "/01-about-us/coach"},
     {id:14, title: "Аттестация", path: "/01-about-us/belt-test"},
-    {id:15, title: "Летний лагерь", path: "/01-about-us/camp"},
+    {id:15, title: "УТС", path: "/01-about-us/camp"},
 
 ]
 
