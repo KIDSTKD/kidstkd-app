@@ -14,6 +14,7 @@ export async function getPosts(tag: string) {
   pbClient.autoCancellation(false)
   const results = await pbClient.collection('05_posts').getList<IPost>(1, 50, {
     requestKey: 'tag',
+    sort: '-created',
     filter: `tag.tag?="${tag}"`
 
   });
