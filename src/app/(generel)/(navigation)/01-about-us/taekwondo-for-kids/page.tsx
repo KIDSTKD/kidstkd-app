@@ -5,6 +5,9 @@ const headerTitle = 'Тхэквондо для детей'
 export const metadata: Metadata = {
   title: headerTitle,
   description: headerTitle + ' - KIDSTKD',
+  alternates: {
+    canonical: "https://kidstkd.ru/01-about-us/taekwondo-for-kids",
+ },
 }
 
 export default function AboutUs() {

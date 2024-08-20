@@ -7,6 +7,9 @@ const headerTitle = 'Аттестация на пояса'
 export const metadata: Metadata = {
   title: headerTitle,
   description: headerTitle + ' - KIDSTKD',
+  alternates: {
+    canonical: "https://kidstkd.ru/01-about-us/belt-test/",
+ },
 }
 
 export default function AboutUs() {

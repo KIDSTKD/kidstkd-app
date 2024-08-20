@@ -5,6 +5,9 @@ const headerTitle = 'О нас'
 export const metadata: Metadata = {
   title: headerTitle,
   description: headerTitle + ' - KIDSTKD',
+  alternates: {
+    canonical: "https://kidstkd.ru/01-about-us/",
+ },
 }
 
 export default function AboutUs() {
