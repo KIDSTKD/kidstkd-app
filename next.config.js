@@ -151,6 +151,11 @@ module.exports = {
         destination: '/03-news/2019/',
         permanent: true,
       },
+      {
+        source: '/wtc',
+        destination: '/competitions/wtc/',
+        permanent: true,
+      },
     ]
   }
 };
