@@ -1,6 +1,5 @@
 import { use } from "react";
-import Image from "next/image";
-import Link from "next/link";
+
 
 import BlogImage from "../ui/blog-image";
 import { IKibon } from "@/interfaces/kibon";
@@ -15,7 +14,7 @@ export async function getKibon(postId: string) {
 }
 
 export const dynamic = "force-dynamic";
-export const revalidate = 3600;
+export const revalidate = 1;
 
 const Kibon = ({ kibonId }: { kibonId: string }) => {
    const res = use(getKibon(kibonId));
@@ -34,6 +33,7 @@ const Kibon = ({ kibonId }: { kibonId: string }) => {
             <h4>Методика выполнения</h4>
             <div dangerouslySetInnerHTML={{ __html: res.method }} />
             <div dangerouslySetInnerHTML={{ __html: res.etc }} />
+            <iframe width="720" height="405" src={res.link}></iframe>
          </article>
       </>
    );
