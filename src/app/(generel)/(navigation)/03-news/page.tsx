@@ -2,7 +2,7 @@ import Heading from "@/components/ui/heading";
 import PaginatedNews from "@/components/news-components/paginated-news";
 
 export const dynamic = 'force-dynamic'
-export const revalidate = 1
+export const revalidate = 3600
 
 import { Metadata } from 'next'
 const headerTitle = 'Новости'
