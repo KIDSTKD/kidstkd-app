@@ -1,7 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
 
-import IconVK from "../../../public/icons/social/vk.svg"
 
 import HeaderButton from "./header-components/header-button";
 
