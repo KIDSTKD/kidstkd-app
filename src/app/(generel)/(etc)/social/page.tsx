@@ -18,23 +18,24 @@ export const metadata: Metadata = {
    },
 };
 
+const SocialeData = [
+   { id: 1, icon: YT, href: 'https://www.youtube.com/@kidstkdtaekwondo2028' },
+   { id: 2, icon: TG, href: 'https://t.me/kidstkdru' },
+   { id: 3, icon: VK, href: 'https://vk.com/kidstkdru' },
+   { id: 4, icon: INST, href: 'https://www.instagram.com/kidstkd' },
+]
 
 
 export default function Home() {
    return (
-      <div className="grid grid-cols-4 gap-10">
-        <Link href='https://www.youtube.com/@kidstkdtaekwondo2028' target='_blank' passHref>
-        <Image src={YT} alt={"Youtube"} className="w-full p-10"/>
-         </Link>
-         <Link href='https://vk.com/kidstkdru' target='_blank' passHref>
-         <Image src={VK} alt={"VK"} className="w-full p-10"/>
-         </Link>
-         <Link href='https://t.me/kidstkdru' target='_blank' passHref>
-         <Image src={TG} alt={"Telegram"} className="w-full p-10"/>
-         </Link>
-         <Link href='https://www.instagram.com/kidstkd' target='_blank' passHref>
-         <Image src={INST} alt={"Instagram"} className="w-full p-10"/>
-         </Link>
-         </div>
+      <>
+<div className='flex flex-row gap-10 py-5 md:w-1/2 justify-center md:justify-start p-10'>
+{SocialeData.map(({ id, icon, href }) => (
+    <a href={href} key={id}><Image src={icon} alt='Иконка Социальной сети' width={100} height={100}
+        className='w-16 hover:scale-105 transition-all'
+    /></a>
+))}
+</div>
+</>
    );
 }
