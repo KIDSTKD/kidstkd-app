@@ -156,6 +156,11 @@ module.exports = {
         destination: '/competitions/wtc/',
         permanent: true,
       },
+      {
+        source: '/kibon/jase/jejari-seogi/moa-seogi',
+        destination: '/kibon/jase/jejari-seogi/s3qrcu3s2tbyx3f',
+        permanent: true,
+      },
     ]
   }
 };
