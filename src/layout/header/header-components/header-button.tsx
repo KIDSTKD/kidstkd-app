@@ -9,9 +9,7 @@ const HeaderButton = ({ text, link }: { text: string, link: string }) => {
             <Link id={text} className={`p-4 transition bg-no-repeat bg-center 
             ${text == "search" ? "bg-iconSearch hover:bg-iconSearchActive" :
                     text == "mail" ? "bg-iconMail hover:bg-iconMailActive" :
-                        text == "user" ? "bg-iconUser hover:bg-iconUserActive" :
-                            text == "more" ? "bg-iconMore hover:rotate-180 transition-transform" : ""
-                }`} href={link}></Link>
+                        text == "user" ? "bg-iconUser hover:bg-iconUserActive" : "" }`} href={link}></Link>
         </div>
 
     );
