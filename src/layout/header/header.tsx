@@ -30,7 +30,9 @@ const Header = () => {
 
             <div className="flex">
                <div className="bg-blue rounded-full w-10 h-10 p-1 flex items-center justify-around">
+                  <Link href={"/social"} >
                   <div className="p-4 bg-iconMore hover:rotate-90 transition-transform cursor-pointer"></div>
+                  </Link>
                </div>
             </div>
          </div>
