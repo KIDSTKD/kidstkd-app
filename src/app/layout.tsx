@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import type { Viewport } from 'next'
 
-import Logo from "@/components/logo";
-import Footer from "@/layout/footer/footer";
-import Header from "@/layout/header/header";
+// import Logo from "@/components/logo";
+// import Footer from "@/layout/footer/footer";
+// import Header from "@/layout/header/header";
 
 import "@/app/globals.css"
 
@@ -49,17 +49,9 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className='custom-bg'>
-        <div id='wrapper' className='grid transition-colors
-      grid-areas-mobileLayout lg:grid-areas-rootLayout
-      grid-cols-mobileLayout lg:grid-cols-rootLayout
-      grid-rows-mobileLayout lg:grid-rows-rootLayout
-      w-full min-h-dvh
-      '>
-          <div className="grid-in-logo bg-blue w-full lg:w-60 xl:w-96"><Logo /></div>
-          <Header />
-          <div className="grid-in-main">{children}</div>
-          <Footer />
-        </div>
+        <>
+      {children}
+      </>
         <script
           dangerouslySetInnerHTML={{
             __html: `

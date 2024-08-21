@@ -34,15 +34,12 @@ const config: Config = {
     extend: {
       gridTemplateAreas: {
         'rootLayout': [
-          'logo header',
-          'main main',
-          'footer footer',
+          'logo header header',
+          'sidebar main aside',
+          'sidebar footer footer',
 
         ],
 
-        'subLayout': [
-          'nav main aside',
-        ],
         'mobileLayout': [
           'logo',
           'header',
@@ -52,8 +49,7 @@ const config: Config = {
         ],
       },
       gridTemplateColumns: {
-        'rootLayout': 'auto 1fr',
-        'subLayout': 'auto 1fr auto',
+        'rootLayout': 'auto 1fr auto',
         'mobileLayout': '1fr',
 
       },

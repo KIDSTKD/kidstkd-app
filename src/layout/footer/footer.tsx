@@ -35,7 +35,7 @@ const Footer = () => {
             <UserButton />
           </div>
         </div>
-        <div className="hidden lg:grid grid-cols-3 justify-between pl-80 py-10 divide-x-[1px] divide-light items-center">
+        <div className="hidden lg:grid grid-cols-3 justify-between py-10 divide-x-[1px] divide-light items-center">
           <div>
             <Level1 menu="02-docs" text="Документы" />
 
