@@ -97,6 +97,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: '/pages/05/01/46-taekwondo-day-4-september.html',
+        destination: '/posts/ms0slry065m75rb',
+        permanent: true,
+      },
+      {
         source: '/posts/17-how-much-is-wtf-championship',
         destination: '/posts/uwyh8y204f4b7v5',
         permanent: true,
