@@ -1,5 +1,13 @@
-import LinkSpan from "@/components/ui/link-span";
+import "@/app/globals.css"
+import Header from "@/layout/header/header";
+import Logo from "@/components/logo";
+import Sidebar from "@/layout/sidebar/sidebar";
+import EventSidebar from "@/layout/sidebar/sidebar-events";
 
+import Footer from "@/layout/footer/footer";
+
+
+import LinkSpan from "@/components/ui/link-span";
 import Heading from "@/components/ui/heading";
 
 import { Metadata } from "next";
@@ -11,7 +19,20 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
    return (
-      <div className="min-h-dvh flex flex-col justify-center items-center">
+
+      <div id='wrapper' className='grid transition-all
+      grid-areas-mobileLayout lg:grid-areas-rootLayout
+      grid-cols-mobileLayout lg:grid-cols-rootLayout
+      grid-rows-mobileLayout lg:grid-rows-rootLayout
+      min-h-dvh
+      '>
+          <div className="grid-in-logo bg-blue lg:w-60 xl:w-96"><Logo /></div>
+          <Header />
+          <Sidebar />
+          <main className="grid-in-main overflow-y-hidden">
+
+
+          <div className="min-h-dvh flex flex-col">
          <Heading text={headerTitle} />
          <p>
             Если вы видите эту ошибку, это означает, что запрашиваемая страница не найдена на сервере. К сожалению, это может произойти по разным
@@ -21,5 +42,16 @@ export default function NotFound() {
           <LinkSpan text={"Вернуться на главную страницу"} href={"/"} />
          </p>
       </div>
+
+          </main>
+          <aside className="grid-in-aside hidden xl:flex w-0 xl:w-60"></aside>
+          <Footer />
+        </div> 
+
+
+     
    );
 }
+
+
+

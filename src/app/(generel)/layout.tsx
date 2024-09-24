@@ -26,8 +26,6 @@ export default function SubLayout({
           <aside className="grid-in-aside hidden xl:flex w-0 xl:w-60"></aside>
           <Footer />
         </div> 
-
-
     </>
   );
 }
