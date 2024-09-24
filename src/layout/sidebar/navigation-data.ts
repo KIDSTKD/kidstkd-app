@@ -7,10 +7,9 @@ export const PrivateMenuData = [
 ]
 
 export const EventMenuData = [
-    {id:1, title: "Положения", path: "/events/1", iconId: '', subMenu: false},
-    {id:2, title: "Протоколы", path: "/events/2", iconId: "", subMenu: false},
-    {id:3, title: "Турнирные таблицы", path: "/events/3", iconId: "", subMenu: false},
-    {id:4, title: "...", path: "/events/4", iconId: "", subMenu: false},
+    {id:1, title: "Положения", path: "/events/info", iconId: '', subMenu: false},
+    {id:2, title: "Протоколы", path: "/events/results", iconId: "", subMenu: false},
+    {id:3, title: "Турнирные таблицы", path: "/events/draw_sheets", iconId: "", subMenu: false},
 
 ]
 
