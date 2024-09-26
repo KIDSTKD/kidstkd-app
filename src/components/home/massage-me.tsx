@@ -18,7 +18,6 @@ const Massage = () => (
             <div className="md:w-1/2 flex items-center justify-center md:justify-end cursor-pointer">
             <div className="flex-col gap-0">
             <h2 className="text-right cursor-pointer pb-0">Записаться на пробное занятие</h2>
-            <p className="text-right italic pt-0 text-dark/75 cursor-pointer">* - начало занятий с 12 августа</p>
             </div>
             </div>
 
