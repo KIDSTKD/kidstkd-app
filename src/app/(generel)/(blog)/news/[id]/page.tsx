@@ -10,6 +10,9 @@ interface PostProps {
   };
 }
 
+export const revalidate = 3600
+
+
 import { Metadata } from "next";
 
 export async function generateMetadata({ params }: PostProps): Promise<Metadata> {
