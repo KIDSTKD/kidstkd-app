@@ -31,6 +31,26 @@ export default function Home() {
             положительный результат занятий. Занятия охватывают все аспекты тхэквондо, и включают в себя базовую подготовку, обучение ударной технике,
             обучение техническому комплексу пхумсэ.
          </p>
+
+         <h4 className="bg-subblue">Расписание занятий</h4>
+
+         <div className="grid grid-cols-3 gap-4 bg-subblue p-4 indent-o">
+         <div className="bg-blue rounded "><p className="text-center text-light">Вторник</p></div>
+         <div className="bg-blue rounded "><p className="text-center text-light">Четверг</p></div>
+         <div className="bg-blue rounded "><p className="text-center text-light">Суббота</p></div>
+
+         <div className="bg-blue rounded "><p className="text-center text-light">10:30-12:00</p></div>
+         <div className="bg-blue rounded "><p className="text-center text-light">10:30-12:00</p></div>
+         <div className="bg-blue rounded"><p className="text-center text-light">10:30-12:00</p></div>
+         <div className="bg-blue rounded"><p className="text-center text-light">15:30-17:00</p></div>
+         <div className="bg-blue rounded"><p className="text-center text-light">15:30-17:00</p></div>
+         <div className="bg-blue rounded"><p className="text-center text-light">10:30-12:00</p></div>
+         <div className="bg-blue rounded "><p className="text-center text-light">17:00-18:00</p></div>
+         <div className="bg-blue rounded"><p className="text-center text-light">17:00-18:00</p></div>
+         <div className="bg-blue rounded"><p className="text-center text-light">12:00-13:00</p></div>
+    
+
+</div>
          <h4>Для занятий Вашему ребенку понадобиться:</h4>
          <ul>
             <li>
