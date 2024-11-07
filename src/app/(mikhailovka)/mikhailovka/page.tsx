@@ -35,19 +35,18 @@ export default function Home() {
          <h4 className="bg-subblue">Расписание занятий</h4>
 
          <div className="grid grid-cols-3 gap-4 bg-subblue p-4 indent-o">
-         <div className="bg-blue rounded "><p className="text-center text-light">Вторник</p></div>
-         <div className="bg-blue rounded "><p className="text-center text-light">Четверг</p></div>
-         <div className="bg-blue rounded "><p className="text-center text-light">Суббота</p></div>
-
-         <div className="bg-blue rounded "><p className="text-center text-light">10:30-12:00</p></div>
-         <div className="bg-blue rounded "><p className="text-center text-light">10:30-12:00</p></div>
-         <div className="bg-blue rounded"><p className="text-center text-light">10:30-12:00</p></div>
-         <div className="bg-blue rounded"><p className="text-center text-light">15:30-17:00</p></div>
-         <div className="bg-blue rounded"><p className="text-center text-light">15:30-17:00</p></div>
-         <div className="bg-blue rounded"><p className="text-center text-light">10:30-12:00</p></div>
-         <div className="bg-blue rounded "><p className="text-center text-light">17:00-18:00</p></div>
-         <div className="bg-blue rounded"><p className="text-center text-light">17:00-18:00</p></div>
-         <div className="bg-blue rounded"><p className="text-center text-light">12:00-13:00</p></div>
+         <div className="bg-blue rounded "><p className="text-center text-light indent-0">Вторник</p></div>
+         <div className="bg-blue rounded "><p className="text-center text-light indent-0">Четверг</p></div>
+         <div className="bg-blue rounded "><p className="text-center text-light indent-0">Суббота</p></div>
+         <div className="bg-blue rounded "><p className="text-center text-light indent-0">10:30-12:00</p></div>
+         <div className="bg-blue rounded "><p className="text-center text-light indent-0">10:30-12:00</p></div>
+         <div className="bg-blue rounded"><p className="text-center text-light indent-0">10:30-12:00</p></div>
+         <div className="bg-blue rounded"><p className="text-center text-light indent-0">15:30-17:00</p></div>
+         <div className="bg-blue rounded"><p className="text-center text-light indent-0">15:30-17:00</p></div>
+         <div className="bg-blue rounded"><p className="text-center text-light indent-0">10:30-12:00</p></div>
+         <div className="bg-blue rounded "><p className="text-center text-light indent-0">17:00-18:00</p></div>
+         <div className="bg-blue rounded"><p className="text-center text-light indent-0">17:00-18:00</p></div>
+         <div className="bg-blue rounded"><p className="text-center text-light indent-0">12:00-13:00</p></div>
     
 
 </div>
