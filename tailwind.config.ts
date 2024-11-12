@@ -15,6 +15,8 @@ const config: Config = {
       'subblue': '#7cacd1',
       'lightblue': '#8fb8d8',
 
+
+
       'dark': '#151718',
       'gray': '#2b2c2d',
       'lightgray': '#555555',
@@ -28,6 +30,9 @@ const config: Config = {
       'summerbluelight': '#193d5e',
       'winterlight': '#e5f2fe',
       'wintergray': '#b0c3d5',
+      'wintedark': '#183b62',
+      'winterlightblue': '#4dbbff',
+
 
       
     },
@@ -89,6 +94,9 @@ const config: Config = {
 
         //
         'loading' : "url('/layout/loading.svg')",
+
+        //
+        'winterCamp' : "url('/img/banners/winter-camp/bg.svg')",
 
 
 

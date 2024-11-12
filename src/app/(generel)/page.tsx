@@ -6,6 +6,7 @@ import LinkSpan from "@/components/ui/link-span";
 import Massage from "@/components/home/massage-me";
 import TKDBanner from "@/components/home/tkd-banner";
 import BestAthlete from "@/components/home/best-athlet";
+import WinterCampBanner from "@/components/home/winter-camp";
 
 import PaginatedNews from "@/components/news-components/paginated-news";
 import PaginatedPosts from "@/components/posts-components/paginated-posts";
@@ -26,6 +27,9 @@ export default function Home() {
    return (
       <>
          <Heading text={headerTitle} />
+         <div className="hidden lg:flex">
+         <WinterCampBanner />
+         </div>
         <p>
             Мы приглашаем детей от 4 лет на занятия олимпийским видом спорта. Занятия проходят в группах детей одного возраста, что обеспечивает
             положительный результат занятий. Занятия охватывают все аспекты тхэквондо, и включают в себя базовую подготовку, обучение ударной технике,
