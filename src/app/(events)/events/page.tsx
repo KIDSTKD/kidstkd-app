@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function EventsPage() {
 
   return (
-    <div className='grid grid-cols-3 gap-3 p-1'>
+    <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 p-1'>
     <div className='bg-light/25 hover:bg-light/5 transition-colors cursor-pointer rounded-sm'>
 <Image src={CompLogo} alt='Открытое Первенство Уссурийского ГО' className='p-5'/>
 <div className='truncate
