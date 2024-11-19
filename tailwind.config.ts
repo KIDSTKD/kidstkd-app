@@ -97,6 +97,12 @@ const config: Config = {
 
         //
         'winterCamp' : "url('/img/banners/winter-camp/bg.svg')",
+        'summerCamp' : "url('/img/banners/summer-camp/bg.svg')",
+
+        
+        //
+        'winterCampLogo' : "url('/img/banners/winter-camp/logo.svg')",
+        'summerCampLogo' : "url('/img/banners/summer-camp/logo.svg')",
 
 
 
