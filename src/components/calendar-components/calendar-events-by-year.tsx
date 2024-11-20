@@ -49,6 +49,8 @@ const ClandarEventsByYearComponent = ({ year }: { year: number }) => {
         ? "bg-blue"
         : events.rank == "BC"
         ? "bg-subblue"
+        : events.rank == "MPC"
+        ? "bg-subblue"
         : events.rank == "winter-camp"
         ? "bg-winterCamp bg-cover"
         : events.rank == "summer-camp"
@@ -68,10 +70,16 @@ const ClandarEventsByYearComponent = ({ year }: { year: number }) => {
               ? "bg-summerCampLogo"
               : events.rank == "BC"
               ? 'bg-rusLogo'
+              : events.rank == "MPC"
+              ? 'bg-rusLogo'
               : events.rank == "federal"
               ? "bg-dfoLogo"
               : events.rank == "regional"
               ? "bg-pkLogo"
+              : events.rank == "belt-test"
+              ? "bg-beltTestLogo"
+              : events.rank == "my"
+              ? "bg-yopChagiLogo"
               : ""
         }`}></div>
         <div className='grid'>

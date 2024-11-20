@@ -106,6 +106,8 @@ const config: Config = {
         'rusLogo' : "url('/img/events/calendar-logo/rus.svg')",
         'dfoLogo' : "url('/img/events/calendar-logo/dfo.png')",
         'pkLogo' : "url('/img/events/calendar-logo/pk.png')",
+        'beltTestLogo' : "url('/img/events/calendar-logo/belt-test.png')",
+        'yopChagiLogo' : "url('/img/events/calendar-logo/yop-chagi.svg')",
 
 
 
