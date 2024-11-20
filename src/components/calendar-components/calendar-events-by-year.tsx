@@ -74,8 +74,8 @@ const ClandarEventsByYearComponent = ({ year }: { year: number }) => {
               ? "bg-pkLogo"
               : ""
         }`}></div>
-        <div>
-        <p className={`text-ellipsis ${events.rank == "RUS"
+        <div className='grid'>
+        <p className={`truncate ${events.rank == "RUS"
               ? "font-bebasRegular text-light text-2xl"
               : events.rank == "summer-camp"
               ? 'text-light'
@@ -87,7 +87,7 @@ const ClandarEventsByYearComponent = ({ year }: { year: number }) => {
         }`}
           >{events.date_text}</span> {events.name}
         </p>
-        <p className={`text-ellipsis ${events.rank == "RUS"
+        <p className={`truncate w-auto ${events.rank == "RUS"
               ? "text-light"
               : events.rank == "summer-camp"
               ? "text-light"
