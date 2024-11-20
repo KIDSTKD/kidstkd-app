@@ -103,6 +103,9 @@ const config: Config = {
         //
         'winterCampLogo' : "url('/img/banners/winter-camp/logo.svg')",
         'summerCampLogo' : "url('/img/banners/summer-camp/logo.svg')",
+        'rusLogo' : "url('/img/events/calendar-logo/rus.svg')",
+        'dfoLogo' : "url('/img/events/calendar-logo/dfo.png')",
+        'pkLogo' : "url('/img/events/calendar-logo/pk.png')",
 
 
 

@@ -59,16 +59,23 @@ const ClandarEventsByYearComponent = ({ year }: { year: number }) => {
         
     }`}
       >
-        <div className={`w-20 bg-contain bg-no-repeat bg-center ml-2 ${events.rank == "RUS"
-        ? ""
-        : events.rank == "winter-camp"
-        ? "bg-winterCampLogo"
-        : events.rank == "summer-camp"
-        ? "bg-summerCampLogo"
-        : ""
+        <div className={`w-20 bg-contain bg-no-repeat bg-center ml-2 hidden xl:flex
+              ${events.rank == "RUS"
+              ? "bg-rusLogo"
+              : events.rank == "winter-camp"
+              ? "bg-winterCampLogo"
+              : events.rank == "summer-camp"
+              ? "bg-summerCampLogo"
+              : events.rank == "BC"
+              ? 'bg-rusLogo'
+              : events.rank == "federal"
+              ? "bg-dfoLogo"
+              : events.rank == "regional"
+              ? "bg-pkLogo"
+              : ""
         }`}></div>
         <div>
-        <p className={`${events.rank == "RUS"
+        <p className={`text-ellipsis ${events.rank == "RUS"
               ? "font-bebasRegular text-light text-2xl"
               : events.rank == "summer-camp"
               ? 'text-light'
@@ -80,7 +87,7 @@ const ClandarEventsByYearComponent = ({ year }: { year: number }) => {
         }`}
           >{events.date_text}</span> {events.name}
         </p>
-        <p className={`${events.rank == "RUS"
+        <p className={`text-ellipsis ${events.rank == "RUS"
               ? "text-light"
               : events.rank == "summer-camp"
               ? "text-light"
