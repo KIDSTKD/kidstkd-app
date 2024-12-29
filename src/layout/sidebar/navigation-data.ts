@@ -46,9 +46,9 @@ export const DocData = [
 
 export const NewsData = [
 
+    {id:32, title: "2025", path: "/03-news/2025"},
     {id:33, title: "2024", path: "/03-news/2024"},
     {id:31, title: "2023", path: "/03-news/2023"},
-    {id:32, title: "2022", path: "/03-news/2022"},
     {id:34, title: "...архив...", path: "/03-news/archive"},
 ]
 
