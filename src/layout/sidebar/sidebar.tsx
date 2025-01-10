@@ -27,7 +27,7 @@ const Sidebar = () => {
                        h-[100vh]
                        w-4/5 md:w-1/2 lg:w-60 xl:w-96
                        -translate-x-[100%] lg:translate-x-0
-                       overflow-y-scroll	
+                       overflow-y-hidden
                        "
       >
          <div className="flex justify-between lg:hidden">
