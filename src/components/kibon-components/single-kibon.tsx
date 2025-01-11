@@ -34,6 +34,7 @@ const Kibon = ({ kibonId }: { kibonId: string }) => {
             <div dangerouslySetInnerHTML={{ __html: res.method }} />
             <div dangerouslySetInnerHTML={{ __html: res.etc }} />
             <iframe width="720" height="405" src={res.link}></iframe>
+
          </article>
       </>
    );
