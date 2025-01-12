@@ -2,6 +2,8 @@
 
 import { usePathname } from "next/navigation";
 
+import KibonTGLink from "./kibon-tg-link";
+
 import Link from "next/link";
 
 const Jase = () => {
@@ -57,10 +59,14 @@ const KibonNavigation = () => {
    const pathname = usePathname();
 
    return (
+      <>
+      <KibonTGLink />
       <div className="m-1 bg-lightblue rounded-xl">
+         
          <Link href="/05-taekwondo/kibon/">
             <h2 className="bg-blue rounded-t-xl text-light cursor-pointer">Базовая техника тхэквондо</h2>
          </Link>
+         
          <div id="level1" className="grid grid-cols-4 bg-subblue rounded-b-xl">
             <h4
                id="l1-jase"
@@ -295,6 +301,7 @@ const KibonNavigation = () => {
             </div>
          </div>
       </div>
+      </>
    );
 };
 

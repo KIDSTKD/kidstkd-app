@@ -34,6 +34,7 @@ export default function KibonPage({ params }: { params: { id: string } }) {
       <>
          <KibonNavigation />
          <Kibon kibonId={params.id} />
+         
       </>
    );
 }

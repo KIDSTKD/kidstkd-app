@@ -109,6 +109,9 @@ const config: Config = {
         'beltTestLogo' : "url('/img/events/calendar-logo/belt-test.png')",
         'yopChagiLogo' : "url('/img/events/calendar-logo/yop-chagi.svg')",
 
+        //
+        'kibon' : "url('/img/05-kibon/tg_cover_line.png')"
+
 
 
 
