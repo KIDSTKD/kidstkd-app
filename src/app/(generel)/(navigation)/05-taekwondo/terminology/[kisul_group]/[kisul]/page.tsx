@@ -1,6 +1,7 @@
 import Heading from "@/components/ui/heading";
 
 import KibonGroupList from "@/components/kibon-components/kibon-group-list";
+import KibonTGLink from "@/components/kibon-components/kibon-tg-link";
 
 interface PostProps {
    params: {
@@ -49,6 +50,7 @@ export default function Taekwondo({ params }: PostProps) {
 
    return (
       <>
+      <KibonTGLink />
          <Heading text={"Терминология: " + meta?.tech + " (" + meta?.decsp + ")"}/>
          <KibonGroupList kisul_group={params.kisul_group} kisul={params.kisul} />
  
