@@ -4,6 +4,8 @@ import Heading from "@/components/ui/heading";
 import LinkSpan from "@/components/ui/link-span";
 import BlogImage from "@/components/ui/blog-image";
 
+import KibonTGLink from "@/components/kibon-components/kibon-tg-link";
+
 import Hangeul1 from "../../../../../../public/img/05-terms/01.jpg"
 import Hangeul2 from "../../../../../../public/img/05-terms/02.jpg"
 
@@ -20,6 +22,7 @@ export const metadata: Metadata = {
 export default function Taekwondo() {
    return (
       <>
+      <KibonTGLink />
          <Heading text={headerTitle} />
          <BlogImage
          href='/img/05-terms/hangeul.png'
