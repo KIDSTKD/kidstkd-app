@@ -1,4 +1,7 @@
 import Heading from '@/components/ui/heading'
+
+import ItemCard from '@/components/gear-components/card'
+
 import { Metadata } from 'next'
 const headerTitle = 'Экипировка'
 export const metadata: Metadata = {
@@ -18,6 +21,7 @@ export default function Gear() {
     <>
       <Heading text={headerTitle} />
 
+      <ItemCard />
 
 
     </>
