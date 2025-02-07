@@ -54,9 +54,9 @@ export const NewsData = [
 
 export const CalendarData = [
 
+    {id:43, title: "2025", path: "/04-calendar/2025"},
     {id:41, title: "2024", path: "/04-calendar/2024"},
     {id:42, title: "2023", path: "/04-calendar/2023"},
-    {id:43, title: "2022", path: "/04-calendar/2022"},
     {id:44, title: "...архив...", path: "/04-calendar/archive"},
 ]
 
