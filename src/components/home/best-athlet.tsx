@@ -17,7 +17,7 @@ interface IUserRatio {
 
 export async function getBestAthlete() {
     pbClient.autoCancellation(false)
-    const results = await pbClient.collection('users_ratio_2024').getFullList<IUserRatio>({
+    const results = await pbClient.collection('users_ratio_2025').getFullList<IUserRatio>({
         requestKey: 'uset-ratio',
         expand: 'user',
         sort: 'rank',
