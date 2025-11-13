@@ -1,6 +1,6 @@
 import { use } from 'react'
 import Image from "next/image";
-// import Link from "next/link";
+import Link from "next/link";
 
 import { IItemsCards } from '@/interfaces/items-cards';
 
@@ -32,16 +32,23 @@ const ItemCard = () => {
 {res.map((gear: IItemsCards) => (
 
     <div key={gear.id} className="">
+                        <Link href='https://t.me/tkd_store_ru'>
+
         <div  className="border-2 border-blue relative cursor-pointer" >
             <h5 className="absolute right-0 top-0 bg-blue rounded-bl-xl text-light indent-0 px-5 z-20">{gear.price}</h5>
             <Image src={pbClient.files.getUrl(gear, gear.img[0], { 'thumb': '360x360' })} alt={gear.title} width={360} height={360} className='scale-95 hover:scale-100 transition-transform' />
             
          </div>
     <h5 className="w-60 indent-0 text-center">{gear.title}</h5>
+
+</Link>
     
     </div>
 
 ))}
+
+
+
 </div>
 
 </>
