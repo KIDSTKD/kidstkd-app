@@ -30,7 +30,6 @@ export default function Gear() {
 
       <ItemCard />
 
-            <Link href='https://t.me/tkd_store_ru'><Button text={'Подробнее'} /></Link>
 
 
 
